@@ -1,0 +1,31 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "[System.Media.SystemSounds]::Exclamation.Play(); (New-Object -ComObject WScript.Shell).Popup('待確認', 3, 'Claude Code', 0)",
+            "async": true,
+            "timeout": 15
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "shell": "powershell",
+            "command": "[System.Media.SystemSounds]::Asterisk.Play(); (New-Object -ComObject WScript.Shell).Popup('任務完成>_<', 3, 'Claude Code', 0)",
+            "async": true,
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

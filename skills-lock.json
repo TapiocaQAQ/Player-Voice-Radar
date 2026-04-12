@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "skills": {
+    "agent-browser": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "computedHash": "fc173a14ecea820739ea971bf81eddbf94e12ce99312fb83e55342724316c5dd"
+    },
+    "agentcore": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "computedHash": "194f6567ad83e506be6a6f29861aec0da3829ecbfdf118c25d5045aa65090108"
+    },
+    "browser-use": {
+      "source": "browser-use/browser-use",
+      "sourceType": "github",
+      "computedHash": "24c08ebcec599f98eca1fbaa0fb67483ac7926347e69de16f1c5e423b49e6145"
+    },
+    "cloud": {
+      "source": "browser-use/browser-use",
+      "sourceType": "github",
+      "computedHash": "4bb7099c0f65cd8d8b403589b01f24784fa0179596a197f3b391645c9de08695"
+    },
+    "dogfood": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "computedHash": "c1b1133e43d087a9f97de44c2b8abdd4b6c59364d3ac9c0456b01916d58a55b2"
+    },
+    "electron": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "computedHash": "637d08276e7d16c4a4fa1a5d661cb88830ce39679053b74d0b48a7f792667f91"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "computedHash": "9e1c8b3103f92fa8092568a44fe64858de7c5c9dc65ce4bea8f168080e889cfd"
+    },
+    "open-source": {
+      "source": "browser-use/browser-use",
+      "sourceType": "github",
+      "computedHash": "0321811b9c4293dc7e1d14e96c6ff4a8c41d3f7fbb2337bd9817f90890e9d762"
+    },
+    "react-dev": {
+      "source": "softaworks/agent-toolkit",
+      "sourceType": "github",
+      "computedHash": "da3caa5f2bfd7274fad3f08524ff3ad4f427978773c3e77e7b14e44aaac31d78"
+    },
+    "react-doctor": {
+      "source": "millionco/react-doctor",
+      "sourceType": "github",
+      "computedHash": "276053f3861a6f29e2ab1922fc91281934dac5be78f85ec9f21604fd979383ee"
+    },
+    "react-state-management": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "76c3686478c0b3f60f5ee9b4626997a61605e1a625e16d31c906db99c9bc1a19"
+    },
+    "remote-browser": {
+      "source": "browser-use/browser-use",
+      "sourceType": "github",
+      "computedHash": "bc43d88a7cd3f130d4edb6f8da4d6f5f2724e45545226ae116fa52a9aa2e6b37"
+    },
+    "slack": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "computedHash": "6304c96ecaf1494e2be424ebb9e52a882ea59b3ee452513764604f349572c7a9"
+    },
+    "sveltekit-svelte5-tailwind-skill": {
+      "source": "claude-skills/sveltekit-svelte5-tailwind-skill",
+      "sourceType": "github",
+      "computedHash": "a6b5cb2295be93d44483c1e32d5a5703e9932dfef19e20b3eff85649b998bc43"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "computedHash": "43ca6c197f8ec13055079da7053232d477068b03ca443f9ac1bc819b95cdd432"
+    },
+    "vercel-sandbox": {
+      "source": "vercel-labs/agent-browser",
+      "sourceType": "github",
+      "computedHash": "d4420f40974fe2964a8198d40998227d3f28c19b7f623b0b0f7422b569ea9ce9"
+    },
+    "web-design-reviewer": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "computedHash": "10c6fad8b4f01dbeae969009d81d6c306c8a96d56077cad9bfe2a73a38f5dcbe"
+    }
+  }
+}

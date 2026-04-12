@@ -1,0 +1,77 @@
+/* Geist Sans + Geist Mono — Vercel's own typefaces */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  .dark {
+    /* ── Vercel Dark Palette → Shadcn CSS vars ─────────────────
+       Pure black canvas · white text · rgba white borders
+    ──────────────────────────────────────────────────────────── */
+    --background: #000000;
+    --foreground: #ededed;
+    --card: #0a0a0a;
+    --card-foreground: #ededed;
+    --popover: #0a0a0a;
+    --popover-foreground: #ededed;
+    --primary: #ededed;
+    --primary-foreground: #000000;
+    --secondary: #111111;
+    --secondary-foreground: #ededed;
+    --muted: #111111;
+    --muted-foreground: #888888;
+    --accent: #111111;
+    --accent-foreground: #ededed;
+    --destructive: #ff5b4f;
+    --destructive-foreground: #000000;
+    --border: rgba(255,255,255,0.08);
+    --input: rgba(255,255,255,0.08);
+    --ring: hsla(212, 100%, 60%, 1);
+    --radius: 8px;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html, body {
+    background-color: #000000;
+    color: #ededed;
+    font-family:
+      'Geist',
+      Arial,
+      'Apple Color Emoji',
+      'Segoe UI Emoji',
+      'Segoe UI Symbol',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: "liga" 1, "calt" 1;
+    line-height: 1.5;
+  }
+}
+
+/* ── Recharts: Vercel dark-mode overrides ─────────────────────
+   Axis labels → Geist Mono muted white
+   Grid lines   → barely-visible white
+────────────────────────────────────────────────────────────── */
+.recharts-cartesian-axis-tick text,
+.recharts-legend-item-text {
+  fill: #9ca3af !important;
+  font-family: 'Geist Mono', ui-monospace, monospace !important;
+  font-size: 11px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.recharts-cartesian-grid line {
+  stroke: rgba(255,255,255,0.1) !important;
+}
+.recharts-tooltip-wrapper {
+  font-family: 'Geist', sans-serif !important;
+}
