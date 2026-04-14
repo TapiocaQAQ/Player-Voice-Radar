@@ -1,9 +1,9 @@
 import { useState } from "react"
-import { Header } from "@/components/Header"
-import { MetricCards } from "@/components/MetricCards"
-import { InsightChart } from "@/components/InsightChart"
-import { BadgeCloud } from "@/components/BadgeCloud"
-import { DetailSheet } from "@/components/DetailSheet"
+import { Header } from "@/components/layout/Header"
+import { MetricCards } from "@/components/features/metrics/MetricCards"
+import { InsightChart } from "@/components/features/charts/InsightChart"
+import { BadgeCloud } from "@/components/features/keywords/BadgeCloud"
+import { DetailSheet } from "@/components/features/detail/DetailSheet"
 
 function App() {
   const [sheetOpen, setSheetOpen] = useState(false)

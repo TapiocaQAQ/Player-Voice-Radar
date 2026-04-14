@@ -1,4 +1,4 @@
-# Project Blueprint: PlayerPulse-AI (遊戲營運即時監控儀表板)
+# Project Blueprint: Player-Voice-Rader (遊戲營運即時監控儀表板)
 
 ## 1. 專案概述與架構限制
 * 專案目標：為遊戲營運團隊開發一個單頁應用程式 (SPA) 儀表板，即時視覺化玩家反饋與流失風險。
@@ -72,19 +72,3 @@ export interface ReviewData {
   - 生成回覆按鈕：底部放置「✨ 撰寫公關回覆草稿」按鈕。點擊後模擬 1 秒 Loading，展開預設的官方安撫回覆文案。
 
 ---
----
-
-[給 Claude Code 的階段一 Prompt]
-
-Please read the `project_blueprint.md`. 
-I want to build this project iteratively to ensure high code quality. 
-
-For Step 1, ONLY focus on setting up the project dependencies and building a STATIC visual shell for the frontend. Do NOT implement any real data fetching, setTimeout loading states, or complex React state logic yet.
-
-Your tasks for this step:
-1. Initialize the Vite + React + TS environment.
-2. Install Tailwind CSS, Tremor, Shadcn UI, and required icons.
-3. Build the static UI layout as described in Section 4 (Layout & Features), including the Header, Metric Cards, an explicitly hardcoded dummy BarChart, the Badge Cloud, and a static version of the slide-out Sheet.
-4. Ensure the visual design is modern, professional, and uses a clean dark/slate SaaS theme.
-
-Stop and ask for my visual review once you have a working static frontend running on localhost.
