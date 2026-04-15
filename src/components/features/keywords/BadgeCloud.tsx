@@ -5,51 +5,38 @@
 const CARD_SHADOW =
   'rgba(255,255,255,0.08) 0px 0px 0px 1px, rgba(0,0,0,0.5) 0px 2px 4px, rgba(255,255,255,0.02) 0px 0px 0px 1px inset'
 
-interface Keyword {
-  text: string
-  count: number
-}
-
-const keywords: Keyword[] = [
-  { text: '閃退',       count: 28 },
-  { text: '黑心抽卡',   count: 24 },
-  { text: '機率詐騙',   count: 21 },
-  { text: '連線錯誤',   count: 19 },
-  { text: '掉線',       count: 17 },
-  { text: '延遲嚴重',   count: 13 },
-  { text: '客服不回',   count: 14 },
-  { text: '更新Bug',    count: 11 },
-  { text: '帳號異常',   count: 9  },
-  { text: '退款問題',   count: 8  },
-  { text: '活動不公平', count: 7  },
-  { text: '廣告太多',   count: 6  },
-  { text: '強制下載',   count: 5  },
-  { text: '卡關',       count: 4  },
-]
-
 // 5-tier encoding: colour + size + weight + opacity + padding
-function getPillStyle(count: number): {
+function getPillStyle(value: number): {
   bg: string; text: string; fontSize: string; fontWeight: number
   opacity: number; px: string; py: string
 } {
-  // Tier 1 — Top painpoints (count ≥ 22): 2× base, vivid red, full opacity
-  if (count >= 22)
+  // Tier 1 — Top painpoints (value ≥ 22): 2× base, vivid red, full opacity
+  if (value >= 22)
     return { bg: 'rgba(255,91,79,0.22)',   text: '#ff6b62', fontSize: '22px', fontWeight: 800, opacity: 1,    px: '18px', py: '8px'  }
-  // Tier 2 — High (count ≥ 16): 1.4× base, saturated red
-  if (count >= 16)
+  // Tier 2 — High (value ≥ 16): 1.4× base, saturated red
+  if (value >= 16)
     return { bg: 'rgba(255,91,79,0.16)',   text: '#ff8a84', fontSize: '16px', fontWeight: 700, opacity: 1,    px: '14px', py: '6px'  }
-  // Tier 3 — Medium (count ≥ 11): base size, muted orange-red
-  if (count >= 11)
+  // Tier 3 — Medium (value ≥ 11): base size, muted orange-red
+  if (value >= 11)
     return { bg: 'rgba(255,91,79,0.10)',   text: '#ffa8a4', fontSize: '13px', fontWeight: 500, opacity: 0.85, px: '11px', py: '4px'  }
-  // Tier 4 — Low (count ≥ 7): smaller, dim
-  if (count >= 7)
+  // Tier 4 — Low (value ≥ 7): smaller, dim
+  if (value >= 7)
     return { bg: 'rgba(255,91,79,0.06)',   text: '#cc6e69', fontSize: '11px', fontWeight: 400, opacity: 0.55, px: '10px', py: '3px'  }
-  // Tier 5 — Noise (count < 7): minimal, below 30% opacity
+  // Tier 5 — Noise (value < 7): minimal, below 30% opacity
   return   { bg: 'rgba(255,255,255,0.03)', text: '#444444', fontSize: '10px', fontWeight: 400, opacity: 0.25, px: '8px',  py: '2px'  }
 }
 
-export function BadgeCloud() {
-  const sorted = [...keywords].sort((a, b) => b.count - a.count)
+export interface KeywordItem {
+  text: string
+  value: number
+}
+
+interface BadgeCloudProps {
+  keywords: KeywordItem[]
+}
+
+export function BadgeCloud({ keywords }: BadgeCloudProps) {
+  const sorted = [...keywords].sort((a, b) => b.value - a.value)
 
   return (
     <div
@@ -76,7 +63,7 @@ export function BadgeCloud() {
       {/* Pill grid — items-end so large pills align to bottom */}
       <div className="flex flex-wrap gap-2.5 flex-1 content-start items-end">
         {sorted.map((kw) => {
-          const { bg, text, fontSize, fontWeight, opacity, px, py } = getPillStyle(kw.count)
+          const { bg, text, fontSize, fontWeight, opacity, px, py } = getPillStyle(kw.value)
           return (
             <span
               key={kw.text}
@@ -94,7 +81,7 @@ export function BadgeCloud() {
               }}
             >
               {kw.text}
-              <span style={{ opacity: 0.45, fontSize: '9px' }}>{kw.count}</span>
+              <span style={{ opacity: 0.45, fontSize: '9px' }}>{kw.value}</span>
             </span>
           )
         })}

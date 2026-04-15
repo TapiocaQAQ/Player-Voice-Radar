@@ -1,4 +1,4 @@
-import { RefreshCw } from "lucide-react"
+import { RefreshCw, Bug } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
   Select,
@@ -10,12 +10,15 @@ import {
 
 interface HeaderProps {
   onSync: () => void
+  starFilter: string
+  onFilterChange: (value: string) => void
+  onRollback?: () => void
 }
 
 // Vercel dark header:
 // bg: black · shadow-border: white 8% · font: Geist
 
-export function Header({ onSync }: HeaderProps) {
+export function Header({ onSync, starFilter, onFilterChange, onRollback }: HeaderProps) {
   return (
     <header
       className="sticky top-0 z-40 w-full bg-black"
@@ -51,7 +54,7 @@ export function Header({ onSync }: HeaderProps) {
           </span>
 
           {/* Star filter */}
-          <Select defaultValue="1-3">
+          <Select value={starFilter} onValueChange={onFilterChange}>
             <SelectTrigger
               className="w-[148px] h-8 text-xs rounded-md bg-black text-[#a1a1a1] focus:ring-0 focus:ring-offset-0"
               style={{
@@ -94,6 +97,23 @@ export function Header({ onSync }: HeaderProps) {
             <RefreshCw className="h-3 w-3" />
             強制同步
           </Button>
+
+          {/* Debug rollback button */}
+          {onRollback && (
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={onRollback}
+              title="[Debug] 回溯：移除最新 20 筆資料"
+              className="h-8 w-8 p-0 bg-black rounded-md hover:bg-[#1a1200] transition-colors duration-100"
+              style={{
+                boxShadow: 'rgba(255,159,10,0.25) 0px 0px 0px 1px',
+                border: 'none',
+              }}
+            >
+              <Bug className="h-3.5 w-3.5 text-[#ff9f0a]" />
+            </Button>
+          )}
         </div>
       </div>
 
@@ -105,15 +125,11 @@ export function Header({ onSync }: HeaderProps) {
           </span>
           <span className="text-[rgba(255,255,255,0.08)]">·</span>
           <span className="font-mono text-[11px] text-[#444444]">
-            last-sync: 2026-04-11T08:42+08:00
+            last-sync: 2026-04-14T00:00+08:00
           </span>
           <span className="text-[rgba(255,255,255,0.08)]">·</span>
           <span className="font-mono text-[11px] text-[#444444] uppercase tracking-[0.04em]">
-            ai: gemini-2.0-flash
-          </span>
-          <span className="text-[rgba(255,255,255,0.08)]">·</span>
-          <span className="font-mono text-[11px] text-[#888888] font-medium">
-            filter: 1–3★ · 129 reviews
+            ai: qwen3-32b (groq)
           </span>
         </div>
       </div>

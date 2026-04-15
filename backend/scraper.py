@@ -109,8 +109,7 @@ def main():
             print(f"[WARN] App ID '{app_id}' 抓取失敗: {e}，嘗試備援 ID…")
 
     if not raw:
-        print("[ERROR] 所有 App ID 均抓取失敗，請確認網路連線或 App ID 是否正確。")
-        sys.exit(1)
+        raise RuntimeError("所有 App ID 均抓取失敗，請確認網路連線或 App ID 是否正確。")
 
     print(f"[INFO] 使用 App ID: {used_app_id}")
 

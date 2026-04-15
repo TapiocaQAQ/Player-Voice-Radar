@@ -79,8 +79,7 @@ def load_env() -> str:
     load_dotenv(ENV_PATH)
     key = os.getenv("GROQ_API_KEY", "").strip()
     if not key:
-        print(f"[ERROR] 找不到 GROQ_API_KEY，請確認 {ENV_PATH} 存在且格式正確。")
-        sys.exit(1)
+        raise RuntimeError(f"找不到 GROQ_API_KEY，請確認 {ENV_PATH} 存在且格式正確。")
     return key
 
 
@@ -229,11 +228,16 @@ def save_output(data: List[Dict]) -> None:
     print(f"[INFO] 已儲存 {len(data)} 筆至 {OUTPUT_PATH}")
 
 
-# ── 主程式（增量更新）────────────────────────────────────────
+# ── 主程式（增量更新）— generator，每批完成後 yield 進度 ──────
 def main(limit: int = None):
+    """
+    LLM 增量分析 generator。
+    每個批次完成後 yield {"current": i, "total": n, "msg": "..."} ，
+    讓呼叫端（FastAPI SSE 或 CLI）即時取得進度。
+    無新評論時直接 return（不 yield 任何事件）。
+    """
     if not INPUT_PATH.exists():
-        print(f"[ERROR] 找不到 {INPUT_PATH}，請先執行 scraper.py")
-        sys.exit(1)
+        raise RuntimeError(f"找不到 {INPUT_PATH}，scraper.py 尚未執行或爬蟲失敗")
 
     # Step 1：載入快取
     existing, processed_ids = load_cache()
@@ -259,15 +263,47 @@ def main(limit: int = None):
 
     if not new_reviews:
         print("[DONE] 目前沒有新的評論需要分析，系統已是最新狀態！")
-        return
+        return  # generator 直接結束，不 yield 任何事件
 
     print(f"[INFO] 發現 {len(new_reviews)} 筆新評論，開始進行 LLM 分析...")
 
-    # Step 5：批次處理
-    analyzed = run_pipeline(new_reviews)
+    # Step 5：批次處理（inline，逐批 yield 進度）
+    api_key = load_env()
+    client  = Groq(api_key=api_key)
+
+    batches       = [new_reviews[i:i + BATCH_SIZE] for i in range(0, len(new_reviews), BATCH_SIZE)]
+    total_batches = len(batches)
+    results: List[Dict] = []
+    failed  = 0
+
+    print(f"[INFO] 共 {len(new_reviews)} 筆新評論，分為 {total_batches} 個批次（每批 {BATCH_SIZE} 筆）")
+
+    for idx, batch in enumerate(batches, 1):
+        print(f"[INFO] 處理批次 {idx}/{total_batches}（{len(batch)} 筆）...", end=" ", flush=True)
+        try:
+            parsed = process_batch(client, batch)
+            results.extend(parsed)
+            print(f"完成，累計 {len(results)} 筆")
+        except Exception as batch_err:
+            # 批次 3 次重試全失敗 → 逐筆單送（fallback）
+            print(f"\n  [FALLBACK] 批次 {idx} 重試 {MAX_RETRIES} 次仍失敗，改為逐筆送出...")
+            for review in batch:
+                rid_short = review.get("review_id", "")[:12]
+                print(f"  [SINGLE] {rid_short}...", end=" ", flush=True)
+                try:
+                    single = process_batch(client, [review])
+                    results.extend(single)
+                    print(f"完成，累計 {len(results)} 筆")
+                except Exception:
+                    failed += 1
+                    print(f"失敗，記錄至 bad_data.json")
+                    save_bad_data(review)
+
+        # 每批完成後推送進度
+        yield {"current": idx, "total": total_batches, "msg": "AI 分析中..."}
 
     # Step 6：合併、排序、寫出
-    merged = existing + analyzed
+    merged = existing + results
     save_output(merged)
     print(f"[DONE] 增量更新完成，快取總筆數：{len(merged)}")
 
@@ -307,4 +343,6 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"[ERROR] 測試失敗：{e}")
     else:
-        main(limit=args.limit)
+        # main() 現在是 generator；drain 它以驅動整個管線
+        for progress in main(limit=args.limit):
+            print(f"[PROGRESS] {progress['current']}/{progress['total']} — {progress['msg']}")

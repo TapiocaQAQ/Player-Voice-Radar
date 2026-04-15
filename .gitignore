@@ -43,6 +43,13 @@ vite.config.ts.timestamp-*
 # Claude Code — Agent Files
 # ===========================
 .agents/
+# Runtime lock files (local scheduler state)
+.claude/scheduled_tasks.lock
+
+# ===========================
+# Screenshots (local only, per CLAUDE.md)
+# ===========================
+screenshot/
 
 # ===========================
 # Generated / Temporary Files

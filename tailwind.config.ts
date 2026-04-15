@@ -160,6 +160,18 @@ const config: Config = {
         'tremor-title':   ['1rem',     { lineHeight: '1.5rem' }],
         'tremor-metric':  ['3rem',     { lineHeight: '1' }],
       },
+
+      // ── JumpingDots 動畫 ─────────────────────────────────────
+      // 每個點跳 4px，0%→80%→100% 靜止，40% 峰值，搭配 150ms stagger
+      keyframes: {
+        'dot-bounce': {
+          '0%, 80%, 100%': { transform: 'translateY(0)' },
+          '40%':           { transform: 'translateY(-4px)' },
+        },
+      },
+      animation: {
+        'dot-bounce': 'dot-bounce 1.2s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

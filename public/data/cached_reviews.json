@@ -1,5 +1,173 @@
 [
   {
+    "review_id": "54354a97-c865-4726-b66a-510a2d2d4445",
+    "player_name": "Google 使用者",
+    "date": "2026-04-14",
+    "star_rating": 1,
+    "review_text": "全拿爛牌",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "發爛牌",
+      "root_cause_summary": "玩家認為發牌機制不公導致全拿爛牌"
+    }
+  },
+  {
+    "review_id": "74307fc0-a612-423c-8ac4-b29601b1defa",
+    "player_name": "Google 使用者",
+    "date": "2026-04-14",
+    "star_rating": 1,
+    "review_text": "可惜沒負星",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "評分限制",
+      "root_cause_summary": "玩家對評分系統無法負星表示不滿"
+    }
+  },
+  {
+    "review_id": "18e0d7b3-397a-4578-a6e4-64f940d56e68",
+    "player_name": "Google 使用者",
+    "date": "2026-04-14",
+    "star_rating": 5,
+    "review_text": "很好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "3426e64d-9d19-484a-aff6-4b65424381f4",
+    "player_name": "Google 使用者",
+    "date": "2026-04-13",
+    "star_rating": 5,
+    "review_text": "玩一下",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "簡單有趣",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "b6a12f95-5b21-488e-8a26-82d08b156d3a",
+    "player_name": "Google 使用者",
+    "date": "2026-04-13",
+    "star_rating": 5,
+    "review_text": "開心",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "樂趣滿分",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "84503e33-611a-4ea7-8e75-1a105fa7ea0b",
+    "player_name": "Google 使用者",
+    "date": "2026-04-13",
+    "star_rating": 1,
+    "review_text": "少玩就是。千萬別玩。錢多的話，一天十元。捐獻孤兒院，好人一個，遊戲玩玩就好的。總於可以刪除了",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "儲值/金流異常",
+      "risk_level": "high",
+      "keyword": "誘導消費",
+      "root_cause_summary": "玩家認為遊戲設計誘導持續消費"
+    }
+  },
+  {
+    "review_id": "c0ecfccd-566d-4c84-85bc-c994d3f09832",
+    "player_name": "Google 使用者",
+    "date": "2026-04-13",
+    "star_rating": 3,
+    "review_text": "三個帳號沒錢了",
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "帳號沒錢",
+      "root_cause_summary": "帳號資金耗盡無具體遊戲機制抱怨"
+    }
+  },
+  {
+    "review_id": "fe463d7b-1ee2-4f97-bf5d-89daaf58b9e6",
+    "player_name": "Google 使用者",
+    "date": "2026-04-13",
+    "star_rating": 1,
+    "review_text": "就算牌在怎麼好 永遠都是其他人先胡你 在來就是玩二人麻將 我竟然可以4萬多輸到只剩下1千多塊 把把都輸 有時候想湊大牌 輸了 我無所謂 可是今天玩小牌也一直被自摸 被胡 我請問 是我運氣真的差還是系統你們在搞鬼 我發自真心覺得 你們這遊戲廣告打那麼大 是要叫大家來儲值吸他們的錢嗎？ 這遊戲真的有夠爛！！！",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "high",
+      "keyword": "系統作弊",
+      "root_cause_summary": "懷疑系統操控牌局導致持續虧損"
+    }
+  },
+  {
+    "review_id": "f08cde18-2f52-4d56-b332-52d295bd0a96",
+    "player_name": "Google 使用者",
+    "date": "2026-04-13",
+    "star_rating": 1,
+    "review_text": "越來越誇張了，這個月都是當天儲值當天破產一點贏的感覺都沒有",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "high",
+      "keyword": "儲值破產",
+      "root_cause_summary": "儲值後立即破產懷疑遊戲機制不公"
+    }
+  },
+  {
+    "review_id": "3d3fc48c-089e-42d4-ab57-8fd617e02dec",
+    "player_name": "Google 使用者",
+    "date": "2026-04-13",
+    "star_rating": 1,
+    "review_text": "不用总是乱扣，对你们的游戏没啥好玩，扣就扣，扣完就删了",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "medium",
+      "keyword": "无趣",
+      "root_cause_summary": "游戏体验无趣，玩家失去兴趣"
+    }
+  },
+  {
+    "review_id": "6e0c1b37-b6e5-49f7-a5d2-a09de9017973",
+    "player_name": "Google 使用者",
+    "date": "2026-04-13",
+    "star_rating": 5,
+    "review_text": "很好",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲體驗好",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "717e63e9-fe80-42aa-9f13-07315dd2e0a0",
+    "player_name": "Google 使用者",
+    "date": "2026-04-13",
+    "star_rating": 5,
+    "review_text": "很喜歡",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "喜歡",
+      "root_cause_summary": "玩家對遊戲整體體驗滿意"
+    }
+  },
+  {
     "review_id": "69302334-f308-438a-93dc-46fc3b8f9042",
     "player_name": "Google 使用者",
     "date": "2026-04-12",
@@ -10,7 +178,7 @@
       "category": "配桌/發牌機制",
       "risk_level": "medium",
       "keyword": "換三張無效",
-      "root_cause_summary": "換三張功能完全無法改變牌局"
+      "root_cause_summary": "換三張功能完全無法改善牌局"
     }
   },
   {
@@ -22,9 +190,9 @@
     "ai_analysis": {
       "sentiment": "negative",
       "category": "配桌/發牌機制",
-      "risk_level": "high",
-      "keyword": "聽牌放槍",
-      "root_cause_summary": "聽牌後頻繁被槍牌導致損失"
+      "risk_level": "medium",
+      "keyword": "頻繁槍牌",
+      "root_cause_summary": "聽牌後頻遭搶杠導致連敗"
     }
   },
   {
@@ -38,7 +206,7 @@
       "category": "配桌/發牌機制",
       "risk_level": "medium",
       "keyword": "電腦常勝",
-      "root_cause_summary": "電腦玩家勝率過高影響遊戲體驗"
+      "root_cause_summary": "AI對手勝率過高影響遊戲平衡"
     }
   },
   {
@@ -52,7 +220,7 @@
       "category": "其他",
       "risk_level": "low",
       "keyword": "遊戲體驗好",
-      "root_cause_summary": "玩家給予簡短正面評價"
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
     }
   },
   {
@@ -64,9 +232,9 @@
     "ai_analysis": {
       "sentiment": "negative",
       "category": "配桌/發牌機制",
-      "risk_level": "high",
+      "risk_level": "medium",
       "keyword": "遊戲作弊",
-      "root_cause_summary": "懷疑遊戲存在不公平發牌"
+      "root_cause_summary": "玩家懷疑遊戲存在不公平發牌或作弊行為"
     }
   },
   {
@@ -79,8 +247,8 @@
       "sentiment": "positive",
       "category": "其他",
       "risk_level": "low",
-      "keyword": "遊戲體驗棒",
-      "root_cause_summary": "玩家給予簡短正面評價"
+      "keyword": "操作流暢",
+      "root_cause_summary": "玩家對遊戲基本操作體驗感到滿意"
     }
   },
   {
@@ -93,8 +261,8 @@
       "sentiment": "negative",
       "category": "配桌/發牌機制",
       "risk_level": "medium",
-      "keyword": "難以獲勝",
-      "root_cause_summary": "玩家認為遊戲過於偏向電腦勝利"
+      "keyword": "電腦贏",
+      "root_cause_summary": "遊戲勝率過低，疑似電腦作弊"
     }
   },
   {
@@ -107,8 +275,8 @@
       "sentiment": "positive",
       "category": "其他",
       "risk_level": "low",
-      "keyword": "遊戲有趣",
-      "root_cause_summary": "玩家給予簡短正面評價"
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗表示滿意"
     }
   },
   {
@@ -121,8 +289,8 @@
       "sentiment": "negative",
       "category": "配桌/發牌機制",
       "risk_level": "medium",
-      "keyword": "電腦常勝",
-      "root_cause_summary": "玩家認為電腦玩家過於強大"
+      "keyword": "電腦贏",
+      "root_cause_summary": "麻將遊戲中電腦過於強勢"
     }
   },
   {
@@ -135,8 +303,8 @@
       "sentiment": "positive",
       "category": "其他",
       "risk_level": "low",
-      "keyword": "遊戲有趣",
-      "root_cause_summary": "玩家給予簡短正面評價"
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
     }
   },
   {
@@ -148,9 +316,9 @@
     "ai_analysis": {
       "sentiment": "negative",
       "category": "配桌/發牌機制",
-      "risk_level": "medium",
+      "risk_level": "high",
       "keyword": "電腦作弊",
-      "root_cause_summary": "玩家認為遊戲存在電腦作弊行為導致損失"
+      "root_cause_summary": "玩家指控電腦程式操控遊戲結果導致損失"
     }
   },
   {
@@ -164,7 +332,7 @@
       "category": "其他",
       "risk_level": "low",
       "keyword": "好玩",
-      "root_cause_summary": "玩家給予正面體驗評價"
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
     }
   },
   {
@@ -176,9 +344,9 @@
     "ai_analysis": {
       "sentiment": "negative",
       "category": "其他",
-      "risk_level": "medium",
-      "keyword": "真爛",
-      "root_cause_summary": "玩家對遊戲體驗極度不滿"
+      "risk_level": "low",
+      "keyword": "體驗差",
+      "root_cause_summary": "玩家對遊戲整體體驗極度不滿"
     }
   },
   {
@@ -191,8 +359,8 @@
       "sentiment": "negative",
       "category": "系統/連線品質",
       "risk_level": "medium",
-      "keyword": "晚上無法登入",
-      "root_cause_summary": "玩家遭遇特定時段無法登入問題"
+      "keyword": "無法登入",
+      "root_cause_summary": "晚上伺服器無法連接導致無法遊戲"
     }
   },
   {
@@ -205,22 +373,8 @@
       "sentiment": "negative",
       "category": "儲值/金流異常",
       "risk_level": "high",
-      "keyword": "儲值被咬",
-      "root_cause_summary": "玩家指控儲值後金幣被系統回收"
-    }
-  },
-  {
-    "review_id": "896546e8-328f-4789-b55f-a6e28402cfec",
-    "player_name": "Google 使用者",
-    "date": "2026-04-09",
-    "star_rating": 1,
-    "review_text": "超爛的，請問麻將一直被自摸怎麼玩？這種遊戲都這樣，跟你玩的也不知道是不是真人。隨便被摸兩支就自摸，不然就是被天聽地聽自摸，阿自己就超難摸到，就是要回收你金幣，是要玩個雕，根本不公平，課金就會天聽自摸，超爛浪費時間，勸大家別下載",
-    "ai_analysis": {
-      "sentiment": "negative",
-      "category": "配桌/發牌機制",
-      "risk_level": "medium",
-      "keyword": "自摸過多",
-      "root_cause_summary": "玩家抱怨遊戲發牌機制導致過度自摸"
+      "keyword": "咬錢",
+      "root_cause_summary": "玩家認為遊戲機制不利於非儲值用戶"
     }
   },
   {
@@ -233,8 +387,8 @@
       "sentiment": "positive",
       "category": "其他",
       "risk_level": "low",
-      "keyword": "好的",
-      "root_cause_summary": "玩家給予正面體驗評價"
+      "keyword": "體驗良好",
+      "root_cause_summary": "玩家給予正面評價"
     }
   },
   {
@@ -247,8 +401,8 @@
       "sentiment": "positive",
       "category": "其他",
       "risk_level": "low",
-      "keyword": "好玩",
-      "root_cause_summary": "玩家給予正面體驗評價"
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家認為遊戲有趣"
     }
   },
   {
@@ -261,8 +415,8 @@
       "sentiment": "positive",
       "category": "其他",
       "risk_level": "low",
-      "keyword": "有益身心",
-      "root_cause_summary": "玩家認可遊戲對腦力訓練的幫助"
+      "keyword": "益智娛樂",
+      "root_cause_summary": "玩家認可遊戲的益智效果"
     }
   },
   {
@@ -276,7 +430,7 @@
       "category": "其他",
       "risk_level": "low",
       "keyword": "開心",
-      "root_cause_summary": "玩家表達遊戲帶來的正面情緒"
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
     }
   },
   {
@@ -289,8 +443,8 @@
       "sentiment": "positive",
       "category": "其他",
       "risk_level": "low",
-      "keyword": "好玩",
-      "root_cause_summary": "玩家對遊戲表示讚賞"
+      "keyword": "有意思",
+      "root_cause_summary": "玩家對遊戲內容表示認可"
     }
   },
   {
@@ -303,8 +457,8 @@
       "sentiment": "negative",
       "category": "配桌/發牌機制",
       "risk_level": "medium",
-      "keyword": "系統作弊",
-      "root_cause_summary": "玩家認為系統操控發牌導致輸錢"
+      "keyword": "系統讓輸錢",
+      "root_cause_summary": "懷疑系統操控勝率導致輸錢"
     }
   },
   {
@@ -315,10 +469,10 @@
     "review_text": "小丑金幣好不容易花7.8萬有free game，結果給中個幾千到幾萬而已，這麼怕玩家贏就別做遊戲，前後14萬多甚至更多就這樣被咬光。 不要扯什麼機率問題，不敢讓玩家贏就是不敢啦。笑死",
     "ai_analysis": {
       "sentiment": "negative",
-      "category": "儲值/金流異常",
-      "risk_level": "high",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
       "keyword": "咬錢",
-      "root_cause_summary": "玩家認為儲值金被系統刻意吞食"
+      "root_cause_summary": "玩家認為遊戲機制刻意讓玩家難以獲利"
     }
   },
   {
@@ -332,7 +486,7 @@
       "category": "其他",
       "risk_level": "low",
       "keyword": "good",
-      "root_cause_summary": "玩家對遊戲表示讚賞"
+      "root_cause_summary": "玩家對遊戲整體體驗表示滿意"
     }
   },
   {
@@ -340,55 +494,13 @@
     "player_name": "Google 使用者",
     "date": "2026-04-07",
     "star_rating": 1,
-    "review_text": "不管是麻將或者是牌， 都發出很詭異的等級的牌或麻將， 正常不可能得到的牌， 牌都亂發又詭異怎麼贏！ 好牌都槍手/假帳號拿走了！ 詐騙！ 不管儲值或不儲值， 不儲值的人就把他的錢一直的A走， 儲值的人也把他的錢一直的A走， 讓他儲更多錢！",
+    "review_text": "不管是麻將或者是牌， 都發出很詭異的等級的牌或麻將， 正常不可能得到的牌， 牌都亂發又詭異怎麼贏！ 好牌都槍手/假帳號拿走了！ 詐騙！ 不管儲值或不儲值， 不儲值的人就把他的錢一直的A走， 導致他需要去儲值！ 儲值的人也把他的錢一直的A走， 讓他儲更多錢！",
     "ai_analysis": {
       "sentiment": "negative",
       "category": "配桌/發牌機制",
-      "risk_level": "medium",
-      "keyword": "發牌詭異",
-      "root_cause_summary": "玩家認為系統發牌不公導致無法贏"
-    }
-  },
-  {
-    "review_id": "3d3cb4aa-8c8a-47e2-9d41-b93b94f2060a",
-    "player_name": "Google 使用者",
-    "date": "2026-04-06",
-    "star_rating": 4,
-    "review_text": "很好玩可以開放一天領500元",
-    "ai_analysis": {
-      "sentiment": "positive",
-      "category": "其他",
-      "risk_level": "low",
-      "keyword": "每日獎勵",
-      "root_cause_summary": "玩家建議增加每日金錢獎勵活動"
-    }
-  },
-  {
-    "review_id": "7fbaa9f8-db92-4f24-af3c-02abdeb97bec",
-    "player_name": "Google 使用者",
-    "date": "2026-04-06",
-    "star_rating": 5,
-    "review_text": "今天一直胡牌很開心",
-    "ai_analysis": {
-      "sentiment": "positive",
-      "category": "配桌/發牌機制",
-      "risk_level": "low",
-      "keyword": "胡牌頻繁",
-      "root_cause_summary": "玩家因連續胡牌獲得遊戲樂趣"
-    }
-  },
-  {
-    "review_id": "90cd3b7e-d5d0-4f32-9d00-3b11df867422",
-    "player_name": "Google 使用者",
-    "date": "2026-04-06",
-    "star_rating": 1,
-    "review_text": "爛遊戲，作弊遊戲",
-    "ai_analysis": {
-      "sentiment": "negative",
-      "category": "配桌/發牌機制",
-      "risk_level": "medium",
-      "keyword": "遊戲作弊",
-      "root_cause_summary": "玩家指控遊戲存在不公平發牌機制"
+      "risk_level": "high",
+      "keyword": "發爛牌",
+      "root_cause_summary": "玩家指控遊戲存在非公平發牌與資金流失問題"
     }
   },
   {
@@ -459,6 +571,48 @@
       "risk_level": "low",
       "keyword": "體驗差",
       "root_cause_summary": "玩家對遊戲整體體驗極度不滿"
+    }
+  },
+  {
+    "review_id": "3d3cb4aa-8c8a-47e2-9d41-b93b94f2060a",
+    "player_name": "Google 使用者",
+    "date": "2026-04-06",
+    "star_rating": 4,
+    "review_text": "很好玩可以開放一天領500元",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "活動建議",
+      "root_cause_summary": "玩家建議增加每日現金獎勵活動"
+    }
+  },
+  {
+    "review_id": "7fbaa9f8-db92-4f24-af3c-02abdeb97bec",
+    "player_name": "Google 使用者",
+    "date": "2026-04-06",
+    "star_rating": 5,
+    "review_text": "今天一直胡牌很開心",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "胡牌順利",
+      "root_cause_summary": "玩家當日遊戲運氣佳頻繁胡牌"
+    }
+  },
+  {
+    "review_id": "90cd3b7e-d5d0-4f32-9d00-3b11df867422",
+    "player_name": "Google 使用者",
+    "date": "2026-04-06",
+    "star_rating": 1,
+    "review_text": "爛遊戲，作弊遊戲",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "遊戲作弊",
+      "root_cause_summary": "玩家指控遊戲存在不公平發牌疑慮"
     }
   },
   {
@@ -8397,6 +8551,1588 @@
       "risk_level": "low",
       "keyword": "好",
       "root_cause_summary": "玩家給予簡短正面評價"
+    }
+  },
+  {
+    "review_id": "0cc0a40e-13fe-47c8-89ed-6e7afaf1892b",
+    "player_name": "Google 使用者",
+    "date": "2025-12-19",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "d5d4ebf2-6e7e-4759-9a15-775d169cae1d",
+    "player_name": "Google 使用者",
+    "date": "2025-12-19",
+    "star_rating": 5,
+    "review_text": "为何没办法看广告",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "廣告/介面體驗",
+      "risk_level": "medium",
+      "keyword": "廣告無法觀看",
+      "root_cause_summary": "廣告觀看功能異常導致玩家困擾"
+    }
+  },
+  {
+    "review_id": "b503be5e-0432-49cd-9e8d-4ef7363f1dd5",
+    "player_name": "Google 使用者",
+    "date": "2025-12-19",
+    "star_rating": 1,
+    "review_text": "爛！儲值一直輸，也不會開大獎，儲值將近一萬也輸到完，所以不要儲值純粹打打遊戲好。",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "儲值/金流異常",
+      "risk_level": "high",
+      "keyword": "儲值後持續輸",
+      "root_cause_summary": "儲值後遊戲結果不利引發玩家不滿"
+    }
+  },
+  {
+    "review_id": "054cbdaf-8c9c-4ed1-bfe0-a60a8a5241b5",
+    "player_name": "Google 使用者",
+    "date": "2025-12-18",
+    "star_rating": 5,
+    "review_text": "很好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "0fbe32d0-edaf-42b8-a50d-7e0739c02e76",
+    "player_name": "Google 使用者",
+    "date": "2025-12-18",
+    "star_rating": 5,
+    "review_text": "好晚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "時間晚",
+      "root_cause_summary": "玩家認為深夜遊玩體驗良好"
+    }
+  },
+  {
+    "review_id": "2478a33e-08e8-4932-ba69-0324181c6985",
+    "player_name": "Google 使用者",
+    "date": "2025-12-18",
+    "star_rating": 5,
+    "review_text": "超級開心",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "開心",
+      "root_cause_summary": "玩家對遊戲帶來的樂趣感到開心"
+    }
+  },
+  {
+    "review_id": "35ca2fb5-6aa4-49dc-820b-11652d99678e",
+    "player_name": "Google 使用者",
+    "date": "2025-12-18",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "777e836c-4abb-4ff7-a571-f0978d825241",
+    "player_name": "Google 使用者",
+    "date": "2025-12-18",
+    "star_rating": 4,
+    "review_text": "好好玩喔",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "有趣",
+      "root_cause_summary": "玩家對遊戲樂趣表示認可"
+    }
+  },
+  {
+    "review_id": "ca1fb99a-0982-43aa-80b5-1a5c11c448ad",
+    "player_name": "Google 使用者",
+    "date": "2025-12-17",
+    "star_rating": 1,
+    "review_text": "爛",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "medium",
+      "keyword": "遊戲體驗差",
+      "root_cause_summary": "玩家對遊戲整體體驗極度不滿"
+    }
+  },
+  {
+    "review_id": "044109b3-4c6e-4a31-b963-d1ff1b09804f",
+    "player_name": "Google 使用者",
+    "date": "2025-12-17",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "9da60992-b0eb-4112-914f-be3324d686dc",
+    "player_name": "Google 使用者",
+    "date": "2025-12-17",
+    "star_rating": 5,
+    "review_text": "開心",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "開心",
+      "root_cause_summary": "玩家對遊戲情緒體驗感到正面"
+    }
+  },
+  {
+    "review_id": "6024f28b-8249-4cf5-8e65-e70237724f9b",
+    "player_name": "Google 使用者",
+    "date": "2025-12-17",
+    "star_rating": 1,
+    "review_text": "請公佈天團專區內的明星轉轉樂獲得的機率，有夠誇張，20次的轉動超過15次不是左上就是右下，咬鑽石不是這樣咬的吧",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "發牌不均",
+      "root_cause_summary": "玩家質疑遊戲內抽獎機率分配不均"
+    }
+  },
+  {
+    "review_id": "9ae0a216-b4db-4e2e-81c1-01006981653a",
+    "player_name": "Google 使用者",
+    "date": "2025-12-16",
+    "star_rating": 5,
+    "review_text": "偶爾玩一下休閒愉樂不用花錢👍👍👍",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "休閒不用錢",
+      "root_cause_summary": "休閒娛樂且無花費壓力"
+    }
+  },
+  {
+    "review_id": "fe1f2091-4fd4-4d72-9d1e-52a3d1042b7e",
+    "player_name": "Google 使用者",
+    "date": "2025-12-15",
+    "star_rating": 5,
+    "review_text": "好玩又可以減輕壓力喔！",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩減壓",
+      "root_cause_summary": "遊戲帶來娛樂與壓力緩解"
+    }
+  },
+  {
+    "review_id": "a640778d-c0b5-4652-98d3-39ba640eda36",
+    "player_name": "Google 使用者",
+    "date": "2025-12-15",
+    "star_rating": 5,
+    "review_text": "太棒了這遊戲",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲體驗佳",
+      "root_cause_summary": "對遊戲整體體驗非常滿意"
+    }
+  },
+  {
+    "review_id": "e484b1e9-f4dc-4351-b1ab-5cdce5c0522b",
+    "player_name": "Google 使用者",
+    "date": "2025-12-14",
+    "star_rating": 5,
+    "review_text": "好玩。輕鬆",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到輕鬆愉快"
+    }
+  },
+  {
+    "review_id": "47ef163d-952e-48ac-9a2b-4682db81bf10",
+    "player_name": "Google 使用者",
+    "date": "2025-12-13",
+    "star_rating": 5,
+    "review_text": "很好完，輸贏都很平俊，不會像是搞台子一樣",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "配桌/發牌機制",
+      "risk_level": "low",
+      "keyword": "輸贏公平",
+      "root_cause_summary": "玩家認可遊戲勝負機制公平性"
+    }
+  },
+  {
+    "review_id": "60fdc51b-647f-4ab0-9edd-ce374488d73f",
+    "player_name": "Google 使用者",
+    "date": "2025-12-12",
+    "star_rating": 5,
+    "review_text": "很容易上手又輕鬆玩的遊戲",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "容易上手",
+      "root_cause_summary": "玩家認可遊戲操作簡易性與輕鬆度"
+    }
+  },
+  {
+    "review_id": "f2a5f157-f3a9-4978-a051-5f03051849a4",
+    "player_name": "Google 使用者",
+    "date": "2025-12-12",
+    "star_rating": 1,
+    "review_text": "現在是更新軟體嗎還是程式都是要在一都在45趴啊一直都不到100趴啊",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "medium",
+      "keyword": "進度卡關",
+      "root_cause_summary": "玩家對遊戲進度完成度不滿"
+    }
+  },
+  {
+    "review_id": "4cb9e795-159a-4c1a-9553-df6dc71d400b",
+    "player_name": "Google 使用者",
+    "date": "2025-12-12",
+    "star_rating": 5,
+    "review_text": "送錢送到爽",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "送錢爽",
+      "root_cause_summary": "玩家對遊戲獎勵機制感到滿意"
+    }
+  },
+  {
+    "review_id": "26d5183a-0fb2-4f04-bd8b-60c04020bbc5",
+    "player_name": "Google 使用者",
+    "date": "2025-12-11",
+    "star_rating": 5,
+    "review_text": "很好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲好玩",
+      "root_cause_summary": "玩家對遊戲體驗表示肯定"
+    }
+  },
+  {
+    "review_id": "9a278711-d8bb-4288-8368-b4326ae21feb",
+    "player_name": "Google 使用者",
+    "date": "2025-12-11",
+    "star_rating": 3,
+    "review_text": "不錯玩",
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "一般",
+      "root_cause_summary": "中性評價，無具體問題"
+    }
+  },
+  {
+    "review_id": "e1b3e71d-e47c-42a5-8394-7555ba4ce40d",
+    "player_name": "Google 使用者",
+    "date": "2025-12-11",
+    "star_rating": 5,
+    "review_text": "好玩的麻將",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "正面評價，遊戲有趣"
+    }
+  },
+  {
+    "review_id": "79959bf7-14ee-4cf7-8c70-dd7f1b1d1324",
+    "player_name": "Google 使用者",
+    "date": "2025-12-10",
+    "star_rating": 2,
+    "review_text": "德州撲克為什麼三條pk兩對會輸？都有分配到錢，錢幾乎分給兩對，看不懂",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "規則不合理",
+      "root_cause_summary": "對德州撲克牌局結果不理解"
+    }
+  },
+  {
+    "review_id": "268b584d-5060-4461-833c-6236e3615556",
+    "player_name": "Google 使用者",
+    "date": "2025-12-09",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲基礎體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "603c68b5-cb38-4bd1-95af-39ebe3d04188",
+    "player_name": "Google 使用者",
+    "date": "2025-12-09",
+    "star_rating": 5,
+    "review_text": "好完，開心",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "開心",
+      "root_cause_summary": "玩家對遊戲整體體驗感到愉快"
+    }
+  },
+  {
+    "review_id": "1eed67ab-d478-4c98-b2e9-9ac9d590ebf0",
+    "player_name": "Google 使用者",
+    "date": "2025-12-09",
+    "star_rating": 1,
+    "review_text": "有人連續自摸莊連五，你說沒有內幕我不信",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "連續自摸",
+      "root_cause_summary": "玩家懷疑遊戲存在不公平發牌機制"
+    }
+  },
+  {
+    "review_id": "7bdad5c9-bbe3-44e5-92a1-e3ed48fe3f6b",
+    "player_name": "Google 使用者",
+    "date": "2025-12-08",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲體驗好",
+      "root_cause_summary": "玩家對遊戲體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "3fa0e167-d9a7-46f4-8219-dbe9be12e738",
+    "player_name": "Google 使用者",
+    "date": "2025-12-07",
+    "star_rating": 5,
+    "review_text": "很有競技的感覺",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "競技感強",
+      "root_cause_summary": "玩家認可遊戲的競技體驗"
+    }
+  },
+  {
+    "review_id": "aa2cc381-a650-413f-8d9d-cbd32f8b284d",
+    "player_name": "Google 使用者",
+    "date": "2025-12-07",
+    "star_rating": 3,
+    "review_text": "和朋友遊玩個人覺得體驗極差147摸輸中洞結算畫面發現還有很多張皆未出來多次遇到不是連輸2小時就是連贏的情況局勢一面倒不知這是否為合理狀況但個人傾向更均衡一點點的遊戲體驗",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "發牌不均",
+      "root_cause_summary": "玩家認為發牌機制導致勝率失衡"
+    }
+  },
+  {
+    "review_id": "89387af0-83eb-4124-ab82-6a6197d59984",
+    "player_name": "Google 使用者",
+    "date": "2025-12-07",
+    "star_rating": 5,
+    "review_text": "好好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "088bf052-08d8-4065-aa0f-388f510b979e",
+    "player_name": "Google 使用者",
+    "date": "2025-12-06",
+    "star_rating": 1,
+    "review_text": "爛遊戲，爛遊戲 ，怎麼可能都是對方贏啊，做牌做成這樣嗎？不要下載不要儲值，這是騙人錢財的平台，不要被電視廣告騙了",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "對方贏",
+      "root_cause_summary": "懷疑發牌機制不公平導致勝率失衡"
+    }
+  },
+  {
+    "review_id": "a26630c1-9f8f-4355-9252-81d572ff68a4",
+    "player_name": "Google 使用者",
+    "date": "2025-12-06",
+    "star_rating": 5,
+    "review_text": "讚喔",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "讚喔",
+      "root_cause_summary": "玩家對遊戲體驗表示肯定"
+    }
+  },
+  {
+    "review_id": "395759af-f46d-476a-86fc-b3bc45e6633f",
+    "player_name": "Google 使用者",
+    "date": "2025-12-05",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家對遊戲表示贊賞"
+    }
+  },
+  {
+    "review_id": "40452038-c6ab-4591-a58a-7e16f6602517",
+    "player_name": "Google 使用者",
+    "date": "2025-12-05",
+    "star_rating": 3,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家認為遊戲有趣"
+    }
+  },
+  {
+    "review_id": "9fba47a1-caac-4299-9546-fdfaa22640f2",
+    "player_name": "Google 使用者",
+    "date": "2025-12-04",
+    "star_rating": 5,
+    "review_text": "咬很兇",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "咬很兇",
+      "root_cause_summary": "玩家認為遊戲機制對自己不利"
+    }
+  },
+  {
+    "review_id": "496be9d0-1ac7-4c6c-9098-267741fc94e4",
+    "player_name": "Google 使用者",
+    "date": "2025-12-04",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "讚",
+      "root_cause_summary": "玩家給予簡單好評"
+    }
+  },
+  {
+    "review_id": "7c1373ae-89b0-41ae-af39-07c5b425be6e",
+    "player_name": "Google 使用者",
+    "date": "2025-12-03",
+    "star_rating": 1,
+    "review_text": "給你六顆星 這真的是我玩過最好的遊戲 非常容易胡牌喔 還不會騙你錢 呵呵",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "容易胡牌",
+      "root_cause_summary": "玩家誤評1星但內容為正面推薦"
+    }
+  },
+  {
+    "review_id": "7d34859b-3aee-4c73-acce-6a54c28c3422",
+    "player_name": "Google 使用者",
+    "date": "2025-12-03",
+    "star_rating": 3,
+    "review_text": "很會咬錢恐龍Q彈",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "儲值/金流異常",
+      "risk_level": "medium",
+      "keyword": "咬錢",
+      "root_cause_summary": "玩家認為遊戲設計誘導消費"
+    }
+  },
+  {
+    "review_id": "1dc5d038-d0f1-4c82-ad74-a498a6ceb057",
+    "player_name": "Google 使用者",
+    "date": "2025-12-03",
+    "star_rating": 1,
+    "review_text": "爛到無極限的垃圾遊戲",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "medium",
+      "keyword": "遊戲品質差",
+      "root_cause_summary": "玩家對遊戲整體品質極度不滿"
+    }
+  },
+  {
+    "review_id": "6d18ff91-2d8c-4b9a-93df-db6985db1fbd",
+    "player_name": "Google 使用者",
+    "date": "2025-12-02",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲體驗佳",
+      "root_cause_summary": "玩家對遊戲整體體驗表示肯定"
+    }
+  },
+  {
+    "review_id": "bb501ea3-4831-4109-9dae-2c56b9edf11a",
+    "player_name": "Google 使用者",
+    "date": "2025-12-02",
+    "star_rating": 1,
+    "review_text": "難完就算了 還一直討五顆星 一顆星都覺得給太多～",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "medium",
+      "keyword": "遊戲難玩",
+      "root_cause_summary": "玩家認為遊戲難度設計不合理"
+    }
+  },
+  {
+    "review_id": "fad2a0c2-c7ec-40e0-a1a9-07f81268dd1f",
+    "player_name": "Google 使用者",
+    "date": "2025-12-02",
+    "star_rating": 5,
+    "review_text": "很好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "302dbb50-4e37-430d-b315-be5d2b301ed7",
+    "player_name": "Google 使用者",
+    "date": "2025-12-01",
+    "star_rating": 1,
+    "review_text": "很精準的電腦設計，咬分的速度相當快，大老二可以讓三家未出一張牌一次輸光，真是服了。",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "電腦作弊",
+      "root_cause_summary": "玩家認為電腦AI設計導致過度輸分"
+    }
+  },
+  {
+    "review_id": "8590b3f9-acbc-4541-8ccf-fea138c48111",
+    "player_name": "Google 使用者",
+    "date": "2025-12-01",
+    "star_rating": 3,
+    "review_text": "好玩十",
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲基礎體驗尚可但無特別意見"
+    }
+  },
+  {
+    "review_id": "f0b58569-fc92-487d-a5d4-876c0b2219f5",
+    "player_name": "Google 使用者",
+    "date": "2025-11-30",
+    "star_rating": 3,
+    "review_text": "無聊時可以打發時間。",
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "打發時間",
+      "root_cause_summary": "中性評價，無具體問題"
+    }
+  },
+  {
+    "review_id": "4662594d-01d2-4ff6-9026-eefba9deb4ed",
+    "player_name": "Google 使用者",
+    "date": "2025-11-30",
+    "star_rating": 5,
+    "review_text": "好餓玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "正面評價，無具體問題"
+    }
+  },
+  {
+    "review_id": "321fc85e-8235-4bf5-addf-7eecb69687e9",
+    "player_name": "Google 使用者",
+    "date": "2025-11-30",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "讚",
+      "root_cause_summary": "正面評價，無具體問題"
+    }
+  },
+  {
+    "review_id": "94ed64d2-06ba-44ab-96fd-1e669ba03041",
+    "player_name": "Google 使用者",
+    "date": "2025-11-30",
+    "star_rating": 4,
+    "review_text": "不無聊，非常好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "遊戲內容有趣且娛樂性高"
+    }
+  },
+  {
+    "review_id": "29d00253-65c5-47b3-8ded-2b7e2e7be920",
+    "player_name": "Google 使用者",
+    "date": "2025-11-30",
+    "star_rating": 5,
+    "review_text": "爽",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "爽",
+      "root_cause_summary": "遊戲體驗愉快且流暢"
+    }
+  },
+  {
+    "review_id": "04d582eb-b930-44f0-a03c-9063f7ca6023",
+    "player_name": "Google 使用者",
+    "date": "2025-11-29",
+    "star_rating": 1,
+    "review_text": "課金被當韭菜",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "儲值/金流異常",
+      "risk_level": "high",
+      "keyword": "課金被當韭菜",
+      "root_cause_summary": "付費系統設計導致玩家損失"
+    }
+  },
+  {
+    "review_id": "57b68e93-01dd-4236-bd90-2d94129c35fc",
+    "player_name": "Google 使用者",
+    "date": "2025-11-29",
+    "star_rating": 2,
+    "review_text": "暴風賽特給加乘都在沒中的地方加乘都在沒中時侯風狂加乘，十萬金幣一下就沒了，不建議你們玩",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "加乘機制",
+      "root_cause_summary": "加乘系統在未中獎時亂扣金幣"
+    }
+  },
+  {
+    "review_id": "aa27ed78-c681-4c28-8387-b65fa82c5ca2",
+    "player_name": "Google 使用者",
+    "date": "2025-11-29",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "讚",
+      "root_cause_summary": "玩家給予簡短正面評價"
+    }
+  },
+  {
+    "review_id": "53e1c72d-9154-40bd-a36c-f5d1f9f8ef21",
+    "player_name": "Google 使用者",
+    "date": "2025-11-29",
+    "star_rating": 1,
+    "review_text": "爛遊戲騙錢遊戲",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "high",
+      "keyword": "騙錢遊戲",
+      "root_cause_summary": "玩家指控遊戲存在詐騙行為"
+    }
+  },
+  {
+    "review_id": "2c03df25-2ca3-4b96-9830-84a009e942df",
+    "player_name": "Google 使用者",
+    "date": "2025-11-28",
+    "star_rating": 5,
+    "review_text": "很開心",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "很開心",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "3696b0bf-902f-457a-b2fe-7170c85c4f2e",
+    "player_name": "Google 使用者",
+    "date": "2025-11-27",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲內容表示認可"
+    }
+  },
+  {
+    "review_id": "ddea6b69-1116-431e-b6b3-94e9861bb5e9",
+    "player_name": "Google 使用者",
+    "date": "2025-11-27",
+    "star_rating": 5,
+    "review_text": "好",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好",
+      "root_cause_summary": "玩家給予簡短正面評價"
+    }
+  },
+  {
+    "review_id": "5d1d6bbf-be02-48c2-bd74-c95f184195f2",
+    "player_name": "Google 使用者",
+    "date": "2025-11-27",
+    "star_rating": 3,
+    "review_text": "偶爾玩玩還可以！30元我儲值才能拿幾千i幤，就不太想玩。",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "儲值/金流異常",
+      "risk_level": "low",
+      "keyword": "儲值不划算",
+      "root_cause_summary": "儲值金額與回饋比例失衡導致遊玩意願低"
+    }
+  },
+  {
+    "review_id": "bf4b4198-b6f4-4e59-a10a-27fb7b2938e0",
+    "player_name": "Google 使用者",
+    "date": "2025-11-27",
+    "star_rating": 1,
+    "review_text": "每次只有自己聽了 永遠都不到自己的牌 別人都還沒聽 都陪他們打到他們聽 他一聽馬上就自摸不然就是胡了 遊戲內定真的很....無語",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "發牌不公",
+      "root_cause_summary": "玩家聽牌後連續遭遇對手快速胡牌的發牌疑慮"
+    }
+  },
+  {
+    "review_id": "cb727ddb-aad5-4fe8-b212-77c5cbf6c905",
+    "player_name": "Google 使用者",
+    "date": "2025-11-27",
+    "star_rating": 5,
+    "review_text": "讚的累",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗表達高度滿意"
+    }
+  },
+  {
+    "review_id": "3be64344-87f4-42bd-9a6a-8d7720e759f3",
+    "player_name": "Google 使用者",
+    "date": "2025-11-27",
+    "star_rating": 4,
+    "review_text": "(四，)2025/11/27 reno14下載",
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "下載",
+      "root_cause_summary": "單純下載紀錄無具體問題"
+    }
+  },
+  {
+    "review_id": "98565890-339f-4448-b09c-2fba49271455",
+    "player_name": "Google 使用者",
+    "date": "2025-11-26",
+    "star_rating": 1,
+    "review_text": "問題很多現在都登不進去",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "系統/連線品質",
+      "risk_level": "high",
+      "keyword": "登不進去",
+      "root_cause_summary": "伺服器問題導致無法登入遊戲"
+    }
+  },
+  {
+    "review_id": "700c3cb8-ecc3-4b3e-9c19-0f8b25773505",
+    "player_name": "Google 使用者",
+    "date": "2025-11-26",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "9301fb9c-e47d-412d-917c-c3dc53bb0077",
+    "player_name": "Google 使用者",
+    "date": "2025-11-26",
+    "star_rating": 4,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗滿意"
+    }
+  },
+  {
+    "review_id": "2fb268e9-1bce-4bbd-8d06-07c89a7b4958",
+    "player_name": "Google 使用者",
+    "date": "2025-11-26",
+    "star_rating": 5,
+    "review_text": "好",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好",
+      "root_cause_summary": "玩家對遊戲體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "26f04e96-2e19-41e1-8207-ef81c1570cb0",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 5,
+    "review_text": "讚哦活動多多，希望任務多多",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "活動多",
+      "root_cause_summary": "玩家喜愛遊戲活動但期待更多任務"
+    }
+  },
+  {
+    "review_id": "63c46b9e-403d-4b13-a38b-cef8ae1921fe",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 5,
+    "review_text": "開心的",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "開心",
+      "root_cause_summary": "玩家對遊戲整體體驗感到開心"
+    }
+  },
+  {
+    "review_id": "e5e54c1d-c91d-4034-ace5-33a80329a5bf",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 5,
+    "review_text": "時間過的可快",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "時間快",
+      "root_cause_summary": "玩家認為遊戲節奏或娛樂性良好"
+    }
+  },
+  {
+    "review_id": "deb3fd62-ba49-451d-b5bb-acf740499ede",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 5,
+    "review_text": "ok",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "ok",
+      "root_cause_summary": "玩家對遊戲體驗表示基本認可"
+    }
+  },
+  {
+    "review_id": "04c5873f-932b-4a9e-9786-e8bfd3f8bcf0",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 5,
+    "review_text": "真好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "c9bb7152-2700-416b-911a-4263a1bdaa75",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "351719fe-f94e-4319-b651-480671777c87",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 4,
+    "review_text": "好",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好",
+      "root_cause_summary": "玩家對遊戲整體體驗表示認可"
+    }
+  },
+  {
+    "review_id": "0633f8cf-c58f-43b2-bc53-bf6e8e628b37",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 1,
+    "review_text": "最爛的遊戲，只會騙花錢",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "儲值/金流異常",
+      "risk_level": "high",
+      "keyword": "無法儲值",
+      "root_cause_summary": "遊戲涉及詐騙儲值行為"
+    }
+  },
+  {
+    "review_id": "6e877444-32dc-4fd2-b2b4-138473edb58e",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 1,
+    "review_text": "已經多次發生登入時畫面就完全卡住",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "系統/連線品質",
+      "risk_level": "medium",
+      "keyword": "登入卡頓",
+      "root_cause_summary": "登入時畫面卡頓無法進入遊戲"
+    }
+  },
+  {
+    "review_id": "e52e0401-1824-4a1e-8d9d-d454657b2a12",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 5,
+    "review_text": "感謝第一科技時代讓我知道科技會影響身體 我也是ai=欸唉",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "感謝",
+      "root_cause_summary": "玩家對遊戲有正面感謝"
+    }
+  },
+  {
+    "review_id": "7c858a39-732f-401a-8dc6-dbdc0945c5dd",
+    "player_name": "Google 使用者",
+    "date": "2025-11-25",
+    "star_rating": 4,
+    "review_text": "打發時間",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "打發時間",
+      "root_cause_summary": "玩家認為遊戲適合消磨時間"
+    }
+  },
+  {
+    "review_id": "3f7a5268-a888-4fde-93ae-fec650543398",
+    "player_name": "Google 使用者",
+    "date": "2025-11-24",
+    "star_rating": 5,
+    "review_text": "玩的不錯",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "玩的不錯",
+      "root_cause_summary": "玩家對整體遊戲體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "d7f2bf25-f73e-4b67-a6e1-c78823c30fb3",
+    "player_name": "Google 使用者",
+    "date": "2025-11-24",
+    "star_rating": 5,
+    "review_text": "謝謝你妳們，辛苦了。",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "感謝開發",
+      "root_cause_summary": "玩家對開發團隊表達感謝與支持"
+    }
+  },
+  {
+    "review_id": "88905b24-9fd6-4446-9ae7-d19ad3a26740",
+    "player_name": "Google 使用者",
+    "date": "2025-11-24",
+    "star_rating": 5,
+    "review_text": "陪伴",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "陪伴",
+      "root_cause_summary": "玩家長期喜愛遊戲陪伴"
+    }
+  },
+  {
+    "review_id": "75818d4c-6e6b-4c4d-b013-8839dfd0c6a4",
+    "player_name": "Google 使用者",
+    "date": "2025-11-23",
+    "star_rating": 5,
+    "review_text": "很久沒有玩了，現在玩起來感覺很不錯",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "玩得不錯",
+      "root_cause_summary": "回歸玩家體驗良好"
+    }
+  },
+  {
+    "review_id": "3f211814-d502-4c41-9da8-d6439ec9a5ba",
+    "player_name": "Google 使用者",
+    "date": "2025-11-23",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "讚",
+      "root_cause_summary": "玩家給予簡單肯定評價"
+    }
+  },
+  {
+    "review_id": "edf67563-012f-450c-b094-b4b962d972f0",
+    "player_name": "Google 使用者",
+    "date": "2025-11-23",
+    "star_rating": 5,
+    "review_text": "打發時間真的很棒的遊戲",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "打發時間",
+      "root_cause_summary": "玩家認為遊戲適合打發時間"
+    }
+  },
+  {
+    "review_id": "7410e640-87a7-46f5-8f16-2eff09532c92",
+    "player_name": "Google 使用者",
+    "date": "2025-11-23",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家對遊戲體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "c1bee819-c61a-4c1e-bf27-ebc54da42569",
+    "player_name": "Google 使用者",
+    "date": "2025-11-23",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "操作流暢",
+      "root_cause_summary": "玩家給予遊戲正面評價"
+    }
+  },
+  {
+    "review_id": "bedf7ec3-60f4-48e0-8d68-9f61630cd69a",
+    "player_name": "Google 使用者",
+    "date": "2025-11-22",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲表示讚賞"
+    }
+  },
+  {
+    "review_id": "63d6b3aa-b889-4d7e-9e09-260dad25c2a5",
+    "player_name": "Google 使用者",
+    "date": "2025-11-22",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "體驗佳",
+      "root_cause_summary": "玩家給予簡短正面評價"
+    }
+  },
+  {
+    "review_id": "ae15ecf4-4414-4777-8b8d-c015c4aec187",
+    "player_name": "Google 使用者",
+    "date": "2025-11-22",
+    "star_rating": 1,
+    "review_text": "爛遊戲只會玩人家",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "對手太強",
+      "root_cause_summary": "玩家認為對手過於強勢"
+    }
+  },
+  {
+    "review_id": "16af6911-3a37-4f4e-84b7-aefb73a456d2",
+    "player_name": "Google 使用者",
+    "date": "2025-11-22",
+    "star_rating": 5,
+    "review_text": "很好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗滿意"
+    }
+  },
+  {
+    "review_id": "787a38ec-da8b-4721-a9c9-cefe0dd5f625",
+    "player_name": "Google 使用者",
+    "date": "2025-11-21",
+    "star_rating": 5,
+    "review_text": "比神來也好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家認為遊戲比其他遊戲更有趣"
+    }
+  },
+  {
+    "review_id": "bb410fc8-9b34-4703-a739-0fc0bb33922c",
+    "player_name": "Google 使用者",
+    "date": "2025-11-21",
+    "star_rating": 4,
+    "review_text": "好",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "體驗佳",
+      "root_cause_summary": "玩家對遊戲有基本肯定"
+    }
+  },
+  {
+    "review_id": "052debb8-de78-4bab-89a6-dca2b0afe783",
+    "player_name": "Google 使用者",
+    "date": "2025-11-21",
+    "star_rating": 5,
+    "review_text": "很好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "很好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "f8ee779d-5df2-401c-be1b-230b63914a7c",
+    "player_name": "Google 使用者",
+    "date": "2025-11-21",
+    "star_rating": 5,
+    "review_text": "很好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "很好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "36c6006a-2817-4847-ac22-f63f670a7bb0",
+    "player_name": "Google 使用者",
+    "date": "2025-11-21",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "da29e31a-5b2d-4aaf-b4b5-446135497896",
+    "player_name": "Google 使用者",
+    "date": "2025-11-20",
+    "star_rating": 5,
+    "review_text": "棒的遊戲",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "49e59d73-9c8c-483f-93ae-b193fb3bd43e",
+    "player_name": "Google 使用者",
+    "date": "2025-11-20",
+    "star_rating": 5,
+    "review_text": "奇怪，請問（小遊戲）怎麼不見了？謝謝您",
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "其他",
+      "risk_level": "medium",
+      "keyword": "小遊戲消失",
+      "root_cause_summary": "玩家詢問遊戲功能異常消失問題"
+    }
+  },
+  {
+    "review_id": "35f00628-6b22-45b6-be68-369b6f8996ca",
+    "player_name": "Google 使用者",
+    "date": "2025-11-19",
+    "star_rating": 1,
+    "review_text": "破遊戲從頭輸到尾贏一點輸到破產直接刪除爛的要死玩到會火大的遊戲",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "high",
+      "keyword": "一直輸",
+      "root_cause_summary": "玩家認為遊戲勝率過低導致持續輸牌"
+    }
+  },
+  {
+    "review_id": "0b7fa4cc-b638-4e18-8904-f123692bf9fd",
+    "player_name": "Google 使用者",
+    "date": "2025-11-18",
+    "star_rating": 1,
+    "review_text": "不要玩，太花錢,",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "medium",
+      "keyword": "太花錢",
+      "root_cause_summary": "遊戲內消費過高導致玩家不滿"
+    }
+  },
+  {
+    "review_id": "5e8658b9-945b-4577-9573-b63000b0c652",
+    "player_name": "Google 使用者",
+    "date": "2025-11-18",
+    "star_rating": 4,
+    "review_text": "贏I幣開心",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "贏I幣",
+      "root_cause_summary": "遊戲內獲得獎勵提升玩家情緒"
+    }
+  },
+  {
+    "review_id": "5b75949c-cbac-496b-8411-e944de1cff54",
+    "player_name": "Google 使用者",
+    "date": "2025-11-18",
+    "star_rating": 5,
+    "review_text": "不錯，滿好玩的",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "遊戲體驗良好獲得玩家肯定"
+    }
+  },
+  {
+    "review_id": "5e7e7e68-b14a-41ec-bfa4-13e9d8137ccb",
+    "player_name": "Google 使用者",
+    "date": "2025-11-18",
+    "star_rating": 5,
+    "review_text": "有深度",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲深度",
+      "root_cause_summary": "玩家肯定遊戲策略性與內容深度"
+    }
+  },
+  {
+    "review_id": "eb94aadf-51cf-49b0-b9a3-8c15836fccb0",
+    "player_name": "Google 使用者",
+    "date": "2025-11-18",
+    "star_rating": 5,
+    "review_text": "非常刺激~非常好玩🎰🃏🎲🀄",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "娛樂性強",
+      "root_cause_summary": "玩家享受遊戲的刺激與娛樂體驗"
+    }
+  },
+  {
+    "review_id": "871e3b18-2cdb-4607-9538-7dd49ae8f04c",
+    "player_name": "Google 使用者",
+    "date": "2025-11-18",
+    "star_rating": 1,
+    "review_text": "爛遊戲，動不動就破產，都設定好的",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "容易破產",
+      "root_cause_summary": "玩家認為遊戲存在預設破產機制"
+    }
+  },
+  {
+    "review_id": "255f4bf2-6f99-499b-9d0c-69fb3459bffd",
+    "player_name": "Google 使用者",
+    "date": "2025-11-18",
+    "star_rating": 1,
+    "review_text": "你們內訂贏，我可以接受 但是內訂輸，就有點過份囉 放假照早中晚三餐打，胡牌沒我的份，別人自摸多（內訂贏），我什麼都沒做，最輸（內訂輸），過了凌晨還不放過我 我只是沒有儲錢而已，有必要這麼狠嗎？ 偶爾聽聽輸家的心聲吧",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "發牌不公",
+      "root_cause_summary": "懷疑發牌機制導致持續輸牌"
+    }
+  },
+  {
+    "review_id": "02286f68-2652-49d8-b960-48e37568c3aa",
+    "player_name": "Google 使用者",
+    "date": "2025-11-18",
+    "star_rating": 5,
+    "review_text": "讚",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "體驗良好",
+      "root_cause_summary": "玩家對遊戲整體滿意"
+    }
+  },
+  {
+    "review_id": "6b67053e-b368-465c-bf9c-5d142cbcff70",
+    "player_name": "Google 使用者",
+    "date": "2025-11-17",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "好玩",
+      "root_cause_summary": "玩家認為遊戲有趣"
+    }
+  },
+  {
+    "review_id": "98db6a98-4d43-46f9-9b20-b64585cb682a",
+    "player_name": "Google 使用者",
+    "date": "2025-11-17",
+    "star_rating": 4,
+    "review_text": "非常好玩",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "非常好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "04881ee4-9376-4aad-8e55-02a608cc1578",
+    "player_name": "Google 使用者",
+    "date": "2025-11-16",
+    "star_rating": 5,
+    "review_text": "愉樂又不傷身",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "愉樂不傷身",
+      "root_cause_summary": "玩家認可遊戲的娛樂性與舒適度"
+    }
+  },
+  {
+    "review_id": "19209b05-ecf4-4e5d-8762-5a762100d367",
+    "player_name": "Google 使用者",
+    "date": "2025-11-16",
+    "star_rating": 5,
+    "review_text": "過癮打發時間好",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "過癮",
+      "root_cause_summary": "玩家認為遊戲有趣適合消遣"
+    }
+  },
+  {
+    "review_id": "e66066eb-834a-408a-96cd-a0539fc0bf30",
+    "player_name": "Google 使用者",
+    "date": "2025-11-16",
+    "star_rating": 3,
+    "review_text": "很開心",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "開心",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "1945d908-9f79-41ad-83c3-ffa4fe1b8337",
+    "player_name": "Google 使用者",
+    "date": "2025-11-16",
+    "star_rating": 1,
+    "review_text": "這個游戲真的很利害一直儲值ㄧ直吃",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "儲值/金流異常",
+      "risk_level": "high",
+      "keyword": "一直吃",
+      "root_cause_summary": "玩家抱怨遊戲持續消耗金錢"
+    }
+  },
+  {
+    "review_id": "434a1809-e845-419f-a21b-bf1b74c8ad38",
+    "player_name": "Google 使用者",
+    "date": "2025-11-16",
+    "star_rating": 1,
+    "review_text": "毫無公平可言，只會讓你跟沒錢玩家匹配，把把給你一手爛牌，讓你把遊戲幣輸光，完全沒娛樂，沒有遊戲幣的輸超過系統也不會補給你，沒有遊戲幣的，都是進來拼的啦",
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "配桌/發牌機制",
+      "risk_level": "medium",
+      "keyword": "發爛牌",
+      "root_cause_summary": "發牌不公導致連敗"
+    }
+  },
+  {
+    "review_id": "8490e8a8-e108-4d3d-8650-700c69ed4a98",
+    "player_name": "Google 使用者",
+    "date": "2025-11-16",
+    "star_rating": 5,
+    "review_text": "好好享受",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家對遊戲體驗滿意"
+    }
+  },
+  {
+    "review_id": "d0b805cc-3add-4e4d-a1ff-99af589a2dd8",
+    "player_name": "Google 使用者",
+    "date": "2025-11-15",
+    "star_rating": 5,
+    "review_text": "很會埋地雷",
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "keyword": "地雷設計",
+      "root_cause_summary": "玩家認可遊戲策略性設計"
     }
   }
 ]

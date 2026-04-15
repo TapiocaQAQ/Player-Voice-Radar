@@ -34,6 +34,38 @@
 
 - **remote-browser** (`.claude/skills/remote-browser/SKILL.md`) - Connect browser-use to remote browser instances. Trigger: `/remote-browser`
 
+# File & Output Storage Guidelines
+
+When executing any task, you must strictly adhere to the following two default behaviors. It is absolutely prohibited to scatter files in the root directory or any unspecified folders:
+
+1. **Screenshots**
+   Whenever you perform a screenshot action (e.g., capturing the screen using agent-browser), you must save the screenshot files directly into `./screenshot`.
+
+2. **Reports**
+   Whenever you generate any form of summary, analysis, or audit report, you must default to using the Markdown format (with a `.md` extension) and save the report file directly into `./gitversion`.
+
+
+
+# Strict Rules for Python Virtual Environment (Conda Environment Rules)
+
+In this project, all Python code execution and package management must be strictly confined to the Conda virtual environment named `PlayerVoiceRadar`.
+
+As an AI assistant, when you need to execute Python scripts or install packages, **you are strictly prohibited from using the global `python` or `pip` commands.**
+
+Please strictly adhere to the following command formats:
+
+1. **Executing Python Scripts**:
+   -  Correct: `conda run -n PlayerVoiceRadar python main.py`
+
+2. **Installing Python Packages**:
+   -  Correct: `conda run -n PlayerVoiceRadar pip install requests` 
+   - (Or: `conda install -n PlayerVoiceRadar <package_name>`)
+
+3. **Checking Packages or Versions**:
+   -  Correct: `conda run -n PlayerVoiceRadar pip list`
+
+Any operation involving the Python environment must be prefixed with `conda run -n PlayerVoiceRadar`. If you discover that this environment does not exist, please notify me first. Do not attempt to create it automatically or fall back to the global environment.
+
 
 # ⚠️ Supreme Security Guidelines: Skill Quarantine Workflow
 
