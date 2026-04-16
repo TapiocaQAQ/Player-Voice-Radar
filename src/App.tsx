@@ -141,20 +141,19 @@ function App() {
   }, [reviews, starFilter])
 
   const metricData = useMemo(() => {
-    const totalReviews = filteredReviews.length
-    const highRiskCount = filteredReviews.filter(
-      r => r.ai_analysis.risk_level === 'high'
+    // P0 級災情數：category 為 "工程研發" 或 "客服金流" 且 risk_level === 'high'
+    const p0Level = filteredReviews.filter(
+      r => (r.ai_analysis.category === '工程研發' || r.ai_analysis.category === '客服金流')
+        && r.ai_analysis.risk_level === 'high'
     ).length
 
-    const catCounts: Record<string, number> = {}
-    for (const r of filteredReviews) {
-      const cat = r.ai_analysis.category
-      catCounts[cat] = (catCounts[cat] ?? 0) + 1
-    }
-    const topCategory = Object.entries(catCounts)
-      .sort((a, b) => b[1] - a[1])[0]?.[0] ?? '-'
+    // 炎上指數：所有 thumbsUpCount 的總和
+    const backlash = filteredReviews.reduce((sum, r) => sum + (r.thumbsUpCount ?? 0), 0)
 
-    return { totalReviews, highRiskCount, topCategory }
+    // VIP 流失數：is_vip_player === true 的數量
+    const vipChurn = filteredReviews.filter(r => r.ai_analysis.is_vip_player === true).length
+
+    return { p0Level, backlash, vipChurn }
   }, [filteredReviews])
 
   const chartData = useMemo(() => {

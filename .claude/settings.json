@@ -22,7 +22,13 @@
       "Bash(echo \"PID: $!\")",
       "Bash(python3 -c \"import sys,json; routes=list\\(json.load\\(sys.stdin\\)['paths'].keys\\(\\)\\); print\\('\\\\n'.join\\(routes\\)\\)\")",
       "Skill(git-commit)",
-      "Skill(git-commit:*)"
+      "Skill(git-commit:*)",
+      "Bash(conda run *)",
+      "Bash(/c/Users/john/miniconda3/condabin/conda.bat run *)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/john/miniconda3/envs/PlayerVoiceRadar/python.exe -m backend.scraper)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/john/miniconda3/envs/PlayerVoiceRadar/python.exe -m backend.llm_service)",
+      "WebFetch(domain:play.google.com)",
+      "Bash(/c/Users/john/miniconda3/envs/PlayerVoiceRadar/python.exe -c ' *)"
     ],
     "additionalDirectories": [
       "C:\\Users\\john\\.agent-browser\\tmp\\screenshots"

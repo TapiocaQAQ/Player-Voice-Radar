@@ -1,4 +1,5 @@
-import { Star, Sparkles } from "lucide-react"
+import { useState } from "react"
+import { Star, Sparkles, ThumbsUp } from "lucide-react"
 import {
   Sheet,
   SheetContent,
@@ -6,7 +7,15 @@ import {
   SheetTitle,
   SheetDescription,
 } from "@/components/ui/sheet"
+import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 import { type ReviewData } from "@/services/api"
 
 interface DetailSheetProps {
@@ -35,13 +44,21 @@ function StarRating({ count }: { count: number }) {
 
 export function DetailSheet({ selectedCategory, onClose, reviews }: DetailSheetProps) {
   const isOpen = selectedCategory !== null
+  const [sortBy, setSortBy] = useState<'date' | 'thumbs'>('date')
 
   // Filter to selected category + high risk only
-  const highRiskReviews = reviews.filter(
-    (r) =>
-      r.ai_analysis.category === selectedCategory &&
-      r.ai_analysis.risk_level === 'high'
-  )
+  const highRiskReviews = reviews
+    .filter(
+      (r) =>
+        r.ai_analysis.category === selectedCategory &&
+        r.ai_analysis.risk_level === 'high'
+    )
+    .sort((a, b) => {
+      if (sortBy === 'thumbs') {
+        return (b.thumbsUpCount ?? 0) - (a.thumbsUpCount ?? 0)
+      }
+      return b.date.localeCompare(a.date)
+    })
 
   // First review's root_cause_summary for AI diagnosis
   const rootCause = highRiskReviews[0]?.ai_analysis.root_cause_summary ?? null
@@ -117,14 +134,37 @@ export function DetailSheet({ selectedCategory, onClose, reviews }: DetailSheetP
             </div>
           )}
 
-          {/* High Risk Reviews */}
+          {/* Sort Toggle + Review List */}
           <div>
-            <p
-              className="font-mono text-[11px] font-medium text-[#444444] uppercase mb-3"
-              style={{ letterSpacing: '0.06em' }}
-            >
-              高風險客訴清單 ({highRiskReviews.length})
-            </p>
+            <div className="flex items-center justify-between mb-3">
+              <p
+                className="font-mono text-[11px] font-medium text-[#444444] uppercase"
+                style={{ letterSpacing: '0.06em' }}
+              >
+                高風險客訴清單 ({highRiskReviews.length})
+              </p>
+              <Select value={sortBy} onValueChange={(v) => setSortBy(v as 'date' | 'thumbs')}>
+                <SelectTrigger
+                  className="w-[140px] h-7 text-[11px] font-mono border-0"
+                  style={{
+                    background: 'rgba(255,255,255,0.06)',
+                    color: '#888888',
+                  }}
+                >
+                  <SelectValue placeholder="排序方式" />
+                </SelectTrigger>
+                <SelectContent
+                  style={{ background: '#1a1a1a', border: '1px solid rgba(255,255,255,0.1)' }}
+                >
+                  <SelectItem value="date" className="text-[12px] font-mono text-[#aaa]">
+                    最新日期
+                  </SelectItem>
+                  <SelectItem value="thumbs" className="text-[12px] font-mono text-[#aaa]">
+                    最多按讚
+                  </SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
 
             {highRiskReviews.length === 0 ? (
               <p className="text-[13px] text-[#555555] font-mono">
@@ -150,6 +190,18 @@ export function DetailSheet({ selectedCategory, onClose, reviews }: DetailSheetP
                         <span className="text-[13px] font-medium text-[#ededed]">
                           {review.player_name}
                         </span>
+                        {/* VIP Badge */}
+                        {review.ai_analysis.is_vip_player && (
+                          <Badge
+                            className="text-[10px] font-semibold px-1.5 py-0 rounded-full border-0"
+                            style={{
+                              background: 'rgba(251,191,36,0.18)',
+                              color: '#FBBF24',
+                            }}
+                          >
+                            👑 VIP
+                          </Badge>
+                        )}
                         <span className="font-mono text-[11px]" style={{ color: 'rgba(255,255,255,0.25)' }}>
                           {review.date}
                         </span>
@@ -162,13 +214,17 @@ export function DetailSheet({ selectedCategory, onClose, reviews }: DetailSheetP
                       {review.review_text}
                     </p>
 
-                    {/* Risk pill */}
-                    <div className="mt-2.5">
+                    {/* Bottom row: risk pill + thumbs up */}
+                    <div className="mt-2.5 flex items-center justify-between">
                       <span
                         className="text-[10px] font-semibold px-2.5 py-0.5 rounded-full uppercase"
                         style={{ background: 'rgba(255,91,79,0.15)', color: '#ff7a73', letterSpacing: '0.04em' }}
                       >
                         CHURN-RISK: HIGH
+                      </span>
+                      <span className="flex items-center gap-1 font-mono text-[11px] text-[#666666]">
+                        <ThumbsUp className="h-3 w-3" />
+                        {review.thumbsUpCount ?? 0}
                       </span>
                     </div>
                   </div>

@@ -1,9 +1,9 @@
 """
-Google Play 評論爬蟲 — PlayerPulse-AI 資料獲取管線 Step 1
+Google Play 評論爬蟲 — PlayerPulse-AI v2.0 資料獲取管線 Step 1
 
-目標 App: 明星三缺一 (com.igs.mjstar31)
+目標 App: 競技麻將2 (com.igs.slots.casino.games.free.android)
 語言/地區: 繁體中文 zh_TW / 台灣
-時間過濾: 近 60 天（以執行當下日期為基準）
+時間過濾: 近 150 天（以執行當下日期為基準）
 輸出檔案: backend/raw_reviews.json
 """
 
@@ -20,10 +20,10 @@ except ImportError:
     sys.exit(1)
 
 # ── 設定常數 ────────────────────────────────────────────────
-APP_IDS = ["com.igs.mjstar31", "com.igs.gametower"]  # 主要 ID，備援 ID
+APP_IDS = ["com.igs.slots.casino.games.free.android"]  # 競技麻將2
 LANG = "zh_TW"
 COUNTRY = "tw"
-FETCH_COUNT = 3000          # 每次抓取的最大筆數
+FETCH_COUNT = 130           # 每次抓取的最大筆數
 LOOKBACK_DAYS =  150         # 只保留近 N 天的評論
 OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "raw_reviews.json")
 
@@ -83,11 +83,12 @@ def normalize(item: Dict) -> Dict:
         date_str = str(at)[:10] if at else ""
 
     return {
-        "review_id":   str(item.get("reviewId", "")),
-        "player_name": str(item.get("userName", "")),
-        "date":        date_str,
-        "star_rating": int(item.get("score", 0)),
-        "review_text": str(item.get("content", "")),
+        "review_id":     str(item.get("reviewId", "")),
+        "player_name":   str(item.get("userName", "")),
+        "date":          date_str,
+        "star_rating":   int(item.get("score", 0)),
+        "review_text":   str(item.get("content", "")),
+        "thumbsUpCount": int(item.get("thumbsUpCount", 0)),
     }
 
 

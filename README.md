@@ -4,6 +4,8 @@
 
 A full-stack analytics tool that scrapes mobile game reviews, classifies them with an LLM pipeline, and visualises the results as an interactive radar dashboard — with a FastAPI backend for live on-demand sync.
 
+**Target App:** 競技麻將2 (`com.igs.slots.casino.games.free.android`)
+
 ---
 
 ## Tech Stack
@@ -15,7 +17,7 @@ A full-stack analytics tool that scrapes mobile game reviews, classifies them wi
 | Backend  | Python 3 — `google-play-scraper` + Groq SDK     |
 | API      | FastAPI + Uvicorn (SSE streaming)               |
 | LLM      | `qwen/qwen3-32b` via Groq API                   |
-| Data     | `public/data/cached_reviews.json` (600 records) |
+| Data     | `public/data/cached_reviews.json` (130 records) |
 
 ---
 
@@ -24,67 +26,72 @@ A full-stack analytics tool that scrapes mobile game reviews, classifies them wi
 ```
 Player-Voice-Radar/
 ├── backend/
-│   ├── scraper.py          # Step 1: Google Play review scraper
-│   ├── llm_service.py      # Step 2: Groq LLM batch analysis pipeline (generator)
+│   ├── scraper.py          # Step 1: Google Play review scraper (v2.0 — 競技麻將2)
+│   ├── llm_service.py      # Step 2: Groq LLM pipeline — new 6-category + VIP detection
 │   ├── main.py             # Step 3: FastAPI server — /api/sync SSE + /api/debug/rollback
 │   └── requirements.txt
 ├── public/
 │   └── data/
-│       └── cached_reviews.json   # 600 LLM-analysed reviews
+│       └── cached_reviews.json   # LLM-analysed reviews (new format: thumbsUpCount + is_vip_player)
 ├── src/
 │   ├── components/
 │   │   ├── layout/         # Header (sync button + star filter)
 │   │   ├── features/
 │   │   │   ├── charts/     # InsightChart (dynamic, click-to-filter)
-│   │   │   ├── detail/     # DetailSheet (real review data)
+│   │   │   ├── detail/     # DetailSheet (VIP badge + thumbs-up sort)
 │   │   │   ├── keywords/   # BadgeCloud (dynamic keywords)
-│   │   │   └── metrics/    # MetricCards
+│   │   │   └── metrics/    # MetricCards (Sparkline + P0/backlash/VIP churn)
 │   │   └── ui/             # shadcn/ui primitives (Skeleton, JumpingDots)
 │   ├── services/
 │   │   └── api.ts          # fetchReviews / triggerSync (SSE) / rollbackData
 │   ├── constants/          # Design tokens & shared constants
-│   ├── data/               # (deprecated — replaced by real API)
 │   ├── hooks/              # Custom React hooks (planned)
 │   └── types/              # Domain TypeScript types
 └── docs/
     ├── DESIGN.md
-    └── project_blueprint.md
+    ├── project_blueprint.md
+    └── Project Blueprint v2.0.md
 ```
 
 ---
 
 ## Backend Pipeline
 
-### Step 1 — Scraper
+### Step 1 — Scraper (v2.0)
 
 ```bash
 pip install -r backend/requirements.txt
 python backend/scraper.py
-# → backend/raw_reviews.json  (~720 reviews, last 150 days)
+# → backend/raw_reviews.json  (競技麻將2, last 150 days, includes thumbsUpCount)
 ```
 
 ### Step 2 — LLM Analysis
 
 ```bash
 # Requires backend/.env with GROQ_API_KEY=<your_key>
-python backend/llm_service.py --limit 600
+python backend/llm_service.py --limit 130
 # → public/data/cached_reviews.json
 ```
 
 Each review gets `ai_analysis`:
 
-| Field               | Values                                                    |
-| ------------------- | --------------------------------------------------------- |
-| `sentiment`         | `positive` / `neutral` / `negative`                      |
-| `category`          | 系統/連線、配桌/發牌、儲值/金流、帳號/客服、廣告/介面、其他 |
-| `risk_level`        | `high` / `medium` / `low`                                 |
-| `keyword`           | 2–5 character Chinese pain-point tag                      |
-| `root_cause_summary`| ≤ 20 character one-line summary                           |
+| Field               | Values                                                              |
+| ------------------- | ------------------------------------------------------------------- |
+| `sentiment`         | `positive` / `neutral` / `negative`                                 |
+| `category`          | 工程研發、營運企劃、客服金流、UI/UX體驗、行銷推廣、其他              |
+| `risk_level`        | `high` / `medium` / `low` (auto-upgraded if VIP or thumbsUp ≥ 10) |
+| `keyword`           | 2–5 character Chinese pain-point tag                                |
+| `root_cause_summary`| ≤ 20 character one-line summary                                     |
+| `is_vip_player`     | `true` if review signals paying/VIP behaviour                       |
 
-Pipeline reliability features:
-- Generator-based `main()` — yields per-batch progress events for SSE streaming
+**Review fields also include:** `thumbsUpCount` — raw Google Play upvote count.
+
+**Risk override logic:** If `thumbsUpCount >= 10` OR `is_vip_player === true`, `risk_level` is forced to `"high"` post-LLM.
+
+Pipeline reliability:
+- Generator-based `main()` — yields per-batch progress for SSE streaming
 - Auto-retry on `json.JSONDecodeError` (up to 3×)
-- Rate-limit 429 → parse suggested wait time → sleep → retry (zero data loss)
+- Rate-limit 429 → parse wait time → sleep → retry (zero data loss)
 - Batch-failure fallback: batch of 3 → individual → `bad_data.json`
 
 ### Step 3 — FastAPI Server (live sync)
@@ -93,13 +100,25 @@ Pipeline reliability features:
 uvicorn backend.main:app --reload --port 8000
 ```
 
-| Endpoint               | Method | Description                                          |
-| ---------------------- | ------ | ---------------------------------------------------- |
+| Endpoint               | Method | Description                                           |
+| ---------------------- | ------ | ----------------------------------------------------- |
 | `/api/sync`            | POST   | Runs scraper → LLM pipeline; streams progress via SSE |
-| `/api/debug/rollback`  | POST   | Removes last 20 records (demo reset)                 |
-| `/health`              | GET    | Health check                                         |
+| `/api/debug/rollback`  | POST   | Removes last 20 records (demo reset)                  |
+| `/health`              | GET    | Health check                                          |
 
 SSE event format: `{"phase": "scraper|llm|done|error", "current": N, "total": N, "msg": "..."}`
+
+---
+
+## Dashboard Metrics
+
+| Metric Card    | Definition                                                                 |
+| -------------- | -------------------------------------------------------------------------- |
+| P0 級災情      | Reviews in 工程研發 or 客服金流 with `risk_level = high`                   |
+| 炎上指數       | Sum of all `thumbsUpCount` across filtered reviews                         |
+| VIP 流失數     | Count of reviews where `is_vip_player === true`                            |
+
+Each card includes a 7-day Sparkline trend chart and a delta badge (static display — real historical comparison planned).
 
 ---
 
@@ -114,19 +133,20 @@ npm run build    # TypeScript check + production build
 ### Data Flow
 
 ```
-[Google Play]
-     ↓ scraper.py
+[Google Play — 競技麻將2]
+     ↓ scraper.py (v2.0, thumbsUpCount)
 [raw_reviews.json]
-     ↓ llm_service.py (Groq qwen3-32b)
+     ↓ llm_service.py (new categories + VIP + risk override)
 [cached_reviews.json] ←──── public/data/cached_reviews.json
-     ↓ fetchReviews()                      ↑
+     ↓ fetchReviews()                        ↑
 [React App.tsx] ──── /api/sync ────→ [FastAPI main.py]
-   useMemo()                            SSE Stream
-   starFilter                      scraper → llm pipeline
-   selectedCategory                每批 yield 進度
+   useMemo()                              SSE Stream
+   starFilter                        scraper → llm pipeline
+   selectedCategory                  每批 yield 進度
      ↓
-[MetricCards] [InsightChart] [BadgeCloud] [DetailSheet]
- (dynamic)     (click filter)  (dynamic)   (real reviews)
+[MetricCards]     [InsightChart]  [BadgeCloud]  [DetailSheet]
+ P0/backlash/VIP   click filter    dynamic        VIP badge
+ Sparkline trend                                  thumbs sort
 ```
 
 ---
@@ -145,12 +165,16 @@ GROQ_API_KEY=your_groq_api_key_here
 
 ## Roadmap
 
-- [x] LLM pipeline — scraper + Groq batch analysis (600 reviews)
+- [x] LLM pipeline — scraper + Groq batch analysis
 - [x] Frontend component architecture (feature-based)
 - [x] FastAPI backend — `/api/sync` SSE streaming endpoint
 - [x] Data Service — `src/services/api.ts` wired to all frontend components
 - [x] Loading / Skeleton state + JumpingDots animation
 - [x] BarChart + BadgeCloud + DetailSheet connected to real data
 - [x] Star filter (1–2 / 1–3 / 1–5 stars) + category click-through
-- [ ] Analyse remaining ~120 reviews (720 scraped − 600 processed)
-- [ ] Code-split bundle (currently 668KB — Tremor/Radix UI)
+- [x] Switch target app to 競技麻將2 with new 6-category taxonomy
+- [x] VIP player detection (`is_vip_player`) + `thumbsUpCount` dimension
+- [x] P0/backlash/VIP churn dashboard metrics with Sparkline trend cards
+- [x] DetailSheet: VIP badge + sort by thumbs-up
+- [ ] Replace static delta/fakeTrend with real historical time-series comparison
+- [ ] Code-split bundle (currently 1,096KB — Tremor SparkAreaChart)

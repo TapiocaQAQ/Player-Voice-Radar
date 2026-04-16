@@ -6,6 +6,7 @@ export interface AIAnalysis {
   sentiment: "negative" | "positive" | "neutral"
   category: string
   risk_level: "high" | "medium" | "low"
+  is_vip_player: boolean
   keyword: string
   root_cause_summary: string
 }
@@ -16,6 +17,7 @@ export interface ReviewData {
   date: string
   star_rating: number
   review_text: string
+  thumbsUpCount: number
   ai_analysis: AIAnalysis
 }
 
