@@ -1,18 +1,115 @@
 [
   {
-    "review_id": "1ef4d796-79f4-40a6-babc-66310108ef0e",
-    "player_name": "蔡榮宏",
-    "date": "2026-04-13",
+    "review_id": "bf8004de-ec3b-493f-bf37-381105fd1d1f",
+    "player_name": "guan ming shen",
+    "date": "2026-04-16",
     "star_rating": 1,
-    "review_text": "都不知道評分4.6怎麼來的，聽牌不能聽，沒幾張排別人就自摸，時不時就斷線，明明天聽不給聽，贏牌還要扣水錢，沒錢馬上跳儲值視窗，感覺工讀生回收金幣的嫌疑過大，總評爛遊戲消遣還會玩到一肚子火真的建議別玩",
+    "review_text": "咬錢咬到沒人想玩",
     "thumbsUpCount": 0,
     "ai_analysis": {
       "sentiment": "negative",
       "category": "營運企劃",
       "risk_level": "medium",
       "is_vip_player": false,
-      "keyword": "機率不公,廣告過多",
-      "root_cause_summary": "遊戲機率不公與頻繁彈窗儲值"
+      "keyword": "咬錢設計",
+      "root_cause_summary": "遊戲經濟設計導致玩家流失"
+    }
+  },
+  {
+    "review_id": "14fff860-2e48-4bb2-85e2-439eef06ec01",
+    "player_name": "莊雅玲",
+    "date": "2026-04-16",
+    "star_rating": 2,
+    "review_text": "昨日改版，卻不上線",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "high",
+      "is_vip_player": false,
+      "keyword": "改版閃退",
+      "root_cause_summary": "改版後伺服器未正常上線"
+    },
+    "status": "resolved"
+  },
+  {
+    "review_id": "792f312c-dc0a-42ea-be1d-f39bde7ae211",
+    "player_name": "魚名",
+    "date": "2026-04-16",
+    "star_rating": 5,
+    "review_text": "讚",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲好玩",
+      "root_cause_summary": "玩家對遊戲表示讚賞"
+    }
+  },
+  {
+    "review_id": "61b020fd-79ae-402c-a150-a8dde9e90b4e",
+    "player_name": "余政雄",
+    "date": "2026-04-15",
+    "star_rating": 5,
+    "review_text": "超好玩的喔",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "9cb6f912-3df3-4178-ab24-83a60d9b2c27",
+    "player_name": "謝志強",
+    "date": "2026-04-15",
+    "star_rating": 3,
+    "review_text": "保養維修沒預告，開機時間到了，又延後，感覺很差。",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "維護延誤",
+      "root_cause_summary": "維護作業未提前公告且延誤開機時間"
+    }
+  },
+  {
+    "review_id": "c6ec739b-eacc-4ca1-b32e-c157d12867ef",
+    "player_name": "黃俊凱",
+    "date": "2026-04-15",
+    "star_rating": 1,
+    "review_text": "維護完，無法登入，請協助處理",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "high",
+      "is_vip_player": false,
+      "keyword": "登入失敗",
+      "root_cause_summary": "維護後伺服器異常導致玩家無法登入"
+    }
+  },
+  {
+    "review_id": "1ef4d796-79f4-40a6-babc-66310108ef0e",
+    "player_name": "蔡榮宏",
+    "date": "2026-04-13",
+    "star_rating": 1,
+    "review_text": "都不知道評分4.6怎麼來的，聽牌不能聽，沒幾張排別人就自摸，時不時就斷線，明明天聽不給聽，贏牌還要扣水錢，沒錢馬上跳儲值視窗，感覺工讀生回收金幣的嫌疑過大，總評爛遊戲消遣還會玩到一肚子火真的建議別玩",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "遊戲機率設計不合理導致玩家體驗負面"
     }
   },
   {
@@ -24,7 +121,7 @@
     "thumbsUpCount": 0,
     "ai_analysis": {
       "sentiment": "positive",
-      "category": "其他",
+      "category": "UI/UX體驗",
       "risk_level": "low",
       "is_vip_player": false,
       "keyword": "好玩",
@@ -43,8 +140,8 @@
       "category": "其他",
       "risk_level": "low",
       "is_vip_player": false,
-      "keyword": "體驗不佳",
-      "root_cause_summary": "玩家對遊戲體驗不滿但未具體說明"
+      "keyword": "評論過簡",
+      "root_cause_summary": "評論過簡，無具體內容"
     }
   },
   {
@@ -53,14 +150,14 @@
     "date": "2026-04-10",
     "star_rating": 1,
     "review_text": "一天到晚在斷線 爛遊戲",
-    "thumbsUpCount": 0,
+    "thumbsUpCount": 1,
     "ai_analysis": {
       "sentiment": "negative",
       "category": "工程研發",
       "risk_level": "medium",
       "is_vip_player": false,
       "keyword": "斷線",
-      "root_cause_summary": "遊戲頻繁斷線導致體驗中斷"
+      "root_cause_summary": "遊戲頻繁斷線影響體驗"
     }
   },
   {
@@ -797,7 +894,8 @@
       "is_vip_player": true,
       "keyword": "回收幣",
       "root_cause_summary": "高級場回收過多遊戲幣設計不公"
-    }
+    },
+    "status": "resolved"
   },
   {
     "review_id": "27994436-d3a3-43e7-9165-8bb7b5d258ee",
@@ -893,7 +991,8 @@
       "is_vip_player": true,
       "keyword": "機率不公",
       "root_cause_summary": "玩家認為遊戲存在電腦玩家操控勝率情況"
-    }
+    },
+    "status": "dismissed"
   },
   {
     "review_id": "3f4b249a-573b-4efd-a84b-35592d2a132b",

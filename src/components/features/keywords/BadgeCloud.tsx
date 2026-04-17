@@ -1,34 +1,66 @@
-// Vercel Dark pill badge cloud — exaggerated frequency encoding
-// Top 1-3 pain points: 1.5-2× larger, full saturation red
-// Low-frequency keywords: <30% opacity, recede into background
+// Vercel Dark badge cloud — dual-dimension encoding: size (frequency) + color (sentiment)
+// High-contrast palette designed for dark backgrounds — no dark tones that vanish on black.
 
 const CARD_SHADOW =
   'rgba(255,255,255,0.08) 0px 0px 0px 1px, rgba(0,0,0,0.5) 0px 2px 4px, rgba(255,255,255,0.02) 0px 0px 0px 1px inset'
 
-// 5-tier encoding: colour + size + weight + opacity + padding
-function getPillStyle(value: number): {
-  bg: string; text: string; fontSize: string; fontWeight: number
-  opacity: number; px: string; py: string
-} {
-  // Tier 1 — Top painpoints (value ≥ 22): 2× base, vivid red, full opacity
-  if (value >= 22)
-    return { bg: 'rgba(255,91,79,0.22)',   text: '#ff6b62', fontSize: '22px', fontWeight: 800, opacity: 1,    px: '18px', py: '8px'  }
-  // Tier 2 — High (value ≥ 16): 1.4× base, saturated red
-  if (value >= 16)
-    return { bg: 'rgba(255,91,79,0.16)',   text: '#ff8a84', fontSize: '16px', fontWeight: 700, opacity: 1,    px: '14px', py: '6px'  }
-  // Tier 3 — Medium (value ≥ 11): base size, muted orange-red
-  if (value >= 11)
-    return { bg: 'rgba(255,91,79,0.10)',   text: '#ffa8a4', fontSize: '13px', fontWeight: 500, opacity: 0.85, px: '11px', py: '4px'  }
-  // Tier 4 — Low (value ≥ 7): smaller, dim
-  if (value >= 7)
-    return { bg: 'rgba(255,91,79,0.06)',   text: '#cc6e69', fontSize: '11px', fontWeight: 400, opacity: 0.55, px: '10px', py: '3px'  }
-  // Tier 5 — Noise (value < 7): minimal, below 30% opacity
-  return   { bg: 'rgba(255,255,255,0.03)', text: '#444444', fontSize: '10px', fontWeight: 400, opacity: 0.25, px: '8px',  py: '2px'  }
+type Sentiment = 'positive' | 'negative' | 'neutral'
+
+// Map (sentiment × frequency tier) → text color
+// Tiers: 0=lowest … 4=highest (relative rank within 0–1 normalised value)
+// Palette sourced from OpenCode DESIGN.md (Apple HIG semantics) × Vercel DESIGN.md
+function getTextColor(sentiment: Sentiment, normValue: number): string {
+  if (sentiment === 'negative') {
+    // Peak: OpenCode Danger Red #ff3b30 (Apple HIG)
+    // Softer tier: Vercel Ship Red #ff5b4f
+    // Lower tiers: derived warm-red ramp, same hue family
+    if (normValue >= 0.8) return '#ff3b30'  // OpenCode Danger Red
+    if (normValue >= 0.6) return '#ff5b4f'  // Vercel Ship Red
+    if (normValue >= 0.4) return '#ff8577'  // derived mid warm-red
+    if (normValue >= 0.2) return '#ffb3ae'  // derived light warm-red
+    return '#ffd5d3'                         // derived very light red tint
+  }
+  if (sentiment === 'positive') {
+    // Peak: OpenCode Success Green #30d158 (Apple HIG)
+    // Lower tiers: derived mint-green ramp, same hue family
+    if (normValue >= 0.8) return '#30d158'  // OpenCode Success Green
+    if (normValue >= 0.6) return '#34c759'  // Apple system green (iOS variant)
+    if (normValue >= 0.4) return '#5ed97c'  // derived mid green
+    if (normValue >= 0.2) return '#91e8a8'  // derived light green
+    return '#c0f0cc'                         // derived very light mint
+  }
+  // neutral: OpenCode text scale (#6e6e73 muted → #9a9898 mid) × Vercel grays (#ebebeb → #fdfcfc)
+  if (normValue >= 0.8) return '#fdfcfc'   // OpenCode Light (warm near-white)
+  if (normValue >= 0.6) return '#ebebeb'   // Vercel Gray 100
+  if (normValue >= 0.4) return '#9a9898'   // OpenCode Mid Gray
+  if (normValue >= 0.2) return '#6e6e73'   // OpenCode Text Muted
+  return '#4d4d4d'                          // Vercel Gray 600
+}
+
+// Map normalised value → font size class
+function getFontSize(normValue: number): string {
+  if (normValue >= 0.8) return '22px'
+  if (normValue >= 0.6) return '17px'
+  if (normValue >= 0.4) return '14px'
+  if (normValue >= 0.2) return '12px'
+  return '10px'
+}
+
+function getFontWeight(normValue: number): number {
+  if (normValue >= 0.8) return 800
+  if (normValue >= 0.6) return 700
+  if (normValue >= 0.4) return 500
+  return 400
+}
+
+function getOpacity(normValue: number): number {
+  return Math.max(0.75, 0.75 + normValue * 0.25)
 }
 
 export interface KeywordItem {
   text: string
   value: number
+  sentiment: Sentiment
 }
 
 interface BadgeCloudProps {
@@ -37,6 +69,7 @@ interface BadgeCloudProps {
 
 export function BadgeCloud({ keywords }: BadgeCloudProps) {
   const sorted = [...keywords].sort((a, b) => b.value - a.value)
+  const maxValue = sorted[0]?.value ?? 1
 
   return (
     <div
@@ -57,27 +90,39 @@ export function BadgeCloud({ keywords }: BadgeCloudProps) {
         Keyword Cloud
       </p>
       <p className="text-[13px] text-[#555555] mb-6">
-        出現頻率越高 → 字體越大、顏色越亮紅
+        字體大小代表發生頻率；顏色代表情緒傾向
       </p>
 
-      {/* Pill grid — items-end so large pills align to bottom */}
+      {/* Badge grid */}
       <div className="flex flex-wrap gap-2.5 flex-1 content-start items-end">
         {sorted.map((kw) => {
-          const { bg, text, fontSize, fontWeight, opacity, px, py } = getPillStyle(kw.value)
+          const norm = kw.value / maxValue
+          const textColor = getTextColor(kw.sentiment, norm)
+          const fontSize = getFontSize(norm)
+          const fontWeight = getFontWeight(norm)
+          const opacity = getOpacity(norm)
+
+          const pillBg = kw.sentiment === 'negative'
+            ? 'rgba(255,91,79,0.06)'
+            : kw.sentiment === 'positive'
+              ? 'rgba(52,199,89,0.05)'
+              : 'rgba(255,255,255,0.03)'
+
           return (
             <span
               key={kw.text}
               className="inline-flex items-center gap-1 rounded-full cursor-default transition-all duration-150 hover:scale-105 hover:opacity-100"
               style={{
-                background: bg,
-                color: text,
+                color: textColor,
                 fontSize,
                 fontWeight,
                 opacity,
-                paddingLeft: px,
-                paddingRight: px,
-                paddingTop: py,
-                paddingBottom: py,
+                background: pillBg,
+                border: '1px solid rgba(255,255,255,0.05)',
+                paddingLeft: '8px',
+                paddingRight: '8px',
+                paddingTop: '2px',
+                paddingBottom: '2px',
               }}
             >
               {kw.text}
@@ -89,27 +134,41 @@ export function BadgeCloud({ keywords }: BadgeCloudProps) {
 
       {/* Legend */}
       <div
-        className="mt-5 pt-4 flex items-center gap-3"
+        className="mt-5 pt-4 space-y-2"
         style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}
       >
-        <span className="font-mono text-[10px] text-[#444444] uppercase tracking-[0.04em]">
-          頻率色階
-        </span>
-        {[
-          { bg: 'rgba(255,255,255,0.03)', text: '#444444', label: 'low' },
-          { bg: 'rgba(255,91,79,0.06)',   text: '#cc6e69', label: ''    },
-          { bg: 'rgba(255,91,79,0.10)',   text: '#ffa8a4', label: ''    },
-          { bg: 'rgba(255,91,79,0.16)',   text: '#ff8a84', label: ''    },
-          { bg: 'rgba(255,91,79,0.22)',   text: '#ff6b62', label: 'high'},
-        ].map((tier, i) => (
-          <span
-            key={i}
-            className="inline-flex items-center justify-center text-[9px] font-medium rounded-full px-2 py-0.5"
-            style={{ background: tier.bg, color: tier.text, minWidth: '28px' }}
-          >
-            {tier.label || '·'}
+        <p className="font-mono text-[10px] text-[#444444] uppercase tracking-[0.04em]">
+          編碼圖例
+        </p>
+        <div className="flex flex-wrap gap-x-4 gap-y-1.5">
+          {/* Size legend */}
+          <span className="flex items-center gap-1.5 font-mono text-[10px] text-[#555555]">
+            <span style={{ fontSize: '10px', color: '#9ca3af' }}>A</span>
+            <span style={{ fontSize: '14px', color: '#9ca3af' }}>A</span>
+            <span style={{ fontSize: '18px', color: '#9ca3af' }}>A</span>
+            <span className="ml-0.5">字體大小 = 出現頻率</span>
           </span>
-        ))}
+        </div>
+        <div className="flex flex-wrap gap-x-4 gap-y-1.5">
+          {/* Negative legend */}
+          <span className="flex items-center gap-1.5 font-mono text-[10px]">
+            <span style={{ color: '#ffd5d3' }}>●</span>
+            <span style={{ color: '#ff3b30' }}>●</span>
+            <span className="text-[#555555]">淡紅→危險紅 = 負面</span>
+          </span>
+          {/* Positive legend */}
+          <span className="flex items-center gap-1.5 font-mono text-[10px]">
+            <span style={{ color: '#c0f0cc' }}>●</span>
+            <span style={{ color: '#30d158' }}>●</span>
+            <span className="text-[#555555]">淡綠→成功綠 = 正面</span>
+          </span>
+          {/* Neutral legend */}
+          <span className="flex items-center gap-1.5 font-mono text-[10px]">
+            <span style={{ color: '#4d4d4d' }}>●</span>
+            <span style={{ color: '#fdfcfc' }}>●</span>
+            <span className="text-[#555555]">深灰→近白 = 中性</span>
+          </span>
+        </div>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ import { BadgeCloud } from "@/components/features/keywords/BadgeCloud"
 import { DetailSheet } from "@/components/features/detail/DetailSheet"
 import { Skeleton } from "@/components/ui/skeleton"
 import { JumpingDots } from "@/components/ui/jumping-dots"
-import { triggerSync, fetchReviews, rollbackData, type ReviewData, type SyncProgress } from "@/services/api"
+import { triggerSync, fetchReviews, rollbackData, type ReviewData, type ReviewStatus, type SyncProgress } from "@/services/api"
 
 // ── Loading messages shown while sync is in progress ─────────
 const SYNC_MESSAGES = [
@@ -156,6 +156,33 @@ function App() {
     return { p0Level, backlash, vipChurn }
   }, [filteredReviews])
 
+  const trendData = useMemo(() => {
+    // Single pass: group all three metrics by date into one Map
+    type DayAgg = { p0: number; backlash: number; vipChurn: number }
+    const dateMap = new Map<string, DayAgg>()
+
+    for (const r of filteredReviews) {
+      if (!r.date) continue
+      const agg = dateMap.get(r.date) ?? { p0: 0, backlash: 0, vipChurn: 0 }
+      const cat = r.ai_analysis.category
+      if ((cat === '工程研發' || cat === '客服金流') && r.ai_analysis.risk_level === 'high') {
+        agg.p0++
+      }
+      agg.backlash += r.thumbsUpCount ?? 0
+      if (r.ai_analysis.is_vip_player) agg.vipChurn++
+      dateMap.set(r.date, agg)
+    }
+
+    // ISO dates sort lexicographically; keep newest 30
+    const last30 = [...dateMap.keys()].sort((a, b) => a.localeCompare(b)).slice(-30)
+
+    const p0Trend       = last30.map(day => ({ day, value: dateMap.get(day)!.p0 }))
+    const backlashTrend = last30.map(day => ({ day, value: dateMap.get(day)!.backlash }))
+    const vipChurnTrend = last30.map(day => ({ day, value: dateMap.get(day)!.vipChurn }))
+
+    return { p0Trend, backlashTrend, vipChurnTrend }
+  }, [filteredReviews])
+
   const chartData = useMemo(() => {
     const catCounts: Record<string, number> = {}
     for (const r of filteredReviews) {
@@ -169,12 +196,24 @@ function App() {
 
   const keywordData = useMemo(() => {
     const kwCounts: Record<string, number> = {}
+    const kwSentiments: Record<string, Record<string, number>> = {}
     for (const r of filteredReviews) {
       const kw = r.ai_analysis.keyword
-      if (kw) kwCounts[kw] = (kwCounts[kw] ?? 0) + 1
+      const sent = r.ai_analysis.sentiment
+      if (!kw) continue
+      kwCounts[kw] = (kwCounts[kw] ?? 0) + 1
+      if (!kwSentiments[kw]) kwSentiments[kw] = {}
+      kwSentiments[kw][sent] = (kwSentiments[kw][sent] ?? 0) + 1
     }
     return Object.entries(kwCounts)
-      .map(([text, value]) => ({ text, value }))
+      .map(([text, value]) => {
+        const sentMap = kwSentiments[text] ?? {}
+        const sentiment = (['positive', 'negative', 'neutral'] as const).reduce(
+          (best, s) => (sentMap[s] ?? 0) > (sentMap[best] ?? 0) ? s : best,
+          'neutral' as 'positive' | 'negative' | 'neutral'
+        )
+        return { text, value, sentiment }
+      })
       .sort((a, b) => b.value - a.value)
       .slice(0, 15)
   }, [filteredReviews])
@@ -243,7 +282,7 @@ function App() {
               >
                 // metrics overview
               </p>
-              <MetricCards metrics={metricData} />
+              <MetricCards metrics={metricData} trendData={trendData} />
             </section>
 
             {/* Section: Charts */}
@@ -273,7 +312,7 @@ function App() {
         <footer className="pt-8" style={{ borderTop: '1px solid rgba(255,255,255,0.12)' }}>
           <div className="flex items-center justify-between">
             <span className="font-mono text-[11px] text-[#444444]">
-              player-voice-radar v0.1.0 · internal use only
+              player-voice-radar v2.1.0 · internal use only
             </span>
             <span className="font-mono text-[11px] text-[#444444]">
               powered-by: qwen3-32b (groq) + google-play-api
@@ -288,6 +327,9 @@ function App() {
         selectedCategory={selectedCategory}
         onClose={() => setSelectedCategory(null)}
         reviews={filteredReviews}
+        onStatusChange={(id, status: ReviewStatus) =>
+          setReviews(prev => prev?.map(r => r.review_id === id ? { ...r, status } : r) ?? null)
+        }
       />
     </div>
   )

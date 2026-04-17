@@ -1,37 +1,34 @@
 {
   "permissions": {
     "allow": [
-      "Bash(powershell -Command 'Get-NetTCPConnection -LocalPort 8000 | ForEach-Object { Stop-Process -Id $_.OwningProcess -Force -ErrorAction SilentlyContinue }; Write-Host '\\\\''Done'\\\\''')",
-      "Bash(powershell -Command \"Start-Process -NoNewWindow -FilePath 'cmd.exe' -ArgumentList '/c','cd /d c:\\\\Users\\\\john\\\\Desktop\\\\claude_code_workspace\\\\Player-Voice-Radar && \\\\\"C:\\\\Program Files\\\\Python37\\\\python.exe\\\\\" -m uvicorn backend.main:app --port 8000' -RedirectStandardOutput 'C:\\\\tmp\\\\uvicorn2.log' -RedirectStandardError 'C:\\\\tmp\\\\uvicorn2_err.log'\")",
-      "Bash(cmd /c \"taskkill /PID 87988 /F\")",
-      "Bash(cmd /c \"taskkill /PID 94292 /F\")",
-      "Bash(powershell -Command \"Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | Select-Object LocalPort,State,OwningProcess\")",
-      "Bash(powershell -Command \"Stop-Process -Id 87988 -Force; Stop-Process -Id 94292 -Force; Start-Sleep -Milliseconds 1000; Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue\")",
-      "Bash(powershell -Command 'Get-NetTCPConnection -LocalPort 8000 | Select-Object LocalPort,State,OwningProcess | ForEach-Object { $_ | Add-Member -Name ProcessName -Value \\(Get-Process -Id $_.OwningProcess -ErrorAction SilentlyContinue\\).Name -MemberType NoteProperty -PassThru }')",
-      "Bash(cmd /c \"tasklist /FI \\\\\"PID eq 87988\\\\\"\")",
-      "Bash(cmd /c \"tasklist /FI \\\\\"PID eq 94292\\\\\"\")",
-      "Bash(powershell -Command \"Start-Process -NoNewWindow -FilePath 'cmd.exe' -ArgumentList '/c','cd /d c:\\\\Users\\\\john\\\\Desktop\\\\claude_code_workspace\\\\Player-Voice-Radar && \\\\\"C:\\\\Program Files\\\\Python37\\\\python.exe\\\\\" -m uvicorn backend.main:app --port 8001' -RedirectStandardOutput 'C:\\\\tmp\\\\uvicorn3.log' -RedirectStandardError 'C:\\\\tmp\\\\uvicorn3_err.log'\")",
-      "Bash(curl -s http://localhost:8001/openapi.json)",
       "Bash(conda env:*)",
-      "Bash(cmd /c \"conda env list\")",
-      "Bash(cmd /c \"C:\\\\Users\\\\john\\\\miniconda3\\\\Scripts\\\\conda.exe env list\")",
-      "Bash(cmd /c \"where conda\")",
-      "Bash(cmd /c \"conda --version\")",
+      "Bash(conda run *)",
       "Bash(/c/Users/john/miniconda3/Scripts/conda.exe env:*)",
       "Bash(/c/Users/john/miniconda3/Scripts/conda.exe run:*)",
-      "Bash(echo \"PID: $!\")",
-      "Bash(python3 -c \"import sys,json; routes=list\\(json.load\\(sys.stdin\\)['paths'].keys\\(\\)\\); print\\('\\\\n'.join\\(routes\\)\\)\")",
-      "Skill(git-commit)",
-      "Skill(git-commit:*)",
-      "Bash(conda run *)",
       "Bash(/c/Users/john/miniconda3/condabin/conda.bat run *)",
+      "Bash(/c/ProgramData/miniconda3/Scripts/conda run *)",
       "Bash(PYTHONIOENCODING=utf-8 /c/Users/john/miniconda3/envs/PlayerVoiceRadar/python.exe -m backend.scraper)",
       "Bash(PYTHONIOENCODING=utf-8 /c/Users/john/miniconda3/envs/PlayerVoiceRadar/python.exe -m backend.llm_service)",
+      "Bash(/c/Users/john/miniconda3/envs/PlayerVoiceRadar/python.exe -c ' *)",
+      "Read(//c/ProgramData/miniconda3/**)",
+      "Read(//c/ProgramData/**)",
       "WebFetch(domain:play.google.com)",
-      "Bash(/c/Users/john/miniconda3/envs/PlayerVoiceRadar/python.exe -c ' *)"
+      "Bash(gh api *)",
+      "Bash(npm --version)",
+      "Skill(git-commit)",
+      "Skill(git-commit:*)",
+      "Bash(powershell.exe -Command \"Get-ChildItem 'C:\\\\Users\\\\john\\\\.claude-mem' -Recurse | Select-Object FullName, Length\")",
+      "Bash(cmd /c \"rd /s /q \\\\\"C:\\\\Users\\\\john\\\\.claude-mem\\\\\"\")",
+      "Bash(cmd /c \"if exist \\\\\"C:\\\\Users\\\\john\\\\.claude-mem\\\\\" \\(echo EXISTS\\) else \\(echo GONE\\)\")",
+      "Bash(powershell.exe -Command \"if \\(Test-Path 'C:\\\\Users\\\\john\\\\.claude-mem'\\) { Write-Host 'EXISTS' } else { Write-Host 'GONE' }\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem 'C:\\\\Users\\\\john\\\\.claude-mem' -Force | Select-Object Name, Attributes, LinkType\")",
+      "Bash(powershell.exe -Command ' *)",
+      "mcp__filesystem__directory_tree",
+      "Bash(gh pr *)"
     ],
     "additionalDirectories": [
-      "C:\\Users\\john\\.agent-browser\\tmp\\screenshots"
+      "C:\\Users\\john\\.agent-browser\\tmp\\screenshots",
+      "\\tmp\\quarantine-skills"
     ]
   },
   "hooks": {

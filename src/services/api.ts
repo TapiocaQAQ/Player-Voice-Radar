@@ -11,6 +11,8 @@ export interface AIAnalysis {
   root_cause_summary: string
 }
 
+export type ReviewStatus = "pending" | "resolved" | "dismissed"
+
 export interface ReviewData {
   review_id: string
   player_name: string
@@ -18,6 +20,7 @@ export interface ReviewData {
   star_rating: number
   review_text: string
   thumbsUpCount: number
+  status?: ReviewStatus
   ai_analysis: AIAnalysis
 }
 
@@ -81,7 +84,24 @@ export async function fetchReviews(): Promise<ReviewData[]> {
   return res.json()
 }
 
-/** [Debug] 移除兩個 JSON 檔案中最新的 20 筆資料，用於 Demo 回溯。 */
+/** 更新單一評論的處理狀態（pending / resolved / dismissed）。 */
+export async function updateReviewStatus(
+  review_id: string,
+  status: ReviewStatus
+): Promise<{ status: string; review_id: string; new_status: string }> {
+  const res = await fetch(`${API_BASE}/api/reviews/status`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ review_id, status }),
+  })
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({ detail: res.statusText }))
+    throw new Error(body.detail ?? "狀態更新失敗")
+  }
+  return res.json()
+}
+
+/** [Debug] 移除兩個 JSON 檔案中最新的 10 筆資料，用於 Demo 回溯。 */
 export async function rollbackData(): Promise<{ status: string; message: string }> {
   const res = await fetch(`${API_BASE}/api/debug/rollback`, { method: "POST" })
   if (!res.ok) {

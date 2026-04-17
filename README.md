@@ -103,7 +103,8 @@ uvicorn backend.main:app --reload --port 8000
 | Endpoint               | Method | Description                                           |
 | ---------------------- | ------ | ----------------------------------------------------- |
 | `/api/sync`            | POST   | Runs scraper → LLM pipeline; streams progress via SSE |
-| `/api/debug/rollback`  | POST   | Removes last 20 records (demo reset)                  |
+| `/api/reviews/status`  | POST   | Updates review status (`pending`/`resolved`/`dismissed`) |
+| `/api/debug/rollback`  | POST   | Removes last 10 records; clears manual operation fields (demo reset) |
 | `/health`              | GET    | Health check                                          |
 
 SSE event format: `{"phase": "scraper|llm|done|error", "current": N, "total": N, "msg": "..."}`
@@ -118,7 +119,7 @@ SSE event format: `{"phase": "scraper|llm|done|error", "current": N, "total": N,
 | 炎上指數       | Sum of all `thumbsUpCount` across filtered reviews                         |
 | VIP 流失數     | Count of reviews where `is_vip_player === true`                            |
 
-Each card includes a 7-day Sparkline trend chart and a delta badge (static display — real historical comparison planned).
+Each card displays a 30-day real Sparkline trend (single-pass `useMemo` from `filteredReviews`). Click any card to open a **DrillDialog** with a full `AreaChart` + peak/avg/latest stats. Static `fakeTrend()` and delta badges have been removed.
 
 ---
 
@@ -144,9 +145,10 @@ npm run build    # TypeScript check + production build
    starFilter                        scraper → llm pipeline
    selectedCategory                  每批 yield 進度
      ↓
-[MetricCards]     [InsightChart]  [BadgeCloud]  [DetailSheet]
- P0/backlash/VIP   click filter    dynamic        VIP badge
- Sparkline trend                                  thumbs sort
+[MetricCards]     [InsightChart]  [BadgeCloud]    [DetailSheet → ReviewCard]
+ 30d real trend    click filter    sentiment       status management
+ DrillDialog                       dual-dimension  AI PR reply generator
+ AreaChart                         colour coding   optimistic update
 ```
 
 ---
@@ -176,5 +178,11 @@ GROQ_API_KEY=your_groq_api_key_here
 - [x] VIP player detection (`is_vip_player`) + `thumbsUpCount` dimension
 - [x] P0/backlash/VIP churn dashboard metrics with Sparkline trend cards
 - [x] DetailSheet: VIP badge + sort by thumbs-up
-- [ ] Replace static delta/fakeTrend with real historical time-series comparison
+- [x] Review status management (`pending`/`resolved`/`dismissed`) — optimistic update + backend persistence
+- [x] 30-day real trend data — replaced `fakeTrend()` with single-pass `useMemo`
+- [x] MetricCard drill-down dialog — `DrillDialog` with full `AreaChart` + stats summary
+- [x] AI PR reply generator — template-based, per-review, VIP-aware
+- [x] Keyword sentiment dual-dimension — normalised frequency + sentiment colour coding
+- [x] `shadcn/ui Dialog` primitive added (`src/components/ui/dialog.tsx`)
+- [ ] Real delta badge — historical period-over-period comparison (planned)
 - [ ] Code-split bundle (currently 1,096KB — Tremor SparkAreaChart)
