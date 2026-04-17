@@ -1,0 +1,5 @@
+google-play-scraper==1.2.7
+groq
+python-dotenv
+fastapi
+uvicorn[standard]

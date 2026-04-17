@@ -27,26 +27,33 @@ const GLOW: Record<string, string> = {
   [C.info]:     'rgba(90,171,255,0.3)',
 }
 
-const chartData = [
-  { category: '抽卡/中獎機率', count: 45, color: C.critical },
-  { category: '客服/帳號',     count: 31, color: C.warning  },
-  { category: '系統Bug/連線',  count: 23, color: C.warning  },
-  { category: '活動設計',      count: 18, color: C.info     },
-  { category: '其他',          count: 12, color: C.info     },
-]
-
-// ── Custom tooltip ────────────────────────────────────────────────
-interface TooltipPayloadItem {
-  payload: typeof chartData[0]
+// Assign colour by rank — top item is critical, second is warning, rest are info
+function colorByRank(index: number): string {
+  if (index === 0) return C.critical
+  if (index === 1) return C.warning
+  return C.info
 }
+
+// ── Types ─────────────────────────────────────────────────────────
+interface ChartItem {
+  name: string
+  count: number
+  color: string
+}
+
+interface TooltipPayloadItem {
+  payload: ChartItem
+}
+
 interface TooltipProps {
   active?: boolean
   payload?: TooltipPayloadItem[]
 }
 
+// ── Custom tooltip ────────────────────────────────────────────────
 function CustomTooltip({ active, payload }: TooltipProps) {
   if (!active || !payload?.length) return null
-  const { category, count, color } = payload[0].payload
+  const { name, count, color } = payload[0].payload
   return (
     <div
       style={{
@@ -67,7 +74,7 @@ function CustomTooltip({ active, payload }: TooltipProps) {
           marginBottom: '4px',
         }}
       >
-        {category}
+        {name}
       </p>
       <p style={{ color: '#ededed', fontSize: '14px', fontWeight: 600, margin: 0 }}>
         客訴筆數：<span style={{ color }}>{count}</span>
@@ -91,7 +98,6 @@ function CustomBar({ x = 0, y = 0, width = 0, height = 0, fill = '', isActive = 
   const gradId = `grad-${fill.replace('#', '')}`
   const glowColor = GLOW[fill] ?? 'transparent'
 
-  // Layered CSS drop-shadow for clean glow (crisp inner + diffuse outer)
   const glowFilter = isActive
     ? `drop-shadow(0 0 6px ${glowColor}) drop-shadow(0 0 14px ${glowColor.replace('0.', '0.2')})`
     : fill === C.critical
@@ -100,7 +106,6 @@ function CustomBar({ x = 0, y = 0, width = 0, height = 0, fill = '', isActive = 
 
   return (
     <g>
-      {/* Gradient def — one per unique fill, repeated renders are idempotent */}
       <defs>
         <linearGradient id={gradId} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%"   stopColor={fill} stopOpacity={0.95} />
@@ -132,11 +137,20 @@ function LegendPill({ color, label }: { color: string; label: string }) {
 
 // ── Main component ────────────────────────────────────────────────
 interface InsightChartProps {
-  onBarClick: () => void
+  data: { name: string; count: number }[]
+  onCategorySelect: (category: string) => void
 }
 
-export function InsightChart({ onBarClick }: InsightChartProps) {
+export function InsightChart({ data, onCategorySelect }: InsightChartProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
+
+  // Enrich with colour by rank (data is assumed to be sorted desc by App.tsx)
+  const enrichedData: ChartItem[] = data.map((item, i) => ({
+    ...item,
+    color: colorByRank(i),
+  }))
+
+  const totalCount = data.reduce((sum, d) => sum + d.count, 0)
 
   return (
     <div
@@ -169,17 +183,20 @@ export function InsightChart({ onBarClick }: InsightChartProps) {
       </div>
 
       <p className="text-[13px] text-[#555555] mb-4">
-        篩選：1–3★ · 129 筆 · 2026-04-11 00:00–08:42
+        共 {totalCount} 筆 · 點擊分類查看詳情
       </p>
 
       {/* Chart */}
       <div className="flex-1 min-h-0">
         <ResponsiveContainer width="100%" height={220}>
           <BarChart
-            data={chartData}
+            data={enrichedData}
             margin={{ top: 6, right: 4, left: 10, bottom: 0 }}
             barCategoryGap="25%"
-            onClick={onBarClick}
+            onClick={(chartState) => {
+              const label = chartState?.activeLabel
+              if (label) onCategorySelect(label)
+            }}
             style={{ cursor: 'pointer' }}
           >
             <CartesianGrid
@@ -188,7 +205,7 @@ export function InsightChart({ onBarClick }: InsightChartProps) {
               strokeDasharray=""
             />
             <XAxis
-              dataKey="category"
+              dataKey="name"
               tick={{ fill: '#9ca3af', fontSize: 10, fontFamily: 'Geist Mono, monospace', fontWeight: 500 }}
               axisLine={false}
               tickLine={false}
@@ -214,7 +231,7 @@ export function InsightChart({ onBarClick }: InsightChartProps) {
                 return <CustomBar {...p} isActive={activeIndex === (p.index ?? -1)} />
               }}
             >
-              {chartData.map((entry, i) => (
+              {enrichedData.map((entry, i) => (
                 <Cell key={i} fill={entry.color} />
               ))}
             </Bar>

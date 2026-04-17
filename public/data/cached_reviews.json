@@ -1,0 +1,2181 @@
+[
+  {
+    "review_id": "bf8004de-ec3b-493f-bf37-381105fd1d1f",
+    "player_name": "guan ming shen",
+    "date": "2026-04-16",
+    "star_rating": 1,
+    "review_text": "咬錢咬到沒人想玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "咬錢設計",
+      "root_cause_summary": "遊戲經濟設計導致玩家流失"
+    }
+  },
+  {
+    "review_id": "14fff860-2e48-4bb2-85e2-439eef06ec01",
+    "player_name": "莊雅玲",
+    "date": "2026-04-16",
+    "star_rating": 2,
+    "review_text": "昨日改版，卻不上線",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "high",
+      "is_vip_player": false,
+      "keyword": "改版閃退",
+      "root_cause_summary": "改版後伺服器未正常上線"
+    },
+    "status": "resolved"
+  },
+  {
+    "review_id": "792f312c-dc0a-42ea-be1d-f39bde7ae211",
+    "player_name": "魚名",
+    "date": "2026-04-16",
+    "star_rating": 5,
+    "review_text": "讚",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲好玩",
+      "root_cause_summary": "玩家對遊戲表示讚賞"
+    }
+  },
+  {
+    "review_id": "61b020fd-79ae-402c-a150-a8dde9e90b4e",
+    "player_name": "余政雄",
+    "date": "2026-04-15",
+    "star_rating": 5,
+    "review_text": "超好玩的喔",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "9cb6f912-3df3-4178-ab24-83a60d9b2c27",
+    "player_name": "謝志強",
+    "date": "2026-04-15",
+    "star_rating": 3,
+    "review_text": "保養維修沒預告，開機時間到了，又延後，感覺很差。",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "維護延誤",
+      "root_cause_summary": "維護作業未提前公告且延誤開機時間"
+    }
+  },
+  {
+    "review_id": "c6ec739b-eacc-4ca1-b32e-c157d12867ef",
+    "player_name": "黃俊凱",
+    "date": "2026-04-15",
+    "star_rating": 1,
+    "review_text": "維護完，無法登入，請協助處理",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "high",
+      "is_vip_player": false,
+      "keyword": "登入失敗",
+      "root_cause_summary": "維護後伺服器異常導致玩家無法登入"
+    }
+  },
+  {
+    "review_id": "1ef4d796-79f4-40a6-babc-66310108ef0e",
+    "player_name": "蔡榮宏",
+    "date": "2026-04-13",
+    "star_rating": 1,
+    "review_text": "都不知道評分4.6怎麼來的，聽牌不能聽，沒幾張排別人就自摸，時不時就斷線，明明天聽不給聽，贏牌還要扣水錢，沒錢馬上跳儲值視窗，感覺工讀生回收金幣的嫌疑過大，總評爛遊戲消遣還會玩到一肚子火真的建議別玩",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "遊戲機率設計不合理導致玩家體驗負面"
+    }
+  },
+  {
+    "review_id": "53919fe3-54d2-4a9b-9da2-3faf13580cb5",
+    "player_name": "古偉業",
+    "date": "2026-04-13",
+    "star_rating": 5,
+    "review_text": "好玩不錯",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "ff9120dc-b775-4227-9385-561f0cb4d210",
+    "player_name": "Ace Lee",
+    "date": "2026-04-12",
+    "star_rating": 1,
+    "review_text": "ok",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "評論過簡",
+      "root_cause_summary": "評論過簡，無具體內容"
+    }
+  },
+  {
+    "review_id": "f406be8e-26fe-4506-af36-580c7ded7d4d",
+    "player_name": "森森",
+    "date": "2026-04-10",
+    "star_rating": 1,
+    "review_text": "一天到晚在斷線 爛遊戲",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "斷線",
+      "root_cause_summary": "遊戲頻繁斷線影響體驗"
+    }
+  },
+  {
+    "review_id": "61b216a4-22cc-40ed-9a4f-88df524920e3",
+    "player_name": "Rex Su",
+    "date": "2026-04-09",
+    "star_rating": 2,
+    "review_text": "讀取速度有待加強 網路也常常容易有不穩 機率也有問題",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "讀取慢",
+      "root_cause_summary": "讀取速度慢與網路不穩定影響遊戲流暢度"
+    }
+  },
+  {
+    "review_id": "27858644-01ec-4018-8ef6-f580a269b2ba",
+    "player_name": "張嘉恩",
+    "date": "2026-04-07",
+    "star_rating": 1,
+    "review_text": "垃圾遊戲 新建的帳號怎麼玩都不會贏 怎麼讓人玩的下去",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "勝率低",
+      "root_cause_summary": "新建帳號勝率過低導致遊戲動力喪失"
+    }
+  },
+  {
+    "review_id": "fa602a8a-a651-46ac-94ac-15f4e777670b",
+    "player_name": "陳永祥",
+    "date": "2026-04-06",
+    "star_rating": 1,
+    "review_text": "不能關閉得獎通知的小視窗，礙眼啊",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "行銷推廣",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "彈窗干擾",
+      "root_cause_summary": "無法關閉得獎通知彈窗影響視覺體驗"
+    }
+  },
+  {
+    "review_id": "a29c3652-6595-4fb6-bc5e-94b177ceb34d",
+    "player_name": "鍾尹容",
+    "date": "2026-04-05",
+    "star_rating": 5,
+    "review_text": "還可以只是每次聽牌都不會胡",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "聽牌後無法胡牌引發遊戲平衡性質疑"
+    }
+  },
+  {
+    "review_id": "395caab4-ef3d-44d0-b5ec-dd242073e501",
+    "player_name": "鄭富仁",
+    "date": "2026-04-05",
+    "star_rating": 3,
+    "review_text": "好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家對遊戲整體體驗表示輕度肯定"
+    }
+  },
+  {
+    "review_id": "c6affd22-e4c4-4813-8d42-a2cd6d818f0e",
+    "player_name": "張福德",
+    "date": "2026-04-04",
+    "star_rating": 5,
+    "review_text": "剛玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "新玩家體驗",
+      "root_cause_summary": "新玩家初次體驗給予正面評價"
+    }
+  },
+  {
+    "review_id": "eab2ab40-dcdd-4455-a049-a33f2c1cf9b1",
+    "player_name": "陳美秀",
+    "date": "2026-04-04",
+    "star_rating": 5,
+    "review_text": "好棒棒",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲體驗佳",
+      "root_cause_summary": "玩家對遊戲整體體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "5ae61256-a12c-4ccc-9a0c-5f3df5c657dd",
+    "player_name": "張玉龍",
+    "date": "2026-04-04",
+    "star_rating": 5,
+    "review_text": "讚",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "簡單好上手",
+      "root_cause_summary": "玩家對遊戲操作或體驗給予簡短肯定"
+    }
+  },
+  {
+    "review_id": "19864192-d697-4c4e-b853-efa6dbd3827c",
+    "player_name": "陳棋峰",
+    "date": "2026-04-02",
+    "star_rating": 3,
+    "review_text": "好",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "一般",
+      "root_cause_summary": "玩家給予中評，未提及具體意見"
+    }
+  },
+  {
+    "review_id": "3af3cd98-f510-46d2-9545-08a813e0aca0",
+    "player_name": "李麗珠",
+    "date": "2026-04-01",
+    "star_rating": 4,
+    "review_text": "輸的機會比贏多",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "勝率低",
+      "root_cause_summary": "玩家認為勝率過低，影響遊戲體驗"
+    }
+  },
+  {
+    "review_id": "ee755294-8586-445e-b2b6-09b2ba48a3a5",
+    "player_name": "贛林老木",
+    "date": "2026-04-01",
+    "star_rating": 1,
+    "review_text": "破遊戲！",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "遊戲差",
+      "root_cause_summary": "玩家對遊戲體驗極度不滿"
+    }
+  },
+  {
+    "review_id": "26750a18-03c4-43c9-be4d-ffd285f19247",
+    "player_name": "龔沛寧",
+    "date": "2026-03-31",
+    "star_rating": 2,
+    "review_text": "麻將那個太離譜 玩小輸大 隨便打個 大牌都被人家 這個真的是太離 怎麼玩都是輸很 偶爾胡一下 一台 兩台 麻將玩到太不爽 那麼多麻將裡面他們的畫質 是最棒的 這樣下去就不要玩了 很少贏麻將 有贏的場到最後也是輸的 天天輸 進去就自摸自摸 放槍 不知道怎麼玩 美麗的心情都被人家搞壞了",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "玩家認為勝率過低，牌運不公導致持續輸牌"
+    }
+  },
+  {
+    "review_id": "354e05b3-7de8-4589-ac8b-788009478902",
+    "player_name": "黃浚酲",
+    "date": "2026-03-30",
+    "star_rating": 1,
+    "review_text": "原來是明星三缺一的聯名的啊，難怪牌型模版都跟明星的一樣，不值得玩！！10局10輸，根本不會贏，想贏的玩家最好要準備大概20組帳號才能贏，祝福各位嚕！！",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "勝率太低",
+      "root_cause_summary": "玩家指責遊戲設計導致幾乎無法獲勝"
+    }
+  },
+  {
+    "review_id": "c6c81904-03a0-445b-b675-2a6aa9055d78",
+    "player_name": "於小華",
+    "date": "2026-03-30",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗表示簡單肯定"
+    }
+  },
+  {
+    "review_id": "5281942b-e28b-4f03-b6d9-fc7cab0c755e",
+    "player_name": "李筱英",
+    "date": "2026-03-30",
+    "star_rating": 2,
+    "review_text": "爛遊戲 騙人儲值.....",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "客服金流",
+      "risk_level": "high",
+      "is_vip_player": true,
+      "keyword": "騙人儲值",
+      "root_cause_summary": "儲值後未獲得對應遊戲價值"
+    }
+  },
+  {
+    "review_id": "5770c8f8-91d5-4650-af3e-66b096ba9b8a",
+    "player_name": "盧多多",
+    "date": "2026-03-29",
+    "star_rating": 1,
+    "review_text": "系統控制太嚴重了，其實講了也沒用，自己要玩的。打什麼牌就抽什麼牌，大牌不碰，抽的都是放槍牌，別人絕只都能自摸，我們聽三洞摸沒半隻，搞笑，要充值才有搞頭。",
+    "thumbsUpCount": 7,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "high",
+      "is_vip_player": true,
+      "keyword": "機率不公",
+      "root_cause_summary": "系統演算法導致玩家持續輸牌"
+    }
+  },
+  {
+    "review_id": "3da91431-ede7-411a-83d7-1bd4903d3690",
+    "player_name": "Erre Hung",
+    "date": "2026-03-28",
+    "star_rating": 1,
+    "review_text": "系統演算法容易讓玩家輸，開局地聽等三隻，等到牌局都快結束了，然後別人胡牌，不然就是你等的牌其他三家都沒有還在海裡，聽牌後很久都不會胡然後給你一張放槍的牌，偶爾這樣可能是運氣，一直連續這樣操作就沒意思了。",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "系統演算法導致無法正常胡牌"
+    }
+  },
+  {
+    "review_id": "87d5522d-6268-42cf-8bf4-4cb93411a8cf",
+    "player_name": "丁丁",
+    "date": "2026-03-28",
+    "star_rating": 5,
+    "review_text": "不錯玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家給予正面遊戲體驗評價"
+    }
+  },
+  {
+    "review_id": "1406b377-ff01-417a-8775-78e7feb3db31",
+    "player_name": "吴",
+    "date": "2026-03-28",
+    "star_rating": 1,
+    "review_text": "對手輕易隨便就能自摸，然後很容易就能胡牌，20把裡面至少11把都是因為自摸而輸，宣告聽牌也常常摸到對手想要的牌讓對方胡牌，公平性跟機率真的很爛很低 近期約30場可能還贏不到1／3場呵呵",
+    "thumbsUpCount": 2,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "玩家抱怨遊戲自摸與胡牌機率失衡"
+    }
+  },
+  {
+    "review_id": "fd58436c-972a-4568-87ff-f2305b2aaeac",
+    "player_name": "新竹人",
+    "date": "2026-03-26",
+    "star_rating": 1,
+    "review_text": "什麼破網路連線品質，現在玩都會無言無固突然連不到網路，輸的比例比贏高，現實也不會輸那麼慘",
+    "thumbsUpCount": 2,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "閃退斷線",
+      "root_cause_summary": "玩家遭遇遊戲連線中斷問題"
+    }
+  },
+  {
+    "review_id": "f5854af5-378c-414c-8fe1-35a4733eea72",
+    "player_name": "簡志強",
+    "date": "2026-03-24",
+    "star_rating": 1,
+    "review_text": "任何遊戲都強調公平！不以為然！我四五進才聽；別家一進,兩進聽就自摸；要不就是起手聽！喔要吃就碰！要胡被攔！真實麻將有那麼好拿嗎！拿給我看看！改叫千技麻將吧！都是輸不起在玩的！悲哀喔！ 牌也拿的特別的爛！大牌4-5張！換牌等於沒換！看牌老半天！就自摸！這我給叫公平？我給負五顆星！",
+    "thumbsUpCount": 4,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "玩家認為牌運設計不合理導致勝率失衡"
+    }
+  },
+  {
+    "review_id": "b15f54d5-d1bc-423e-bd90-e2b68e7ba35d",
+    "player_name": "羅清華",
+    "date": "2026-03-23",
+    "star_rating": 5,
+    "review_text": "還可以",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "一般體驗",
+      "root_cause_summary": "玩家對遊戲體驗表示一般性滿意"
+    }
+  },
+  {
+    "review_id": "c8509596-5f4e-4638-ac6f-3080ade91d94",
+    "player_name": "肥基",
+    "date": "2026-03-23",
+    "star_rating": 1,
+    "review_text": "玩不到一個禮拜 就不想玩了 感覺系統要你輸就是輸",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "玩家認為系統刻意讓他輸"
+    }
+  },
+  {
+    "review_id": "3063c653-e0bd-4bfe-b92d-2741d37af9e7",
+    "player_name": "Chen",
+    "date": "2026-03-23",
+    "star_rating": 1,
+    "review_text": "我地聽後直到上一把那個自摸的“人”也聽了，然後他就槓上自摸絕張。有時候很快就聽，或是牌很好，但就是不進牌，也胡不到。 不知是系統玩家還是智慧代打，有的吃碰聽胡超容易又快速,但我嘗試使用智慧代打也沒那麼容易吃碰聽和快速胡。不知為何有的玩家換他時，能拖到10幾秒才把牌打出。玩中高級50幾億只胡到2把，然後就一路輸到破產...不到1小時內。",
+    "thumbsUpCount": 3,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "玩家質疑系統玩家與智慧代打機率不均等"
+    }
+  },
+  {
+    "review_id": "5850edd5-114c-4f92-b996-ac27899b9027",
+    "player_name": "吳錦河",
+    "date": "2026-03-22",
+    "star_rating": 1,
+    "review_text": "什麼遊戲，235億從頭輸到尾，不是對方自摸就是我放槍，吃相太難看了。玩遊戲是放輕鬆能安静一些嗎！日語太吵了聲音又尖銳讓人有些討厭，能温和一些嗎？",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "勝率太低",
+      "root_cause_summary": "玩家抱怨遊戲勝率過低且音效設計不佳"
+    }
+  },
+  {
+    "review_id": "efb84de1-df71-46fd-a199-af45e11627de",
+    "player_name": "林大福",
+    "date": "2026-03-22",
+    "star_rating": 1,
+    "review_text": "下載後囉哩叭嗦的，一下點那一點這，好不容易都按完，要玩個底一百台五十不行，要玩底五十台三十也不行，搞半天都沒玩半局，浪費時間，怒刪",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "操作不直覺",
+      "root_cause_summary": "玩家對初始操作流程與場地選擇設計不滿"
+    }
+  },
+  {
+    "review_id": "7bcf7c67-46d7-4533-80e2-78c856dd5ac5",
+    "player_name": "馬玉貴",
+    "date": "2026-03-22",
+    "star_rating": 4,
+    "review_text": "好玩，讚",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲基礎體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "2886953d-06e3-4ae6-95b2-5f38cb650f4b",
+    "player_name": "蔡世洪",
+    "date": "2026-03-22",
+    "star_rating": 4,
+    "review_text": "好玩，可是進場玩有點久",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "進場慢",
+      "root_cause_summary": "遊戲載入時間過長影響體驗"
+    }
+  },
+  {
+    "review_id": "edf31664-7779-4cb3-9749-4d21f998bb5b",
+    "player_name": "梁進中",
+    "date": "2026-03-22",
+    "star_rating": 5,
+    "review_text": "很好玩的，打發時間的",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "打發時間",
+      "root_cause_summary": "玩家認可遊戲休閒娛樂價值"
+    }
+  },
+  {
+    "review_id": "1ce92362-a073-498a-96cc-7d522d9acdc9",
+    "player_name": "陳錦華",
+    "date": "2026-03-21",
+    "star_rating": 5,
+    "review_text": "很棒的",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗滿意"
+    }
+  },
+  {
+    "review_id": "25d783ce-b1e3-471b-8c8e-0366d5ac9d9d",
+    "player_name": "許泰山",
+    "date": "2026-03-21",
+    "star_rating": 3,
+    "review_text": "還好",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "一般體驗",
+      "root_cause_summary": "玩家對遊戲體驗無特別不滿"
+    }
+  },
+  {
+    "review_id": "858e81ae-187a-43ed-b4fe-eefe3c70e394",
+    "player_name": "周正明",
+    "date": "2026-03-21",
+    "star_rating": 1,
+    "review_text": "要胡常段",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "斷線",
+      "root_cause_summary": "玩家遊戲中頻繁斷線"
+    }
+  },
+  {
+    "review_id": "410c4f7f-b4e5-4b37-a3a7-5bdda18ad5a2",
+    "player_name": "Lency Ooi",
+    "date": "2026-03-20",
+    "star_rating": 5,
+    "review_text": "很好玩的遊戲",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "很好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "ca707312-480d-4291-9a97-d36b185a3127",
+    "player_name": "吳維維",
+    "date": "2026-03-20",
+    "star_rating": 4,
+    "review_text": "好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲基礎體驗表示認可"
+    }
+  },
+  {
+    "review_id": "66c2026c-10ad-4524-8552-1ae356e2f470",
+    "player_name": "真善美（邱馨）",
+    "date": "2026-03-20",
+    "star_rating": 4,
+    "review_text": "桌友牌品不佳者（如：胡牌他很不爽 ，出牌動作等非常久才出牌…3位就等到天荒地老）。是否可限3秒，5秒桌）桌友亦可將爛咖桌友拉黑 不再與他配同桌。",
+    "thumbsUpCount": 4,
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "配桌不合理",
+      "root_cause_summary": "玩家抱怨匹配桌友行為影響遊戲流暢度"
+    }
+  },
+  {
+    "review_id": "42a4b95b-dfab-4fe8-9f9c-74102cce576a",
+    "player_name": "褚定達",
+    "date": "2026-03-19",
+    "star_rating": 5,
+    "review_text": "好好玩喔",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "132d744e-aec8-43b8-80ac-f03b20eb245f",
+    "player_name": "夏一平",
+    "date": "2026-03-19",
+    "star_rating": 5,
+    "review_text": "好",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲體驗好",
+      "root_cause_summary": "玩家對遊戲體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "305ad405-17be-4195-9a32-438bf04383b3",
+    "player_name": "李秋雪",
+    "date": "2026-03-18",
+    "star_rating": 2,
+    "review_text": "還可以",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "體驗一般",
+      "root_cause_summary": "玩家對遊戲體驗感到一般"
+    }
+  },
+  {
+    "review_id": "0b1f5876-a3f3-4790-a674-4a36f21f8049",
+    "player_name": "花百合",
+    "date": "2026-03-18",
+    "star_rating": 5,
+    "review_text": "不錯玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲基礎體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "6986d98e-19ea-465a-9f98-61ee4df4caa3",
+    "player_name": "王中士",
+    "date": "2026-03-18",
+    "star_rating": 5,
+    "review_text": "很好長知識",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "長知識",
+      "root_cause_summary": "玩家認可遊戲教育性設計"
+    }
+  },
+  {
+    "review_id": "5ec95707-2ffe-4b04-a472-edc1cf77fc19",
+    "player_name": "陳采潔",
+    "date": "2026-03-18",
+    "star_rating": 5,
+    "review_text": "好玩，很棒",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲娛樂性給予肯定"
+    }
+  },
+  {
+    "review_id": "fa417a12-392e-4962-a8b8-3dd578013d10",
+    "player_name": "陳俊誠",
+    "date": "2026-03-18",
+    "star_rating": 2,
+    "review_text": "普通遊戲",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "普通",
+      "root_cause_summary": "遊戲體驗普通"
+    }
+  },
+  {
+    "review_id": "02392af1-e068-4e42-8bf4-c5c6173cb8e7",
+    "player_name": "鍾生華",
+    "date": "2026-03-17",
+    "star_rating": 5,
+    "review_text": "棒喔",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "體驗佳",
+      "root_cause_summary": "遊戲體驗良好"
+    }
+  },
+  {
+    "review_id": "7f8238f4-6227-4a35-90c7-c7de98b0d09b",
+    "player_name": "曾富蓉",
+    "date": "2026-03-17",
+    "star_rating": 5,
+    "review_text": "棒棒",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "遊戲體驗良好"
+    }
+  },
+  {
+    "review_id": "ad41b4cc-ddee-49bb-9544-5baf65f36e0b",
+    "player_name": "林桂珍",
+    "date": "2026-03-16",
+    "star_rating": 5,
+    "review_text": "心情不好時玩個幾局，棒棒躂",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "心情好",
+      "root_cause_summary": "玩家感到放松和愉快"
+    }
+  },
+  {
+    "review_id": "e5ae4b04-6113-444a-90a1-ac04ddeab5db",
+    "player_name": "渣渣渣",
+    "date": "2026-03-16",
+    "star_rating": 3,
+    "review_text": "回收遊戲幣.回收的好多.......建議不要玩高級的一下子就沒錢錢了......加上商業性的博弈遊戲都只是為了賺錢.不公正的.儲值？看個人吧！我還玩過更惡劣的.用外掛.用AI在坑殺玩家的~~哈",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "high",
+      "is_vip_player": true,
+      "keyword": "回收幣",
+      "root_cause_summary": "高級場回收過多遊戲幣設計不公"
+    },
+    "status": "resolved"
+  },
+  {
+    "review_id": "27994436-d3a3-43e7-9165-8bb7b5d258ee",
+    "player_name": "洪淑美",
+    "date": "2026-03-16",
+    "star_rating": 2,
+    "review_text": "之前用鑽石換紅鑽因沒儲值所以紅鑽被鎖死不公平",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "客服金流",
+      "risk_level": "high",
+      "is_vip_player": false,
+      "keyword": "鎖鑽未到帳",
+      "root_cause_summary": "未儲值導致紅鑽被誤鎖定"
+    }
+  },
+  {
+    "review_id": "7e2c32c0-dcf3-435e-8d8b-33ab3808bfc4",
+    "player_name": "趙忠麟",
+    "date": "2026-03-16",
+    "star_rating": 5,
+    "review_text": "gooóooooóooóooooooooood",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "9796f27c-fe89-408e-a1b5-1caa0a9c7292",
+    "player_name": "楊義宏",
+    "date": "2026-03-15",
+    "star_rating": 1,
+    "review_text": "爛透了",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "體驗差",
+      "root_cause_summary": "玩家對遊戲整體體驗極度不滿"
+    }
+  },
+  {
+    "review_id": "8236a826-bdfc-4213-99fc-b24be292fdf0",
+    "player_name": "黃坤弘",
+    "date": "2026-03-14",
+    "star_rating": 3,
+    "review_text": "很多變化",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "變化多",
+      "root_cause_summary": "玩家認為遊戲內容變動頻繁"
+    }
+  },
+  {
+    "review_id": "4c0e50a9-e8f5-46b4-8489-19a798b38115",
+    "player_name": "林泉成",
+    "date": "2026-03-13",
+    "star_rating": 5,
+    "review_text": "很好",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗滿意"
+    }
+  },
+  {
+    "review_id": "ecafa694-291d-4442-ade6-e9b939a1f574",
+    "player_name": "史珍香",
+    "date": "2026-03-13",
+    "star_rating": 1,
+    "review_text": "都是電腦玩家怎麼玩怎麼輸 就是要你儲值",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "high",
+      "is_vip_player": true,
+      "keyword": "機率不公",
+      "root_cause_summary": "玩家認為遊戲存在電腦玩家操控勝率情況"
+    },
+    "status": "dismissed"
+  },
+  {
+    "review_id": "3f4b249a-573b-4efd-a84b-35592d2a132b",
+    "player_name": "林果",
+    "date": "2026-03-12",
+    "star_rating": 1,
+    "review_text": "設定好誰贏誰輸，別再傻了。",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "玩家質疑遊戲結果被預先設定"
+    }
+  },
+  {
+    "review_id": "8d7dbe02-b490-40b6-adcf-0b140752cdc9",
+    "player_name": "楊素珠",
+    "date": "2026-03-12",
+    "star_rating": 5,
+    "review_text": "好玩很容易贏錢",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家覺得遊戲有趣且容易獲勝"
+    }
+  },
+  {
+    "review_id": "207aeece-df56-4d1b-880a-be413d422b5d",
+    "player_name": "史塔森",
+    "date": "2026-03-12",
+    "star_rating": 5,
+    "review_text": "感覺不錯",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "整體體驗",
+      "root_cause_summary": "玩家對遊戲整體體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "5f75de19-05b4-48a8-a7e5-f2893c745be2",
+    "player_name": "蘇意晴",
+    "date": "2026-03-12",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家認為遊戲具有娛樂性"
+    }
+  },
+  {
+    "review_id": "546adcb8-fc0f-4170-9009-9aae8c44b406",
+    "player_name": "曾奐璋",
+    "date": "2026-03-12",
+    "star_rating": 5,
+    "review_text": "爽",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "爽",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "db4c2046-01c5-48ea-83d2-b4f8e5482076",
+    "player_name": "蕭正展",
+    "date": "2026-03-11",
+    "star_rating": 5,
+    "review_text": "加油",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "加油",
+      "root_cause_summary": "玩家給予遊戲正面鼓勵"
+    }
+  },
+  {
+    "review_id": "e8ff6612-c80f-4e78-b22f-d72af173bfb0",
+    "player_name": "吳漢裕",
+    "date": "2026-03-11",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家認可遊戲娛樂性"
+    }
+  },
+  {
+    "review_id": "c43f3536-7da9-4816-9952-6792fe77e5cb",
+    "player_name": "林豐富",
+    "date": "2026-03-10",
+    "star_rating": 5,
+    "review_text": "讚",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好評",
+      "root_cause_summary": "玩家給予好評無具體問題"
+    }
+  },
+  {
+    "review_id": "fee6df78-b3b8-4f56-b993-9cbb64be3296",
+    "player_name": "steven wu",
+    "date": "2026-03-08",
+    "star_rating": 3,
+    "review_text": "廣告可以接受但是看20秒以下 現在廣告難關真是遺憾。都被廣告搞砸了",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "行銷推廣",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "廣告過多",
+      "root_cause_summary": "廣告過多影響遊戲體驗"
+    }
+  },
+  {
+    "review_id": "5478ecc7-cdf1-4137-b281-ddb971b21d76",
+    "player_name": "陳晉德",
+    "date": "2026-03-06",
+    "star_rating": 5,
+    "review_text": "讚",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好評",
+      "root_cause_summary": "玩家給予好評無具體問題"
+    }
+  },
+  {
+    "review_id": "44249a54-16dd-4bc2-9441-b13871d0c194",
+    "player_name": "Super8",
+    "date": "2026-03-06",
+    "star_rating": 1,
+    "review_text": "兩人麻將..初級一台50萬請問為什麼贏家跟輸家的分數對不起來？贏家贏500多萬輸家輸了1100多萬.差了500多萬是莊家冬走了嗎？差分少時幾十萬分多則幾百萬分..是隨後台高興想怎麼冬就怎麼冬嗎？搞不懂 求解",
+    "thumbsUpCount": 2,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "玩家質疑分數計算機制不透明不合理"
+    }
+  },
+  {
+    "review_id": "ea3d3fed-41e8-4a90-88f8-abb87f8656ba",
+    "player_name": "挖靠",
+    "date": "2026-03-05",
+    "star_rating": 1,
+    "review_text": "破遊戲",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲體驗差",
+      "root_cause_summary": "玩家對遊戲整體體驗極度不滿"
+    }
+  },
+  {
+    "review_id": "e7f0cbbd-bc0e-4ac4-9a70-d211180a0978",
+    "player_name": "WEI C",
+    "date": "2026-03-05",
+    "star_rating": 1,
+    "review_text": "白吃、低能的麻將遊戲 哪可能連三把都被自摸，下車了也一樣 好不容易胡了一把還被截胡 已卸載",
+    "thumbsUpCount": 3,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "玩家認為遊戲胡牌機率設計不合理"
+    }
+  },
+  {
+    "review_id": "ff332c28-6e7a-4ccb-9a12-f6809cf8b627",
+    "player_name": "朱華安",
+    "date": "2026-03-04",
+    "star_rating": 5,
+    "review_text": "流暢好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "流暢",
+      "root_cause_summary": "玩家對遊戲流暢度與娛樂性感到滿意"
+    }
+  },
+  {
+    "review_id": "6be21803-c3ff-4b60-96e2-4106efea423c",
+    "player_name": "頑皮貓",
+    "date": "2026-03-03",
+    "star_rating": 1,
+    "review_text": "垃圾遊戲惡意程式斷線坑殺玩家只會咬錢放任系統養的玩家做弊，要玩只能免費簽到充人數，儲值就咬讓玩家當傻瓜",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "high",
+      "is_vip_player": true,
+      "keyword": "斷線坑殺",
+      "root_cause_summary": "玩家遭遇斷線與儲值被坑的嚴重體驗問題"
+    }
+  },
+  {
+    "review_id": "c8638df4-5336-40b1-9cb9-f60f0d93d77c",
+    "player_name": "唐安東",
+    "date": "2026-03-03",
+    "star_rating": 5,
+    "review_text": "很好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "娛樂性佳",
+      "root_cause_summary": "玩家對遊戲娛樂性感到滿意"
+    }
+  },
+  {
+    "review_id": "7d65f4f8-cb19-45ed-9a4b-e88498712b44",
+    "player_name": "劉耀鷹",
+    "date": "2026-03-02",
+    "star_rating": 5,
+    "review_text": "有這個平台遊戲很棒哦 動動腦開心玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "5bc41775-8f34-4766-818b-7bf1da860e1b",
+    "player_name": "陳麗娟",
+    "date": "2026-02-28",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家認為遊戲有趣"
+    }
+  },
+  {
+    "review_id": "d54a7b4c-7433-43ab-86cf-c545c471afca",
+    "player_name": "家澤",
+    "date": "2026-02-27",
+    "star_rating": 5,
+    "review_text": "介面我喜歡",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "介面流暢",
+      "root_cause_summary": "玩家對介面設計滿意"
+    }
+  },
+  {
+    "review_id": "dce58e37-d8a8-47bc-8aed-cc5109e03bed",
+    "player_name": "Justin Wu",
+    "date": "2026-02-26",
+    "star_rating": 1,
+    "review_text": "好玩遊戲，對手當莊連續三把自摸，還有遇到莊連三天聽自摸的，甚至牌池裡只有兩張他聽的牌，你跟我說這機率沒問題？",
+    "thumbsUpCount": 3,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "對手連續自摸，質疑牌局機率設計"
+    }
+  },
+  {
+    "review_id": "ec8a61cb-ea61-4429-9f5d-5a513c25b332",
+    "player_name": "蔡日炎",
+    "date": "2026-02-25",
+    "star_rating": 5,
+    "review_text": "人物和名稱請問要怎麼更換",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "操作不直覺",
+      "root_cause_summary": "詢問角色名稱更換功能位置"
+    }
+  },
+  {
+    "review_id": "12554ed2-47d8-40f8-a845-7d273b52cc5f",
+    "player_name": "walk junny",
+    "date": "2026-02-24",
+    "star_rating": 1,
+    "review_text": "爛遊戲，連續被開場胡了幾10把。",
+    "thumbsUpCount": 3,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "連續被開場胡牌質疑遊戲平衡性"
+    }
+  },
+  {
+    "review_id": "60c2b12c-c074-4c4d-a80b-645326ab45cd",
+    "player_name": "陳志光",
+    "date": "2026-02-23",
+    "star_rating": 5,
+    "review_text": "很好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "1534f31c-a9d7-4d71-8bf9-55b8c5d8744c",
+    "player_name": "禹德韡",
+    "date": "2026-02-23",
+    "star_rating": 3,
+    "review_text": "一堆洗錢掛 怎麼玩？ 回報問題又伺服器忙碌",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "伺服器忙碌",
+      "root_cause_summary": "伺服器回報問題影響遊戲體驗"
+    }
+  },
+  {
+    "review_id": "e2324019-827e-41fe-b316-dcdef9e1c3c6",
+    "player_name": "鵝鵝鵝",
+    "date": "2026-02-23",
+    "star_rating": 3,
+    "review_text": "今天剛完，連胡三把",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "連胡",
+      "root_cause_summary": "玩家對遊戲運氣值感到中性評價"
+    }
+  },
+  {
+    "review_id": "c0eca75f-443a-4298-af06-9c0202cc5eab",
+    "player_name": "魔隱",
+    "date": "2026-02-22",
+    "star_rating": 5,
+    "review_text": "不錯喔！",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲體驗",
+      "root_cause_summary": "玩家對遊戲表示滿意"
+    }
+  },
+  {
+    "review_id": "a0f50b4f-a60f-46ea-acda-7d0c7b930c53",
+    "player_name": "汪仁瑋",
+    "date": "2026-02-21",
+    "star_rating": 5,
+    "review_text": "好好玩",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "娛樂性高",
+      "root_cause_summary": "玩家對遊戲感到樂趣"
+    }
+  },
+  {
+    "review_id": "c0b2db68-99dc-46ac-aa3a-4c9e06101c7e",
+    "player_name": "judy nieh (聶淑虹)",
+    "date": "2026-02-20",
+    "star_rating": 4,
+    "review_text": "強迫中的獎項，無聊就下載安裝來玩玩看",
+    "thumbsUpCount": 8,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "活動設計",
+      "root_cause_summary": "玩家對獎勵機制感到不滿"
+    }
+  },
+  {
+    "review_id": "f22c9c85-00c3-46ac-ae9d-af8ecf8a953a",
+    "player_name": "陳子翔",
+    "date": "2026-02-19",
+    "star_rating": 1,
+    "review_text": "沒玩個兩三場就會閃退 這是要怎玩",
+    "thumbsUpCount": 2,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "high",
+      "is_vip_player": false,
+      "keyword": "閃退",
+      "root_cause_summary": "遊戲運行不穩定導致無法正常遊玩"
+    }
+  },
+  {
+    "review_id": "c5b2a2ca-91d8-4053-bb40-b7afab617bf2",
+    "player_name": "黃定康",
+    "date": "2026-02-18",
+    "star_rating": 3,
+    "review_text": "下載好煩哦！弄一下，差點就走了，怎不一下子就讓玩呢？",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "UI/UX體驗",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "下載流程",
+      "root_cause_summary": "下載流程複雜導致玩家流失"
+    }
+  },
+  {
+    "review_id": "7a6c1062-71ba-4f94-a544-3beb7ccb3fd7",
+    "player_name": "吳秉原",
+    "date": "2026-02-18",
+    "star_rating": 5,
+    "review_text": "相較之下這款麻將遊戲感覺比較好玩！",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲體驗",
+      "root_cause_summary": "遊戲設計提升玩家樂趣"
+    }
+  },
+  {
+    "review_id": "0eea8ae0-14c4-44e7-ae6b-6e807014e8e6",
+    "player_name": "黃意郎",
+    "date": "2026-02-17",
+    "star_rating": 5,
+    "review_text": "ok",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "體驗良好",
+      "root_cause_summary": "玩家對遊戲表示肯定"
+    }
+  },
+  {
+    "review_id": "8dccff3f-0868-4f72-8566-48083da6e798",
+    "player_name": "應嬌",
+    "date": "2026-02-17",
+    "star_rating": 5,
+    "review_text": "還不錯玩呢",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "玩法有趣",
+      "root_cause_summary": "玩家對遊戲體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "a4ebc2ef-2582-4cc7-9594-2f9796866146",
+    "player_name": "doo Francis",
+    "date": "2026-02-17",
+    "star_rating": 5,
+    "review_text": "獎金很多喔",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "營運企劃",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "獎金豐富",
+      "root_cause_summary": "玩家對獎勵機制感到滿意"
+    }
+  },
+  {
+    "review_id": "34375611-1a18-4d9d-839c-e1e3a386c312",
+    "player_name": "天使的眼淚",
+    "date": "2026-02-17",
+    "star_rating": 5,
+    "review_text": "過年打發時間還不錯",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "節日休閒",
+      "root_cause_summary": "過年期間作為休閒娛樂不錯"
+    }
+  },
+  {
+    "review_id": "e3cd1a1f-7b41-48d9-8a42-28538af6c348",
+    "player_name": "Kuo-Bin Chen",
+    "date": "2026-02-17",
+    "star_rating": 1,
+    "review_text": "爛到爆!配對就LAG要等好久，配好牌咖也要等好久才可開始玩。一家大公司搞笑了。",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "配對LAG",
+      "root_cause_summary": "配對過程LAG且等待時間過長"
+    }
+  },
+  {
+    "review_id": "1ec77bed-aedc-4904-a50d-44e27662f172",
+    "player_name": "陳羿宇",
+    "date": "2026-02-16",
+    "star_rating": 1,
+    "review_text": "系統維護後！！！洗牌！！！金額歸零！！！這樣還玩嗎！！！刪了不玩了！！！！！",
+    "thumbsUpCount": 2,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "high",
+      "is_vip_player": false,
+      "keyword": "洗牌歸零",
+      "root_cause_summary": "系統維護後洗牌導致金額歸零"
+    }
+  },
+  {
+    "review_id": "75748627-25e3-45df-9914-842d5d026a2e",
+    "player_name": "陳正忠",
+    "date": "2026-02-16",
+    "star_rating": 1,
+    "review_text": "爛透了，別的APP都可連線，就你家的遊戲沒辦法連線，可不可以加油啊",
+    "thumbsUpCount": 5,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "連線失敗",
+      "root_cause_summary": "玩家遭遇遊戲連線異常問題"
+    }
+  },
+  {
+    "review_id": "93d5ab30-6a45-4392-86b2-c05b21f4ca3c",
+    "player_name": "蘇逸帆",
+    "date": "2026-02-15",
+    "star_rating": 5,
+    "review_text": "很好",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲體驗好",
+      "root_cause_summary": "玩家對遊戲整體體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "5960d148-62c4-4db3-bf19-560cf5c4d50c",
+    "player_name": "Chen強",
+    "date": "2026-02-15",
+    "star_rating": 5,
+    "review_text": "好玩讚啦",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家對遊戲娛樂性給予肯定"
+    }
+  },
+  {
+    "review_id": "2f71cf22-106f-47d4-bade-7632d19187e3",
+    "player_name": "黃秋燕",
+    "date": "2026-02-15",
+    "star_rating": 5,
+    "review_text": "棒",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "玩法簡單",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "7393ee18-f466-4dc1-9d65-041ed2ca6718",
+    "player_name": "Al Ming Huang",
+    "date": "2026-02-15",
+    "star_rating": 5,
+    "review_text": "會比明星三缺一更有很多牌技強的可以磨練牌技。 是個訓練頭腦思考邏輯的練習遊戲",
+    "thumbsUpCount": 13,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "營運企劃",
+      "risk_level": "high",
+      "is_vip_player": false,
+      "keyword": "訓練邏輯",
+      "root_cause_summary": "玩家認可遊戲對牌技提升的幫助"
+    }
+  },
+  {
+    "review_id": "847f9bd8-bab3-4988-b18f-8a313007d2e8",
+    "player_name": "古泓育",
+    "date": "2026-02-15",
+    "star_rating": 3,
+    "review_text": "很好玩 爽快的感覺真好",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "玩法爽快",
+      "root_cause_summary": "玩家對遊戲操作體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "0c572bff-f941-445a-ac32-74d09c2c3759",
+    "player_name": "kimi Fu",
+    "date": "2026-02-14",
+    "star_rating": 5,
+    "review_text": "棒",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "棒",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "87584fd4-1bb4-47c1-a014-02f77f97cf72",
+    "player_name": "曾是摯愛",
+    "date": "2026-02-13",
+    "star_rating": 5,
+    "review_text": "很棒",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "很棒",
+      "root_cause_summary": "玩家對遊戲整體表現感到滿意"
+    }
+  },
+  {
+    "review_id": "58e3afb1-39c2-4804-8bd9-bb613f9ae206",
+    "player_name": "吳奧迪",
+    "date": "2026-02-13",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家認為遊戲玩法有趣"
+    }
+  },
+  {
+    "review_id": "7c7e0df6-9bfa-476d-9c0b-864e8f173a38",
+    "player_name": "Kevin Chang",
+    "date": "2026-02-13",
+    "star_rating": 5,
+    "review_text": "開心",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "開心",
+      "root_cause_summary": "玩家對遊戲體驗感到開心"
+    }
+  },
+  {
+    "review_id": "d84d398b-bed4-40bb-8af5-2a84195a8b9c",
+    "player_name": "蔡勝閎",
+    "date": "2026-02-12",
+    "star_rating": 4,
+    "review_text": "還不錯玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "9ca1f28f-f569-49a1-9d57-bcefc391ac14",
+    "player_name": "董二哥",
+    "date": "2026-02-11",
+    "star_rating": 1,
+    "review_text": "莫名就會有斷線的現象，先刪了",
+    "thumbsUpCount": 3,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "斷線",
+      "root_cause_summary": "遊戲頻繁斷線導致玩家流失"
+    }
+  },
+  {
+    "review_id": "a62b140f-cdad-4e3b-88ec-4ef9ab035d3a",
+    "player_name": "chun kuo Liu",
+    "date": "2026-02-11",
+    "star_rating": 1,
+    "review_text": "很烂的游戏。每次玩这个都会打瞌睡，看多慢，又时常的断线。而且又很假。",
+    "thumbsUpCount": 5,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "斷線卡頓",
+      "root_cause_summary": "遊戲頻繁斷線導致體驗中斷"
+    }
+  },
+  {
+    "review_id": "b53d4b54-ece1-4c8c-8659-62517b2b55a5",
+    "player_name": "Wiho Hon",
+    "date": "2026-02-10",
+    "star_rating": 1,
+    "review_text": "連5G網路的wifi還一直斷線",
+    "thumbsUpCount": 3,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "斷線卡頓",
+      "root_cause_summary": "穩定網路環境下仍發生斷線問題"
+    }
+  },
+  {
+    "review_id": "9d2b56c3-af10-4029-8d55-00112e3559a7",
+    "player_name": "黃兆豐",
+    "date": "2026-02-10",
+    "star_rating": 5,
+    "review_text": "好玩，數值高",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲有趣",
+      "root_cause_summary": "玩家對遊戲數值設計感到滿意"
+    }
+  },
+  {
+    "review_id": "c0f24cca-624c-4071-b92a-840c80fd85a9",
+    "player_name": "徐孟如",
+    "date": "2026-02-09",
+    "star_rating": 2,
+    "review_text": "不是關於你們的廣告這麼的多是怎樣啦！你們的廣告能不能減少一點，不然我都不用玩其他遊戲了欸！！！！",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "行銷推廣",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "廣告過多",
+      "root_cause_summary": "廣告過多影響遊戲體驗"
+    }
+  },
+  {
+    "review_id": "e80c82a0-8486-46d2-b4b6-858b5d075d0f",
+    "player_name": "怪獸霸戰",
+    "date": "2026-02-09",
+    "star_rating": 5,
+    "review_text": "好玩喔 快點來玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "遊戲評價良好"
+    }
+  },
+  {
+    "review_id": "5a462739-578e-44c0-9e0c-3a46343d6965",
+    "player_name": "江林諺",
+    "date": "2026-02-08",
+    "star_rating": 3,
+    "review_text": "可以",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "neutral",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "體驗一般",
+      "root_cause_summary": "中性評價無具體描述"
+    }
+  },
+  {
+    "review_id": "7a64bc2c-8ce2-4ee9-983b-6078291e999f",
+    "player_name": "s ky",
+    "date": "2026-02-07",
+    "star_rating": 5,
+    "review_text": "讚",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲好玩",
+      "root_cause_summary": "玩家給予正面評價"
+    }
+  },
+  {
+    "review_id": "c4f21361-9fb0-44ec-b6d6-5d74536d6916",
+    "player_name": "魏胖祥",
+    "date": "2026-02-05",
+    "star_rating": 5,
+    "review_text": "讚得啦",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "推薦遊戲",
+      "root_cause_summary": "玩家給予高度推薦"
+    }
+  },
+  {
+    "review_id": "0e11d28a-d76e-4f4f-815a-4ff6f81ce955",
+    "player_name": "林曉瑄",
+    "date": "2026-02-05",
+    "star_rating": 5,
+    "review_text": "這二天都打不開",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "無法登入",
+      "root_cause_summary": "玩家遭遇遊戲無法開啟問題"
+    }
+  },
+  {
+    "review_id": "aea11d6f-9577-4cde-bf63-a1092d0a1526",
+    "player_name": "黃正靖",
+    "date": "2026-02-03",
+    "star_rating": 3,
+    "review_text": "我剛在徽章交易所花25個紅鑽換一個膽小鬼徽章，結果紅鑽扣走了，徽章拿不到？？？",
+    "thumbsUpCount": 2,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "客服金流",
+      "risk_level": "high",
+      "is_vip_player": true,
+      "keyword": "扣款未到帳",
+      "root_cause_summary": "紅鑽扣除但未獲得對應徽章"
+    }
+  },
+  {
+    "review_id": "10819116-d46d-4e01-bf3b-c63a6e824b99",
+    "player_name": "蔡明章",
+    "date": "2026-02-01",
+    "star_rating": 5,
+    "review_text": "還不錯",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲體驗佳",
+      "root_cause_summary": "玩家對遊戲整體體驗表示滿意"
+    }
+  },
+  {
+    "review_id": "968c4406-e9c8-409d-93d4-1df0f9c1568e",
+    "player_name": "李文德",
+    "date": "2026-01-31",
+    "star_rating": 1,
+    "review_text": "差，2小時輸100億金幣算了，自己玩大，智慧代打我2、4、6條，一進聽，進5條居然打出去放槍，重點是2條還沒事，經常,5,6,8,9上家打7是拿56來吃，真是傻眼的智慧代打，坑人的遊戲",
+    "thumbsUpCount": 7,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "機率不公",
+      "root_cause_summary": "智慧代打策略導致玩家頻繁放槍"
+    }
+  },
+  {
+    "review_id": "72ba618d-21c0-4cad-93a9-d2dbe4e97588",
+    "player_name": "尤阿榮",
+    "date": "2026-01-31",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+    }
+  },
+  {
+    "review_id": "9ba4d462-3b38-4128-b1cf-1c99b31cc987",
+    "player_name": "顏子傑",
+    "date": "2026-01-30",
+    "star_rating": 5,
+    "review_text": "玩一局就不玩，贏錢幣可以亂跑，玩不起，可以不要玩，大叔玩高檔級，也一樣對方根本玩遊戲，玩不起贏錢幣可以落跑，真的不要臉",
+    "thumbsUpCount": 19,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "high",
+      "is_vip_player": false,
+      "keyword": "玩家不公",
+      "root_cause_summary": "玩家指控對手存在不當遊戲行為影響公平性"
+    }
+  },
+  {
+    "review_id": "4141b3ae-9957-4811-a9fa-3a3b66e5cd0e",
+    "player_name": "張芳",
+    "date": "2026-01-30",
+    "star_rating": 5,
+    "review_text": "可以",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "可以",
+      "root_cause_summary": "玩家對遊戲體驗給予基本肯定"
+    }
+  },
+  {
+    "review_id": "bc0634d2-11fc-47f8-8692-f21841d611c5",
+    "player_name": "李書凱",
+    "date": "2026-01-30",
+    "star_rating": 1,
+    "review_text": "玩到後面一直輸",
+    "thumbsUpCount": 1,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "勝率太低",
+      "root_cause_summary": "遊戲後期勝率低導致玩家不滿"
+    }
+  },
+  {
+    "review_id": "79fa45e5-a3e7-4b4d-ad79-d068cf4f3201",
+    "player_name": "藍小龍",
+    "date": "2026-01-28",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗滿意"
+    }
+  },
+  {
+    "review_id": "62b2825c-f10f-4a2f-a4b4-45cc1fb34ecb",
+    "player_name": "林志賢",
+    "date": "2026-01-27",
+    "star_rating": 5,
+    "review_text": "加油打氣加油喔",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "加油打氣",
+      "root_cause_summary": "玩家給予遊戲積極支持"
+    }
+  },
+  {
+    "review_id": "97ab6e1e-178c-43c6-9187-aadf7b2909cd",
+    "player_name": "劉惠箐",
+    "date": "2026-01-26",
+    "star_rating": 1,
+    "review_text": "智慧代打跟白痴一樣",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "智慧代打",
+      "root_cause_summary": "智慧代打表現差影響遊戲體驗"
+    }
+  },
+  {
+    "review_id": "adbc4a66-31a7-426e-84f2-066748e95cea",
+    "player_name": "謝政祥",
+    "date": "2026-01-25",
+    "star_rating": 1,
+    "review_text": "爛遊戲",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲體驗差",
+      "root_cause_summary": "玩家對遊戲整體體驗不滿"
+    }
+  },
+  {
+    "review_id": "9a9a7682-6b70-456e-b76f-5d2f050a3b64",
+    "player_name": "吳友財",
+    "date": "2026-01-24",
+    "star_rating": 4,
+    "review_text": "不錯玩 可以體驗看看",
+    "thumbsUpCount": 3,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲體驗好",
+      "root_cause_summary": "玩家對遊戲整體體驗滿意"
+    }
+  },
+  {
+    "review_id": "c02cff80-c426-4199-b0aa-e1c5d73eeb76",
+    "player_name": "kotung chang",
+    "date": "2026-01-24",
+    "star_rating": 5,
+    "review_text": "再加油",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "鼓励",
+      "root_cause_summary": "玩家给予鼓励"
+    }
+  },
+  {
+    "review_id": "68f96da2-354d-413e-baa1-40911d585c58",
+    "player_name": "施慶星",
+    "date": "2026-01-22",
+    "star_rating": 5,
+    "review_text": "讚",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好评",
+      "root_cause_summary": "玩家给予好评"
+    }
+  },
+  {
+    "review_id": "26e6d06c-9a39-4c9f-9396-0dcf2e1a5de6",
+    "player_name": "鄭永義",
+    "date": "2026-01-22",
+    "star_rating": 5,
+    "review_text": "好",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好评",
+      "root_cause_summary": "玩家给予简短好评"
+    }
+  },
+  {
+    "review_id": "2d03af4e-3131-42e6-9d60-07b93cf8d28a",
+    "player_name": "張春英",
+    "date": "2026-01-21",
+    "star_rating": 4,
+    "review_text": "太好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  }
+]

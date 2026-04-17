@@ -43,6 +43,13 @@ vite.config.ts.timestamp-*
 # Claude Code — Agent Files
 # ===========================
 .agents/
+# Runtime lock files (local scheduler state)
+.claude/scheduled_tasks.lock
+
+# ===========================
+# Screenshots (local only, per CLAUDE.md)
+# ===========================
+screenshot/
 
 # ===========================
 # Generated / Temporary Files
@@ -88,6 +95,24 @@ desktop.ini
 *.sw?
 *.swp
 *~
+
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# ===========================
+# Backend — Raw / Intermediate Data
+# ===========================
+# Raw scraper output (regeneratable via scraper.py)
+backend/raw_reviews.json
+# Bad-batch fallback dump (auto-generated)
+backend/bad_data.json
 
 # ===========================
 # Testing

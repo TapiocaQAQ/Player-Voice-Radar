@@ -1,4 +1,36 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(conda env:*)",
+      "Bash(conda run *)",
+      "Bash(/c/Users/john/miniconda3/Scripts/conda.exe env:*)",
+      "Bash(/c/Users/john/miniconda3/Scripts/conda.exe run:*)",
+      "Bash(/c/Users/john/miniconda3/condabin/conda.bat run *)",
+      "Bash(/c/ProgramData/miniconda3/Scripts/conda run *)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/john/miniconda3/envs/PlayerVoiceRadar/python.exe -m backend.scraper)",
+      "Bash(PYTHONIOENCODING=utf-8 /c/Users/john/miniconda3/envs/PlayerVoiceRadar/python.exe -m backend.llm_service)",
+      "Bash(/c/Users/john/miniconda3/envs/PlayerVoiceRadar/python.exe -c ' *)",
+      "Read(//c/ProgramData/miniconda3/**)",
+      "Read(//c/ProgramData/**)",
+      "WebFetch(domain:play.google.com)",
+      "Bash(gh api *)",
+      "Bash(npm --version)",
+      "Skill(git-commit)",
+      "Skill(git-commit:*)",
+      "Bash(powershell.exe -Command \"Get-ChildItem 'C:\\\\Users\\\\john\\\\.claude-mem' -Recurse | Select-Object FullName, Length\")",
+      "Bash(cmd /c \"rd /s /q \\\\\"C:\\\\Users\\\\john\\\\.claude-mem\\\\\"\")",
+      "Bash(cmd /c \"if exist \\\\\"C:\\\\Users\\\\john\\\\.claude-mem\\\\\" \\(echo EXISTS\\) else \\(echo GONE\\)\")",
+      "Bash(powershell.exe -Command \"if \\(Test-Path 'C:\\\\Users\\\\john\\\\.claude-mem'\\) { Write-Host 'EXISTS' } else { Write-Host 'GONE' }\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem 'C:\\\\Users\\\\john\\\\.claude-mem' -Force | Select-Object Name, Attributes, LinkType\")",
+      "Bash(powershell.exe -Command ' *)",
+      "mcp__filesystem__directory_tree",
+      "Bash(gh pr *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\john\\.agent-browser\\tmp\\screenshots",
+      "\\tmp\\quarantine-skills"
+    ]
+  },
   "hooks": {
     "PreToolUse": [
       {
@@ -6,10 +38,10 @@
         "hooks": [
           {
             "type": "command",
-            "shell": "powershell",
             "command": "[System.Media.SystemSounds]::Exclamation.Play(); (New-Object -ComObject WScript.Shell).Popup('待確認', 3, 'Claude Code', 0)",
-            "async": true,
-            "timeout": 15
+            "shell": "powershell",
+            "timeout": 15,
+            "async": true
           }
         ]
       }
@@ -19,10 +51,10 @@
         "hooks": [
           {
             "type": "command",
-            "shell": "powershell",
             "command": "[System.Media.SystemSounds]::Asterisk.Play(); (New-Object -ComObject WScript.Shell).Popup('任務完成>_<', 3, 'Claude Code', 0)",
-            "async": true,
-            "timeout": 15
+            "shell": "powershell",
+            "timeout": 15,
+            "async": true
           }
         ]
       }
