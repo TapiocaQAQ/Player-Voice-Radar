@@ -1,5 +1,53 @@
 [
   {
+    "review_id": "94a08201-d9d5-4cd7-8b52-f1d67156a6e6",
+    "player_name": "嵐小妹",
+    "date": "2026-04-17",
+    "star_rating": 5,
+    "review_text": "進不去",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "工程研發",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "無法登入",
+      "root_cause_summary": "玩家無法登入遊戲"
+    }
+  },
+  {
+    "review_id": "a0f377d0-f82f-4516-9581-e62821d0a51f",
+    "player_name": "徐聖昌",
+    "date": "2026-04-16",
+    "star_rating": 5,
+    "review_text": "讚",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "遊戲讚",
+      "root_cause_summary": "玩家給予高度評價"
+    }
+  },
+  {
+    "review_id": "e4964ab1-01a9-4319-8b80-858cf29108d5",
+    "player_name": "阿唯",
+    "date": "2026-04-16",
+    "star_rating": 5,
+    "review_text": "很好玩 遊戲體驗好",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲體驗感到滿意"
+    }
+  },
+  {
     "review_id": "bf8004de-ec3b-493f-bf37-381105fd1d1f",
     "player_name": "guan ming shen",
     "date": "2026-04-16",
@@ -11,8 +59,8 @@
       "category": "營運企劃",
       "risk_level": "medium",
       "is_vip_player": false,
-      "keyword": "咬錢設計",
-      "root_cause_summary": "遊戲經濟設計導致玩家流失"
+      "keyword": "收費過重",
+      "root_cause_summary": "收費過重導致玩家流失"
     }
   },
   {
@@ -27,10 +75,9 @@
       "category": "工程研發",
       "risk_level": "high",
       "is_vip_player": false,
-      "keyword": "改版閃退",
-      "root_cause_summary": "改版後伺服器未正常上線"
-    },
-    "status": "resolved"
+      "keyword": "改版失敗",
+      "root_cause_summary": "改版後無法上線"
+    }
   },
   {
     "review_id": "792f312c-dc0a-42ea-be1d-f39bde7ae211",
@@ -44,8 +91,8 @@
       "category": "其他",
       "risk_level": "low",
       "is_vip_player": false,
-      "keyword": "遊戲好玩",
-      "root_cause_summary": "玩家對遊戲表示讚賞"
+      "keyword": "遊戲讚",
+      "root_cause_summary": "玩家給予正面評價"
     }
   },
   {
@@ -61,7 +108,7 @@
       "risk_level": "low",
       "is_vip_player": false,
       "keyword": "好玩",
-      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+      "root_cause_summary": "玩家对游戏体验感到满意"
     }
   },
   {
@@ -76,8 +123,8 @@
       "category": "營運企劃",
       "risk_level": "medium",
       "is_vip_player": false,
-      "keyword": "維護延誤",
-      "root_cause_summary": "維護作業未提前公告且延誤開機時間"
+      "keyword": "維護延遲",
+      "root_cause_summary": "維護未預告且延遲導致玩家不滿"
     }
   },
   {
@@ -92,8 +139,24 @@
       "category": "工程研發",
       "risk_level": "high",
       "is_vip_player": false,
-      "keyword": "登入失敗",
-      "root_cause_summary": "維護後伺服器異常導致玩家無法登入"
+      "keyword": "無法登入",
+      "root_cause_summary": "維護後出現登入故障"
+    }
+  },
+  {
+    "review_id": "53919fe3-54d2-4a9b-9da2-3faf13580cb5",
+    "player_name": "古偉業",
+    "date": "2026-04-13",
+    "star_rating": 5,
+    "review_text": "好玩不錯",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
     }
   },
   {
@@ -106,26 +169,10 @@
     "ai_analysis": {
       "sentiment": "negative",
       "category": "營運企劃",
-      "risk_level": "medium",
+      "risk_level": "high",
       "is_vip_player": false,
       "keyword": "機率不公",
-      "root_cause_summary": "遊戲機率設計不合理導致玩家體驗負面"
-    }
-  },
-  {
-    "review_id": "53919fe3-54d2-4a9b-9da2-3faf13580cb5",
-    "player_name": "古偉業",
-    "date": "2026-04-13",
-    "star_rating": 5,
-    "review_text": "好玩不錯",
-    "thumbsUpCount": 0,
-    "ai_analysis": {
-      "sentiment": "positive",
-      "category": "UI/UX體驗",
-      "risk_level": "low",
-      "is_vip_player": false,
-      "keyword": "好玩",
-      "root_cause_summary": "玩家對遊戲整體體驗感到滿意"
+      "root_cause_summary": "遊戲機制不公平導致玩家金錢損失與體驗受挫"
     }
   },
   {
@@ -894,8 +941,7 @@
       "is_vip_player": true,
       "keyword": "回收幣",
       "root_cause_summary": "高級場回收過多遊戲幣設計不公"
-    },
-    "status": "resolved"
+    }
   },
   {
     "review_id": "27994436-d3a3-43e7-9165-8bb7b5d258ee",
@@ -991,8 +1037,7 @@
       "is_vip_player": true,
       "keyword": "機率不公",
       "root_cause_summary": "玩家認為遊戲存在電腦玩家操控勝率情況"
-    },
-    "status": "dismissed"
+    }
   },
   {
     "review_id": "3f4b249a-573b-4efd-a84b-35592d2a132b",
