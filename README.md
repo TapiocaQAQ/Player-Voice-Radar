@@ -1,188 +1,121 @@
-# Player Voice Radar
+# 🎮 Player-Voice-Radar: 遊戲營運早期預警雷達
 
-> Real-time player sentiment analysis dashboard powered by Google Play reviews + Groq LLM.
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+[![React](https://img.shields.io/badge/React-18.2+-61DAFB.svg)](https://reactjs.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-009688.svg)](https://fastapi.tiangolo.com/)
+[![Groq](https://img.shields.io/badge/AI-Qwen3--32B_(Groq)-orange.svg)](https://groq.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A full-stack analytics tool that scrapes mobile game reviews, classifies them with an LLM pipeline, and visualises the results as an interactive radar dashboard — with a FastAPI backend for live on-demand sync.
+> **「在遊戲上線前期或新活動初期，精準攔截 P0 級災情，守住核心 VIP 玩家。」**
 
-**Target App:** 競技麻將2 (`com.igs.slots.casino.games.free.android`)
-
----
-
-## Tech Stack
-
-| Layer    | Technology                                      |
-| -------- | ----------------------------------------------- |
-| Frontend | React 18 + TypeScript + Vite                    |
-| UI       | Tailwind CSS v3, Radix UI, Tremor, shadcn/ui    |
-| Backend  | Python 3 — `google-play-scraper` + Groq SDK     |
-| API      | FastAPI + Uvicorn (SSE streaming)               |
-| LLM      | `qwen/qwen3-32b` via Groq API                   |
-| Data     | `public/data/cached_reviews.json` (130 records) |
+`Player-Voice-Radar` 是一款專為遊戲營運團隊設計的 **AI 驅動即時監控儀表板**。本系統針對遊戲上線初期或新活動發布後的關鍵期，透過自動化資料管線（ETL）與大語言模型（LLM）語意分析，將海量玩家評論轉化為具備「部門權責分流」與「風險加權判定」的決策洞察。
 
 ---
 
-## Project Structure
+## 🚀 核心價值與痛點解決
 
+在遊戲上線或新活動初期，傳統的人工過濾已無法應付數據爆發帶來的決策延遲。本專案透過 AI 實現以下突破：
+
+* **P0 級災情自動分流**：精準偵測「閃退、登入異常、扣款失敗」等致命 Bug，並將客訴自動歸類至正確的權責部門（工程、金流、企劃等），實現即時 Triage。
+* **VIP 課長流失攔截**：利用語意分析技術，從文字中自動辨識「大老、長期課金、老玩家」等身分特徵，並針對高價值用戶的負評優先觸發警報。
+* **社群共識指標整合**：導入 Google Play `thumbsUpCount`（按讚數）加權模型。將獲得大量共鳴的評論權重自動提升，防止潛在公關危機擴散。
+* **營運工作流閉環**：不僅是數據展示，更提供「標記處理狀態」與「AI 公關回覆草稿」功能，縮短從災情發現到安撫解決的反應鏈。
+
+
+## 🌊 系統資料流架構 (Data Pipeline)
+
+```mermaid
+flowchart LR
+    A[Google Play 評論<br/>App ID: 競技麻將2] -->|Scraper API<br/>擷取文本與按讚數| B(Data ETL 管線)
+    B -->|批次處理 Incremental| C{AI 分析引擎<br/>Groq Qwen3-32B}
+    
+    C -->|情緒與語意萃取| D[部門分流 Triage]
+    C -->|關鍵字比對| E[VIP 身分標記]
+    C -->|加權計算| F[社群炎上指數]
+    
+    D --> G[(FastAPI 微型後端)]
+    E --> G
+    F --> G
+    
+    G -->|SSE 串流推播| H[前端 React 儀表板]
+    
+    H --> I[🚨 P0 災情攔截]
+    H --> J[👑 VIP 流失預警]
+    H --> K[✨ AI 公關草稿]
+    
+    style C fill:#f9a8d4,stroke:#be185d,stroke-width:2px,color:#900
+    style H fill:#a7f3d0,stroke:#047857,stroke-width:2px,color:#000
 ```
-Player-Voice-Radar/
-├── backend/
-│   ├── scraper.py          # Step 1: Google Play review scraper (v2.0 — 競技麻將2)
-│   ├── llm_service.py      # Step 2: Groq LLM pipeline — new 6-category + VIP detection
-│   ├── main.py             # Step 3: FastAPI server — /api/sync SSE + /api/debug/rollback
-│   └── requirements.txt
-├── public/
-│   └── data/
-│       └── cached_reviews.json   # LLM-analysed reviews (new format: thumbsUpCount + is_vip_player)
-├── src/
-│   ├── components/
-│   │   ├── layout/         # Header (sync button + star filter)
-│   │   ├── features/
-│   │   │   ├── charts/     # InsightChart (dynamic, click-to-filter)
-│   │   │   ├── detail/     # DetailSheet (VIP badge + thumbs-up sort)
-│   │   │   ├── keywords/   # BadgeCloud (dynamic keywords)
-│   │   │   └── metrics/    # MetricCards (Sparkline + P0/backlash/VIP churn)
-│   │   └── ui/             # shadcn/ui primitives (Skeleton, JumpingDots)
-│   ├── services/
-│   │   └── api.ts          # fetchReviews / triggerSync (SSE) / rollbackData
-│   ├── constants/          # Design tokens & shared constants
-│   ├── hooks/              # Custom React hooks (planned)
-│   └── types/              # Domain TypeScript types
-└── docs/
-    ├── DESIGN.md
-    ├── project_blueprint.md
-    └── Project Blueprint v2.0.md
-```
+---
+
+## 🛠️ 技術棧 (Tech Stack)
+
+### 後端 (Data & AI Pipeline)
+* **API Framework**: FastAPI (支援異步處理)
+* **Analysis Engine**: Qwen3-32B via **Groq Cloud** (極速推理，大幅降低管線延遲)
+* **Optimization**: 實作增量更新（Incremental Update）邏輯，僅處理新產生的評論，極大化 Token 使用效率。
+* **Real-time Streaming**: 使用 **SSE (Server-Sent Events)** 實作後端與前端的通信，即時推送 AI 批次處理進度。
+
+### 前端 (Interactive Dashboard)
+* **Core**: Vite + React + TypeScript
+* **UI System**: **Shadcn UI** + **Tremor** (專業級數據可視化)
+* **Visual Design**: 嚴格遵循 Vercel Dark Theme 高對比規範，針對營運場景優化長時間觀看的視覺舒適度。
+* **Data Visualization**: 
+    * 30 日動態時間序列聚合 (Time-series Aggregation)。
+    * 雙維度（頻率 + 情緒）高對比文字雲編碼。
 
 ---
 
-## Backend Pipeline
+## ✨ 關鍵功能展示
 
-### Step 1 — Scraper (v2.0)
+### 1. 行動觸發指標卡 (Actionable Metrics)
+* 🚨 **P0 級災情數**：工程與金流部門的首要戰報。
+* 🔥 **社群炎上指數**：按讚數加權後的客訴壓力指標。
+* 👑 **VIP 流失預警**：核心付費用戶的情緒監控指標。
+* *支援點擊展開「30 天詳細趨勢圖」，協助決策者追蹤特定更新後的數據波動。*
 
+### 2. 雙維度高對比文字雲 (BadgeCloud)
+為了解決暗黑模式下的「警報疲勞」，我們優化了視覺編碼：
+* **大小**：反映關鍵字出現頻率。
+* **明度過渡**：採用「粉紅 ➔ 亮紅」代表負面，「淺綠 ➔ 亮綠」代表正面。避免低頻詞在黑底上隱形。
+
+### 3. 營運協作與 AI Copilot
+* **狀態管理**：每則評論可標記為「已處理」或「無效/忽略」，支援跨部門協作紀錄。
+* **AI 公關草稿**：針對情緒化客訴，一鍵生成安撫性回覆，區分技術問題與情緒宣洩，提升客服效率。
+
+---
+
+## ⚙️ 快速開始 (Installation)
+
+### 1. 後端啟動
 ```bash
-pip install -r backend/requirements.txt
-python backend/scraper.py
-# → backend/raw_reviews.json  (競技麻將2, last 150 days, includes thumbsUpCount)
+cd backend
+pip install -r requirements.txt
+# 在 .env 中填入你的 GROQ_API_KEY
+uvicorn main:app --reload --port 8000
 ```
 
-### Step 2 — LLM Analysis
-
-```bash
-# Requires backend/.env with GROQ_API_KEY=<your_key>
-python backend/llm_service.py --limit 130
-# → public/data/cached_reviews.json
-```
-
-Each review gets `ai_analysis`:
-
-| Field               | Values                                                              |
-| ------------------- | ------------------------------------------------------------------- |
-| `sentiment`         | `positive` / `neutral` / `negative`                                 |
-| `category`          | 工程研發、營運企劃、客服金流、UI/UX體驗、行銷推廣、其他              |
-| `risk_level`        | `high` / `medium` / `low` (auto-upgraded if VIP or thumbsUp ≥ 10) |
-| `keyword`           | 2–5 character Chinese pain-point tag                                |
-| `root_cause_summary`| ≤ 20 character one-line summary                                     |
-| `is_vip_player`     | `true` if review signals paying/VIP behaviour                       |
-
-**Review fields also include:** `thumbsUpCount` — raw Google Play upvote count.
-
-**Risk override logic:** If `thumbsUpCount >= 10` OR `is_vip_player === true`, `risk_level` is forced to `"high"` post-LLM.
-
-Pipeline reliability:
-- Generator-based `main()` — yields per-batch progress for SSE streaming
-- Auto-retry on `json.JSONDecodeError` (up to 3×)
-- Rate-limit 429 → parse wait time → sleep → retry (zero data loss)
-- Batch-failure fallback: batch of 3 → individual → `bad_data.json`
-
-### Step 3 — FastAPI Server (live sync)
-
-```bash
-uvicorn backend.main:app --reload --port 8000
-```
-
-| Endpoint               | Method | Description                                           |
-| ---------------------- | ------ | ----------------------------------------------------- |
-| `/api/sync`            | POST   | Runs scraper → LLM pipeline; streams progress via SSE |
-| `/api/reviews/status`  | POST   | Updates review status (`pending`/`resolved`/`dismissed`) |
-| `/api/debug/rollback`  | POST   | Removes last 10 records; clears manual operation fields (demo reset) |
-| `/health`              | GET    | Health check                                          |
-
-SSE event format: `{"phase": "scraper|llm|done|error", "current": N, "total": N, "msg": "..."}`
-
----
-
-## Dashboard Metrics
-
-| Metric Card    | Definition                                                                 |
-| -------------- | -------------------------------------------------------------------------- |
-| P0 級災情      | Reviews in 工程研發 or 客服金流 with `risk_level = high`                   |
-| 炎上指數       | Sum of all `thumbsUpCount` across filtered reviews                         |
-| VIP 流失數     | Count of reviews where `is_vip_player === true`                            |
-
-Each card displays a 30-day real Sparkline trend (single-pass `useMemo` from `filteredReviews`). Click any card to open a **DrillDialog** with a full `AreaChart` + peak/avg/latest stats. Static `fakeTrend()` and delta badges have been removed.
-
----
-
-## Frontend
-
+### 2. 前端啟動
 ```bash
 npm install
-npm run dev      # dev server
-npm run build    # TypeScript check + production build
+npm run dev
 ```
 
-### Data Flow
+### 3. 展示/回溯功能
+* 點擊 Header 右側的 🐞 瓢蟲按鈕：系統將自動回溯最新 10 筆資料並重置所有處理狀態，方便展示「增量更新」與「數據聯動」的完整流程。
 
-```
-[Google Play — 競技麻將2]
-     ↓ scraper.py (v2.0, thumbsUpCount)
-[raw_reviews.json]
-     ↓ llm_service.py (new categories + VIP + risk override)
-[cached_reviews.json] ←──── public/data/cached_reviews.json
-     ↓ fetchReviews()                        ↑
-[React App.tsx] ──── /api/sync ────→ [FastAPI main.py]
-   useMemo()                              SSE Stream
-   starFilter                        scraper → llm pipeline
-   selectedCategory                  每批 yield 進度
-     ↓
-[MetricCards]     [InsightChart]  [BadgeCloud]    [DetailSheet → ReviewCard]
- 30d real trend    click filter    sentiment       status management
- DrillDialog                       dual-dimension  AI PR reply generator
- AreaChart                         colour coding   optimistic update
-```
 
 ---
 
-## Environment Variables
+## 📚 完整文檔與技術細節 (Deep Dive)
 
-Create `backend/.env`:
+本專案不僅是一個展示工具，更具備完整的開發規範與技術深度。若您想進一步了解底層實作邏輯或進行二次開發，請參閱以下詳細文件：
 
-```env
-GROQ_API_KEY=your_groq_api_key_here
-```
-
-> `.env` is gitignored and **never** committed.
+* **[開發者上手指南](./docs/DEVELOPER_GUIDE.md)**：包含環境配置細節、API 接口定義、以及腳本手動執行參數。
+* **[技術架構演進史 (Git Version Logs)](./gitversion/)**：紀錄從 v1.0 到 v2.2 的核心代碼異動、LLM Prompt 優化歷程與 Bug 修復紀錄。
+* **[視覺設計規範 (DESIGN.md)](./docs/vercel/DESIGN.md)**：詳細定義了暗黑模式下的色彩編碼邏輯與 UX 互動規範。
+* **[產品藍圖 (Project Blueprint)](./docs/project_blueprint.md)**：本專案的完整 URD 與商業邏輯推演過程。
 
 ---
 
-## Roadmap
-
-- [x] LLM pipeline — scraper + Groq batch analysis
-- [x] Frontend component architecture (feature-based)
-- [x] FastAPI backend — `/api/sync` SSE streaming endpoint
-- [x] Data Service — `src/services/api.ts` wired to all frontend components
-- [x] Loading / Skeleton state + JumpingDots animation
-- [x] BarChart + BadgeCloud + DetailSheet connected to real data
-- [x] Star filter (1–2 / 1–3 / 1–5 stars) + category click-through
-- [x] Switch target app to 競技麻將2 with new 6-category taxonomy
-- [x] VIP player detection (`is_vip_player`) + `thumbsUpCount` dimension
-- [x] P0/backlash/VIP churn dashboard metrics with Sparkline trend cards
-- [x] DetailSheet: VIP badge + sort by thumbs-up
-- [x] Review status management (`pending`/`resolved`/`dismissed`) — optimistic update + backend persistence
-- [x] 30-day real trend data — replaced `fakeTrend()` with single-pass `useMemo`
-- [x] MetricCard drill-down dialog — `DrillDialog` with full `AreaChart` + stats summary
-- [x] AI PR reply generator — template-based, per-review, VIP-aware
-- [x] Keyword sentiment dual-dimension — normalised frequency + sentiment colour coding
-- [x] `shadcn/ui Dialog` primitive added (`src/components/ui/dialog.tsx`)
-- [ ] Real delta badge — historical period-over-period comparison (planned)
-- [ ] Code-split bundle (currently 1,096KB — Tremor SparkAreaChart)
+本專案為應徵 鈊象電子 AI工程師/數據分析師 之實戰作品，僅供技術交流使用。
