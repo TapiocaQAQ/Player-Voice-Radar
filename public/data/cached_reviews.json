@@ -1,5 +1,69 @@
 [
   {
+    "review_id": "1c0b9187-ab63-4737-9b2b-24719b946dfc",
+    "player_name": "楊金祥",
+    "date": "2026-04-18",
+    "star_rating": 5,
+    "review_text": "好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "好玩",
+      "root_cause_summary": "玩家覺得遊戲有趣"
+    }
+  },
+  {
+    "review_id": "0386c6cc-2e94-418e-af90-b560f3eb93e6",
+    "player_name": "張佐熙",
+    "date": "2026-04-17",
+    "star_rating": 5,
+    "review_text": "good",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "其他",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "good",
+      "root_cause_summary": "玩家對遊戲表示滿意"
+    }
+  },
+  {
+    "review_id": "20158440-31c1-4ab5-83ca-c1837e8bef12",
+    "player_name": "王綺綺",
+    "date": "2026-04-17",
+    "star_rating": 5,
+    "review_text": "簡單好玩",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "positive",
+      "category": "UI/UX體驗",
+      "risk_level": "low",
+      "is_vip_player": false,
+      "keyword": "簡單好玩",
+      "root_cause_summary": "玩家認為遊戲簡單有趣"
+    }
+  },
+  {
+    "review_id": "d70a9acf-ae76-4648-8ce0-f049ddb93604",
+    "player_name": "易水寒",
+    "date": "2026-04-17",
+    "star_rating": 1,
+    "review_text": "下載這遊戲前先知道自己的心臟跟錢包是否負荷的了玩這遊戲",
+    "thumbsUpCount": 0,
+    "ai_analysis": {
+      "sentiment": "negative",
+      "category": "營運企劃",
+      "risk_level": "medium",
+      "is_vip_player": false,
+      "keyword": "課金壓力",
+      "root_cause_summary": "對遊戲課金壓力感到不滿"
+    }
+  },
+  {
     "review_id": "94a08201-d9d5-4cd7-8b52-f1d67156a6e6",
     "player_name": "嵐小妹",
     "date": "2026-04-17",
@@ -9,10 +73,10 @@
     "ai_analysis": {
       "sentiment": "negative",
       "category": "工程研發",
-      "risk_level": "medium",
+      "risk_level": "high",
       "is_vip_player": false,
       "keyword": "無法登入",
-      "root_cause_summary": "玩家無法登入遊戲"
+      "root_cause_summary": "遊戲無法正常登入"
     }
   },
   {
@@ -27,8 +91,8 @@
       "category": "其他",
       "risk_level": "low",
       "is_vip_player": false,
-      "keyword": "遊戲讚",
-      "root_cause_summary": "玩家給予高度評價"
+      "keyword": "遊戲體驗好",
+      "root_cause_summary": "對遊戲整體體驗感到滿意"
     }
   },
   {
@@ -40,7 +104,7 @@
     "thumbsUpCount": 0,
     "ai_analysis": {
       "sentiment": "positive",
-      "category": "其他",
+      "category": "UI/UX體驗",
       "risk_level": "low",
       "is_vip_player": false,
       "keyword": "好玩",
@@ -57,10 +121,10 @@
     "ai_analysis": {
       "sentiment": "negative",
       "category": "營運企劃",
-      "risk_level": "medium",
-      "is_vip_player": false,
-      "keyword": "收費過重",
-      "root_cause_summary": "收費過重導致玩家流失"
+      "risk_level": "high",
+      "is_vip_player": true,
+      "keyword": "課金過高",
+      "root_cause_summary": "玩家認為遊戲內消費設計過於強烈"
     }
   },
   {
@@ -73,10 +137,10 @@
     "ai_analysis": {
       "sentiment": "negative",
       "category": "工程研發",
-      "risk_level": "high",
+      "risk_level": "medium",
       "is_vip_player": false,
       "keyword": "改版失敗",
-      "root_cause_summary": "改版後無法上線"
+      "root_cause_summary": "改版後遊戲無法正常上線"
     }
   },
   {
@@ -91,8 +155,8 @@
       "category": "其他",
       "risk_level": "low",
       "is_vip_player": false,
-      "keyword": "遊戲讚",
-      "root_cause_summary": "玩家給予正面評價"
+      "keyword": "遊戲好玩",
+      "root_cause_summary": "玩家對遊戲表示讚賞"
     }
   },
   {
