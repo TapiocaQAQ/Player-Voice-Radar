@@ -6,6 +6,9 @@
 [![Groq](https://img.shields.io/badge/AI-Qwen3--32B_(Groq)-orange.svg)](https://groq.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+
+
+![Player Pulse AI Demo](./docs/DEMO.gif)
 > **「在遊戲上線前期或新活動初期，精準攔截 P0 級災情，守住核心 VIP 玩家。」**
 
 `Player-Voice-Radar` 是一款專為遊戲營運團隊設計的 **AI 驅動即時監控儀表板**。本系統針對遊戲上線初期或新活動發布後的關鍵期，透過自動化資料管線（ETL）與大語言模型（LLM）語意分析，將海量玩家評論轉化為具備「部門權責分流」與「風險加權判定」的決策洞察。
